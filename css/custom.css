@@ -409,7 +409,7 @@ body {
     color: #73879C;
     background: #2A3F54;
     /*#ECF0F1; #FCFCFC*/
-    
+
     font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -456,7 +456,7 @@ body {
 }
 
 .fixed_height_320 {
-    height: 320px;
+    height: 350px;
 }
 
 .fixed_height_390 {
@@ -1204,7 +1204,7 @@ h2 {
         display: inline-block;
         margin-top: 5px;
         margin-left: 39px;
-        padding: 20px 15px; 
+        padding: 20px 15px;
         font-size: 26px;
         font-weight: 500;
 
@@ -1222,14 +1222,14 @@ h2 {
         color: #BDBDBD;
         font-weight: 900;
         font-size: 56px;
-        padding: 0px 40px; 
+        padding: 0px 40px;
 
 }
 
 .player_ranking rankpoints{
     position: relative;
     font-size: 16px;
-    padding: 0px 0px 0px; 
+    padding: 0px 0px 0px;
     margin-left: 5px;
 
 
@@ -2602,7 +2602,7 @@ span.section {
   color: #333;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
-} 
+}
 
 .form-control {
     border-radius: 0;
@@ -2669,6 +2669,7 @@ legend {
     margin-bottom: 1px;
 }
 
+
 .form-group-small {
     position: relative;
     min-height: 1px;
@@ -2701,21 +2702,31 @@ font-size: 18px;
     padding-left: 80px;
 
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 75px;
 }
 
+.form-group-year1 {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    padding-right: 10px;
+    padding-left: 80px;
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
 
 .form-year {
     border-radius: 0;
     line-height: 30px;
     width: 100%;
 
-    
+
 }
 .top_buttons{
  padding: 6px;
     position: relative;
- margin: 0 auto;   
+ margin: 0 auto;
     margin-top: 5px;
     margin-left: 45px;
 
@@ -3127,7 +3138,7 @@ select.parsley-error {
 }
 
 .well .markup-heading{
-    
+
 }
 .well .markup{
     background: #fff;
@@ -3716,7 +3727,7 @@ span.tag a {
 
 ul.bar_tabs {
     /* border: 1px solid #ff0000; */
-    
+
     overflow: visible;
     background: #F5F7FA;
     height: 25px;
@@ -4101,7 +4112,7 @@ ul.social li {
     position: absolute;
     height: auto;
     /* Ensures notices are above everything */
-    
+
     z-index: 9999;
 }
 /* Hides position: fixed from IE6 */
@@ -5900,12 +5911,12 @@ a.hiddenanchor{
     position: relative;
 }
 
-#register, 
+#register,
 #login{
     position: absolute;
     top: 0px; width:100%;
 }
-#register{	
+#register{
     z-index: 21;
     opacity: 0; width:100%;
 }

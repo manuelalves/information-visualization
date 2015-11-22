@@ -22,6 +22,8 @@
 
     <script src="js/custom.js"></script>
 
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/RadarChart.js"></script>
 
 </head>
 
@@ -54,14 +56,14 @@
                         <div class="profile_pic">
                             <img id="player_photo1" alt="Rafael Nadal" class="img-circle profile_img" src="images/players/nadal.png" name="photo1"></img>
 
-                            <label class="form-field"> <span id="list1"> Rafael Nadal </span> 
+                            <label class="form-field"> <span id="list1"> Rafael Nadal </span>
                                <img id="flag_photo1" alt="Spain" class="flag_img" src="images/flags/es.png" name="flag"></img>
                             </label>
 
-                       </div>         
+                       </div>
 
 
-                
+
                     </div>
                     <!-- /menu prile quick info -->
 
@@ -72,9 +74,9 @@
 
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
-                   <div class="form-group-year" > 
+                   <div class="form-group-year1" >
 
-                                    <select id="yearList" class="form-year" onchange="myYear()" > 
+                                    <select id="yearList" class="form-year" onchange="myYear()" >
 
                                                     <option selected="selected">2010</option>
                                                     <option>2011</option>
@@ -84,7 +86,7 @@
                                                     <option>2015</option>
 
 
-                                                </select> 
+                                                </select>
                     </div>
                     </div>
 
@@ -96,7 +98,7 @@
                        <strong>Birthdate:</strong> <span id="player_birthdate"> 1986.06.03 </span>  <br>
                        <strong>Birthplace:</strong> <span id="player_birthplace"> Mallorca, Spain </span>  <br>
                         <strong>Height:</strong> <span id="player_height"> 185 </span> cm <br>
-                        <strong>Hand:</strong> <span id="player_hand"> Left </span><br>        
+                        <strong>Hand:</strong> <span id="player_hand"> Left </span><br>
                      </div>
 
                      <div class ="player_ranking">
@@ -108,7 +110,7 @@
 
                 </div>
 
-                                              
+
 
             </div>
 
@@ -120,10 +122,10 @@
                     <div class = "top_buttons" >
                         <button type="button" class="btn btn-primary btn-lg" onClick="location.href='index.html'">Player Stats</button>
                         <button type="button" class="btn btn-default btn-lg" onClick="location.href='index2.html'">Compare</button>
-                        <button type="button" class="btn btn-default btn-lg" onClick="location.href = 'index3.html'">Ranking</button>     
+                        <button type="button" class="btn btn-default btn-lg" onClick="location.href = 'index3.html'">Ranking</button>
                      <!--   <input type=button onClick="location.href='index.html'" value='click here'>-->
-                       
-                     </div> 
+
+                     </div>
                 </div>
 
             </div>
@@ -136,8 +138,8 @@
 
                 <!-- top tiles -->
                 <div class="row tile_count">
-                    
-                
+
+
 
                 </div>
                 <!-- /top tiles -->
@@ -151,7 +153,7 @@
                                     <h3>Tournment Performance </h3>
 
                                 </div>
-                               
+
                             </div>
 
                                      GRAFICOOOOO
@@ -161,11 +163,11 @@
                                     <div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
                                 </div>
                             </div>
-                            
+
 
 
                             <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
-                                
+
 
 
                             </div>
@@ -189,9 +191,9 @@
 
                             <div class="x_content">
 
-                        <!-- GRAFICO --> 
+                        <!-- GRAFICO -->
 
-                           
+
 
                             </div>
                         </div>
@@ -201,7 +203,7 @@
                         <div class="x_panel tile fixed_height_320 overflow_hidden">
                             <div class="x_title">
                                 <h2>Surface Influence on Ranking & Perfomance</h2>
-                               
+
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
@@ -222,12 +224,14 @@
                         <div class="x_panel fixed_height_320">
                             <div class="x_title">
                                 <h2>Tournament Stats </h2>
-                              
+
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                
-                                <!--GRAFICO-->
+
+                              <div id="chart"></div>
+                              <script type="text/javascript" src="js/RadarScript.js"></script>
+
                             </div>
                         </div>
                     </div>
@@ -237,7 +241,7 @@
                                 <div class="x_panel fixed_height_320">
                                     <div class="x_title">
                                         <h2>Surface Influence on Ranking & Performance </h2>
-                                       
+
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="x_content">
@@ -269,12 +273,12 @@
 
     </div>
 
-  
 
 
 
 
- 
+
+
 </body>
 
 </html>

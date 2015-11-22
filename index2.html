@@ -21,6 +21,8 @@
     <link href="css/custom.css" rel="stylesheet">
 
     <script src="js/custom.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/RadarChart.js"></script>
 
 
 </head>
@@ -43,10 +45,11 @@
                     <!-- player section -->
                     <div class="row_players">
 <!-- Player 1 -->
+
                                 <div class="form-group">
                                                 <select id="playerList1" class="form-control" onchange="changePlayer1()">
                                                     <option selected="selected" >Select Player</option>
-                                                    <option  >Rafael Nadal</option>
+                                                    <option>Rafael Nadal</option>
                                                     <option>Roger Federer</option>
                                                     <option>Novak Djokovic</option>
                                                 </select>
@@ -57,20 +60,20 @@
                                     <div class="profile_pic">
                                         <img id="player_photo1" alt="Rafael Nadal" class="img-circle profile_img" src="images/players/nadal.png" name="photo1"></img>
 
-                                        <label class="form-field"> <span id="list1"> Rafael Nadal </span> 
+                                        <label class="form-field"> <span id="list1"> Rafael Nadal </span>
                                            <img id="flag_photo1" alt="Spain" class="flag_img" src="images/flags/es.png" name="flag"></img>
                                         </label>
 
-                                   </div>         
+                                   </div>
                                 </div>
                     <!-- /menu prile quick info -->
 
                                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
-                                   <div class="form-group-year" > 
+                                   <div class="form-group-year" >
 
 
-                                                    <select id="yearList1" class="form-year" onchange="myYear1()" > 
+                                                    <select id="yearList1" class="form-year" onchange="myYear1()" >
 
                                                                     <option selected="selected">2010</option>
                                                                     <option>2011</option>
@@ -80,13 +83,14 @@
                                                                     <option>2015</option>
 
 
-                                                                </select> 
+                                                                </select>
                                     </div>
 
                                 </div>
+
 <!-- end Player 1 -->
 <!-- Player 2 -->
-
+                      
                                    <div class="form-group">
 
                                                 <select id="playerList2" class="form-control" onchange="changePlayer2()">
@@ -102,19 +106,19 @@
                                     <div class="profile_pic">
                                         <img id="player_photo2" alt="Roger Federer" class="img-circle profile_img" src="images/players/federer.png" name="photo2"></img>
 
-                                        <label class="form-field"> <span id="list2"> Roger Federer </span> 
+                                        <label class="form-field"> <span id="list2"> Roger Federer </span>
                                            <img id="flag_photo2" alt="Spain" class="flag_img" src="images/flags/ch.png" name="flag"></img>
                                         </label>
 
-                                   </div>         
+                                   </div>
                                 </div>
                     <!-- /menu prile quick info -->
 
                                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
-                                   <div class="form-group-year" > 
+                                   <div class="form-group-year" >
 
-                                                    <select id="yearList2" class="form-year" onchange="myYear2()" > 
+                                                    <select id="yearList2" class="form-year" onchange="myYear2()" >
 
                                                                     <option selected="selected">2010</option>
                                                                     <option>2011</option>
@@ -124,10 +128,11 @@
                                                                     <option>2015</option>
 
 
-                                                                </select> 
+                                                                </select>
                                     </div>
 
                                 </div>
+
 <!-- end Player 2 -->
 <!-- Player 3 -->
 
@@ -147,19 +152,19 @@
                                     <div class="profile_pic">
                                         <img id="player_photo3" alt="Novak Djokovic" class="img-circle profile_img" src="images/players/djokovic.png" name="photo3"></img>
 
-                                        <label class="form-field"> <span id="list3"> Novak Djokovic </span> 
+                                        <label class="form-field"> <span id="list3"> Novak Djokovic </span>
                                            <img id="flag_photo3" alt="Spain" class="flag_img" src="images/flags/rs.png" name="flag"></img>
                                         </label>
 
-                                   </div>         
+                                   </div>
                                 </div>
                     <!-- /menu prile quick info -->
 
                                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
-                                   <div class="form-group-year" > 
+                                   <div class="form-group-year" >
 
-                                                    <select id="yearList3" class="form-year" onchange="myYear3()" > 
+                                                    <select id="yearList3" class="form-year" onchange="myYear3()" >
 
                                                                     <option selected="selected">2010</option>
                                                                     <option>2011</option>
@@ -169,10 +174,11 @@
                                                                     <option>2015</option>
 
 
-                                                                </select> 
+                                                                </select>
                                     </div>
 
                                 </div>
+
 <!-- end Player 3 -->
 
 
@@ -189,10 +195,10 @@
                     <div class = "top_buttons" >
                         <button type="button" class="btn btn-default btn-lg" onClick="location.href='index.html'">Player Stats</button>
                         <button type="button" class="btn btn-primary btn-lg" onClick="location.href='index2.html'">Compare</button>
-                        <button type="button" class="btn btn-default btn-lg" onClick="location.href = 'index3.html'">Ranking</button>     
+                        <button type="button" class="btn btn-default btn-lg" onClick="location.href = 'index3.html'">Ranking</button>
                      <!--   <input type=button onClick="location.href='index.html'" value='click here'>-->
-                       
-                     </div> 
+
+                     </div>
                 </div>
 
             </div>
@@ -205,38 +211,38 @@
 
                 <!-- top tiles -->
                 <div class="row tile_count">
-                    
-                
+
+
 
                 </div>
-              
+
 
                 <div class="row">
 
 
-                    <div class="col-md-5 col-sm-5a col-xs-12a">
-                        <div class="x_panel_player tile fixed_height_290">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <div class="x_panel tile fixed_height_320">
                             <div class="x_title">
-                                <h2>Tournament Performance</h2>
+                                <h2>Tournament Stats</h2>
                                 <div class="clearfix"></div>
                             </div>
 
                             <div class="x_content">
 
-                        <!-- GRAFICO --> 
+                              <div id="chart1"></div>
+                              <script type="text/javascript" src="js/RadarScript.js"></script>
 
-                           
 
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="col-md-5 col-sm-5a col-xs-12a">
-                        <div class="x_panel_player tile fixed_height_290 overflow_hidden">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <div class="x_panel tile fixed_height_320 overflow_hidden">
                             <div class="x_title">
                                 <h2>Surface Influence on Ranking & Perfomance</h2>
-                               
+
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
@@ -253,26 +259,28 @@
 
 
                 <div class="row">
-                    <div class="col-md-5 col-sm-5a col-xs-12a">
-                        <div class="x_panel_player fixed_height_290">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <div class="x_panel fixed_height_320">
                             <div class="x_title">
                                 <h2>Tournament Stats </h2>
-                              
+
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                
-                                <!--GRAFICO-->
+
+                              <div id="chart2"></div>
+                              <script type="text/javascript" src="js/RadarScript.js"></script>
+
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="col-md-5 col-sm-5a col-xs-12a">
-                                <div class="x_panel_player fixed_height_290">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                                <div class="x_panel fixed_height_320">
                                     <div class="x_title">
                                         <h2>Surface Influence on Ranking & Performance </h2>
-                                       
+
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="x_content">
@@ -289,26 +297,28 @@
                 </div>
 
                    <div class="row">
-                    <div class="col-md-5 col-sm-5a col-xs-12a">
-                        <div class="x_panel_player fixed_height_290">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <div class="x_panel fixed_height_320">
                             <div class="x_title">
                                 <h2>Tournament Stats </h2>
-                              
+
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                
-                                <!--GRAFICO-->
+
+                              <div id="chart3"></div>
+                              <script type="text/javascript" src="js/RadarScript.js"></script>
+
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="col-md-5 col-sm-5a col-xs-12a">
-                                <div class="x_panel_player fixed_height_290">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                                <div class="x_panel fixed_height_320">
                                     <div class="x_title">
                                         <h2>Surface Influence on Ranking & Performance </h2>
-                                       
+
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="x_content">
@@ -340,12 +350,12 @@
 
     </div>
 
-  
 
 
 
 
- 
+
+
 </body>
 
 </html>
