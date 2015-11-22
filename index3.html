@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>iTennistics</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+
+ <!-- Files Que Estamos a Usar -->
+
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/custom.js"></script>
+
+
+</head>
+
+
+<body class="nav-md">
+
+    <div class="container body">
+
+        <div class="main_container">
+
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title"> <img src="images/tennis_ball.png"></img> <span>iTennistics</span></a>
+                    </div>
+                    <div class="clearfix"></div>
+
+                                <div class="form-group">
+                                                <select id="playerList1" class="form-control" onchange="changePlayer1()">
+                                                    <option selected="selected" >Select Player</option>
+                                                    <option >Rafael Nadal</option>
+                                                    <option>Roger Federer</option>
+                                                    <option>Novak Djokovic</option>
+                                                </select>
+                                        </div>
+
+                    <!-- menu prile quick info -->
+                    <div class="profile">
+                        <div class="profile_pic">
+                            <img id="player_photo1" alt="Rafael Nadal" class="img-circle profile_img" src="images/players/nadal.png" name="photo1"></img>
+
+                            <label class="form-field"> <span id="list1"> Rafael Nadal </span> 
+                               <img id="flag_photo1" alt="Spain" class="flag_img" src="images/flags/es.png" name="flag"></img>
+                            </label>
+
+                       </div>         
+
+
+                
+                    </div>
+                    <!-- /menu prile quick info -->
+
+                    <br/>
+
+                    <!-- sidebar menu -->
+
+
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
+                   <div class="form-group-year" > 
+
+                                    <select id="yearList" class="form-year" onchange="myYear()" > 
+
+                                                    <option selected="selected">2010</option>
+                                                    <option>2011</option>
+                                                    <option>2012</option>
+                                                    <option>2013</option>
+                                                    <option>2014</option>
+                                                    <option>2015</option>
+
+
+                                                </select> 
+                    </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <div class = "top_buttons" >
+                        <button type="button" class="btn btn-default btn-lg" onClick="location.href='index.html'" >Player Stats</button>
+                        <button type="button" class="btn btn-default btn-lg" onClick="location.href='index2.html'">Compare</button>
+                        <button type="button" class="btn btn-primary btn-lg" onClick="location.href ='index3.html'">Ranking</button>     
+                     <!--   <input type=button onClick="location.href='index.html'" value='click here'>-->
+                       
+                     </div> 
+                </div>
+
+            </div>
+            <!-- /top navigation -->
+
+<!-- style="text-align:center;" -->
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+
+                <!-- top tiles -->
+                <div class="row tile_count">
+                    
+                
+
+                </div>
+                <!-- /top tiles -->
+
+              <!--  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="dashboard_graph">
+
+                           <div class="row x_title">
+                                <div class="col-md-6">
+                                    <h3>Tournment Performance </h3>
+
+                                </div>
+                               
+                            </div>
+
+                                     GRAFICOOOOO
+                           <!-- <div class="col-md-9 col-sm-9 col-xs-12">
+                                <div id="placeholder33" style="height: 160px; display: none" class="demo-placeholder"></div>
+                                <div style="width: 100%;">
+                                    <div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
+                                </div>
+                            </div>
+                            
+
+
+                            <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
+                                
+
+
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <br />-->
+
+                <div class="row">
+
+
+                    <div class="col-md-10 col-sm-10 col-xs-12">
+                        <div class="x_panel tile fixed_height_320">
+                            <div class="x_title">
+                                <h2>Ranking by Year</h2>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="x_content">
+
+                        <!-- GRAFICO --> 
+
+                           
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-10 col-sm-10 col-xs-12">
+                        <div class="x_panel fixed_height_320">
+                            <div class="x_title">
+                                <h2>Ranking by Tourney Date</h2>
+                              
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                
+                                <!--GRAFICO-->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- footer content -->
+
+                <footer>
+                    <div class="">
+                        <p class="pull-right">Visualização de Informação <a>Grupo 5 Alameda</a>.
+                        </p>
+                    </div>
+                </footer>
+                <!-- /footer content -->
+            </div>
+            <!-- /page content -->
+
+        </div>
+
+    </div>
+
+  
+
+
+
+
+ 
+</body>
+
+</html>
