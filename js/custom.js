@@ -53,6 +53,21 @@ $(function () {
 // Player Photo
 imageArray = new Array("","images/players/nadal.png", "images/players/Federer.png", "images/players/Djokovic.png"); 
 flagArray = new Array("","images/flags/es.png", "images/flags/ch.png", "images/flags/rs.png"); 
+ageArray = new Array("","29", "34", "28"); 
+birthdateArray = new Array("","1986.06.03", "1981.08.08", "1987.05.22"); 
+birthplaceArray = new Array("","Mallorca, Spain", "Basel, Switzerland", "Belgrade, Serbia"); 
+heightArray = new Array("","185", "185", "172"); 
+handArray = new Array("","Left", "Right", "Right"); 
+
+rankArray = new Array("","7", "3", "1"); 
+pointsArray = new Array("","4330", "7098", "9765"); 
+
+
+
+
+
+
+
 
 
 altArray = new Array("", "Rafael Nadal", "Roger Federer", "Novak Djokovic"); 
@@ -69,7 +84,18 @@ function changePlayer1() {
     document.getElementById("player_photo1").src = imageArray[index1]; 
     document.getElementById("player_photo1").alt = altArray[index1];
 
-    document.getElementById("flag_photo1").src = flagArray[index1]; 
+    document.getElementById("flag_photo1").src = flagArray[index1];
+
+    document.getElementById("player_age").innerHTML = ageArray[index1];
+    document.getElementById("player_birthdate").innerHTML = birthdateArray[index1];
+    document.getElementById("player_birthplace").innerHTML = birthplaceArray[index1];
+    document.getElementById("player_height").innerHTML = heightArray[index1];
+    document.getElementById("player_hand").innerHTML = handArray[index1];
+
+    document.getElementById("player_rank").innerHTML = rankArray[index1];
+    document.getElementById("player_points").innerHTML = pointsArray[index1];
+
+
 
 
     //document.getElementById("list").value = playerList.options[playerList.selectedIndex].text;

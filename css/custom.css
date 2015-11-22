@@ -1185,6 +1185,63 @@ h2 {
 
 }
 
+
+/*Novo codigoooo*/
+.player_text{
+        position: relative;
+        display: inline-block;
+        margin-top: 5px;
+        padding: 10px 25px;
+}
+
+.player_text strong{
+        color: #BDBDBD;
+
+}
+
+.player_ranking{
+    position: relative;
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 39px;
+        padding: 20px 15px; 
+        font-size: 26px;
+        font-weight: 500;
+
+}
+
+.player_ranking strong{
+        color: #BDBDBD;
+}
+
+.player_ranking rank{
+    position: relative;
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 0px;
+        color: #BDBDBD;
+        font-weight: 900;
+        font-size: 56px;
+        padding: 0px 40px; 
+
+}
+
+.player_ranking rankpoints{
+    position: relative;
+    font-size: 16px;
+    padding: 0px 0px 0px; 
+    margin-left: 5px;
+
+
+
+}
+
+.player_ranking points{
+    position: relative;
+    font-size: 16px;
+
+}
+
 .x_title {
     border-bottom: 2px solid #E6E9ED;
     padding: 1px 5px 6px;
