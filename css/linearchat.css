@@ -1,0 +1,29 @@
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  font-family: sans-serif;
+  color: #fff;
+  border-radius: 2px;
+}
+path {
+  stroke: #F8CA00;
+  stroke-width: 2;
+  font-family: sans-serif;
+  fill: none;
+}
+.axis path, .axis line {
+  fill: none;
+  font-family: sans-serif;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.datapoint:hover{
+fill: #F8CA00;
+}
+.xlabel, .ylabel {
+  font-weight:bold;
+  font-family: sans-serif;
+font-size:5px;
+}
