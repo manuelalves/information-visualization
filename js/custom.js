@@ -131,7 +131,39 @@ function changePlayer3() {
     //document.getElementById("list").value = playerList.options[playerList.selectedIndex].text;
 }
 
+function changePlayer4() {
+    var playerList1 = document.getElementById("playerList1");
+    var index1 = playerList1.selectedIndex;
+    var strUser1 = playerList1.options[index1].value;
 
+    document.getElementById("list1").innerHTML = strUser1;
+    document.getElementById("playerList1").selectedIndex = 0;
+
+    document.getElementById("player_photo1").src = imageArray[index1];
+    document.getElementById("player_photo1").alt = altArray[index1];
+
+    document.getElementById("flag_photo1").src = flagArray[index1];
+
+    document.getElementById("player_age").innerHTML = ageArray[index1];
+    document.getElementById("player_birthdate").innerHTML = birthdateArray[index1];
+    document.getElementById("player_birthplace").innerHTML = birthplaceArray[index1];
+    document.getElementById("player_height").innerHTML = heightArray[index1];
+    document.getElementById("player_hand").innerHTML = handArray[index1];
+
+    document.getElementById("player_rank").innerHTML = rankArray[index1];
+    document.getElementById("player_points").innerHTML = pointsArray[index1];
+
+    //document.getElementById("list").value = playerList.options[playerList.selectedIndex].text;
+}
+
+function myYear() {
+    var dateList = document.getElementById("yearList");
+    var index = dateList.selectedIndex;
+
+    optionYear(index);
+
+    //document.getElementById("list").value = playerList.options[playerList.selectedIndex].text;
+}
 
 /* Sidebar Menu active class */
 $(function () {
