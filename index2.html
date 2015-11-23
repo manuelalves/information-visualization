@@ -23,6 +23,7 @@
     <script src="js/custom.js"></script>
     <script src="js/d3.v3.min.js"></script>
     <script src="js/RadarChart.js"></script>
+    <script src="js/RadarScript.js"></script>
 
 
 </head>
@@ -90,7 +91,7 @@
 
 <!-- end Player 1 -->
 <!-- Player 2 -->
-                      
+
                                    <div class="form-group">
 
                                                 <select id="playerList2" class="form-control" onchange="changePlayer2()">
@@ -218,24 +219,21 @@
 
 
                 <div class="row">
+                 <div class="col-md-5 col-sm-5 col-xs-12">
+                     <div class="x_panel fixed_height_320">
+                         <div class="x_title">
+                             <h2>Tournament Stats </h2>
 
+                             <div class="clearfix"></div>
+                         </div>
+                         <div class="x_content">
 
-                    <div class="col-md-5 col-sm-5 col-xs-12">
-                        <div class="x_panel tile fixed_height_320">
-                            <div class="x_title">
-                                <h2>Tournament Stats</h2>
-                                <div class="clearfix"></div>
-                            </div>
+                         <div id="chart"></div>
+                           <script type="text/javascript" src="js/RadarScript.js"></script>
 
-                            <div class="x_content">
-
-                              <div id="chart1"></div>
-                              <script type="text/javascript" src="js/RadarScript.js"></script>
-
-
-                            </div>
-                        </div>
-                    </div>
+                         </div>
+                     </div>
+                 </div>
 
 
                     <div class="col-md-5 col-sm-5 col-xs-12">
@@ -268,8 +266,9 @@
                             </div>
                             <div class="x_content">
 
-                              <div id="chart2"></div>
+                              <div id="chart1"></div>
                               <script type="text/javascript" src="js/RadarScript.js"></script>
+
 
                             </div>
                         </div>
@@ -306,7 +305,7 @@
                             </div>
                             <div class="x_content">
 
-                              <div id="chart3"></div>
+                            <div id="chart2"></div>
                               <script type="text/javascript" src="js/RadarScript.js"></script>
 
                             </div>

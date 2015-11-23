@@ -1,4 +1,5 @@
 
+
 var RadarChart = {
   draw: function(id, d, options){
   var cfg = {
@@ -160,7 +161,7 @@ var RadarChart = {
 					tooltip
 						.attr('x', newX)
 						.attr('y', newY)
-						.text(d.value)
+						.text(Math.round(d.value/4))
 						.transition(200)
 						.style('opacity', 1);
 

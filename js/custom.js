@@ -1,10 +1,12 @@
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
 /** ******  left menu  *********************** **/
+
+
 $(function () {
     $('#sidebar-menu li ul').slideUp();
     $('#sidebar-menu li').removeClass('active');
@@ -51,37 +53,31 @@ $(function () {
 });
 
 // Player Photo
-imageArray = new Array("","images/players/nadal.png", "images/players/Federer.png", "images/players/Djokovic.png"); 
-flagArray = new Array("","images/flags/es.png", "images/flags/ch.png", "images/flags/rs.png"); 
-ageArray = new Array("","29", "34", "28"); 
-birthdateArray = new Array("","1986.06.03", "1981.08.08", "1987.05.22"); 
-birthplaceArray = new Array("","Mallorca, Spain", "Basel, Switzerland", "Belgrade, Serbia"); 
-heightArray = new Array("","185", "185", "172"); 
-handArray = new Array("","Left", "Right", "Right"); 
+imageArray = new Array("","images/players/nadal.png", "images/players/Federer.png", "images/players/Djokovic.png");
+flagArray = new Array("","images/flags/es.png", "images/flags/ch.png", "images/flags/rs.png");
+ageArray = new Array("","29", "34", "28");
+birthdateArray = new Array("","1986.06.03", "1981.08.08", "1987.05.22");
+birthplaceArray = new Array("","Mallorca, Spain", "Basel, Switzerland", "Belgrade, Serbia");
+heightArray = new Array("","185", "185", "172");
+handArray = new Array("","Left", "Right", "Right");
 
-rankArray = new Array("","7", "3", "1"); 
-pointsArray = new Array("","4330", "7098", "9765"); 
+rankArray = new Array("","7", "3", "1");
+pointsArray = new Array("","4330", "7098", "9765");
 
+altArray = new Array("", "Rafael Nadal", "Roger Federer", "Novak Djokovic");
 
-
-
-
-
-
-
-
-altArray = new Array("", "Rafael Nadal", "Roger Federer", "Novak Djokovic"); 
-
-// Player List 
+// Player List
 function changePlayer1() {
     var playerList1 = document.getElementById("playerList1");
     var index1 = playerList1.selectedIndex;
     var strUser1 = playerList1.options[index1].value;
 
+    writeRadarChart(index1);
+
     document.getElementById("list1").innerHTML = strUser1;
     document.getElementById("playerList1").selectedIndex = 0;
 
-    document.getElementById("player_photo1").src = imageArray[index1]; 
+    document.getElementById("player_photo1").src = imageArray[index1];
     document.getElementById("player_photo1").alt = altArray[index1];
 
     document.getElementById("flag_photo1").src = flagArray[index1];
@@ -97,7 +93,6 @@ function changePlayer1() {
 
 
 
-
     //document.getElementById("list").value = playerList.options[playerList.selectedIndex].text;
 }
 
@@ -109,11 +104,12 @@ function changePlayer2() {
     document.getElementById("list2").innerHTML = strUser2;
     document.getElementById("playerList2").selectedIndex = 0;
 
-    document.getElementById("player_photo2").src = imageArray[index2]; 
+    document.getElementById("player_photo2").src = imageArray[index2];
     document.getElementById("player_photo2").alt = altArray[index2];
 
-    document.getElementById("flag_photo2").src = flagArray[index2]; 
+    document.getElementById("flag_photo2").src = flagArray[index2];
 
+    writeRadarChart2(index2);
 
     //document.getElementById("list").value = playerList.options[playerList.selectedIndex].text;
 }
@@ -126,17 +122,14 @@ function changePlayer3() {
     document.getElementById("list3").innerHTML = strUser3;
     document.getElementById("playerList3").selectedIndex = 0;
 
-    document.getElementById("player_photo3").src = imageArray[index3]; 
+    document.getElementById("player_photo3").src = imageArray[index3];
     document.getElementById("player_photo3").alt = altArray[index3];
 
-    document.getElementById("flag_photo3").src = flagArray[index3]; 
+    document.getElementById("flag_photo3").src = flagArray[index3];
 
-
+    writeRadarChart3(index3);
     //document.getElementById("list").value = playerList.options[playerList.selectedIndex].text;
 }
-
-
-
 
 
 
@@ -404,7 +397,7 @@ $(function () {
 /** ******  Accordion  *********************** **/
 /** ******  scrollview  *********************** **/
 $(document).ready(function () {
-  
+
             $(".scroll-view").niceScroll({
                 touchbehavior: true,
                 cursorcolor: "rgba(42, 63, 84, 0.35)"
