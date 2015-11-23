@@ -10,8 +10,8 @@ function parser(d) {
 var format = d3.time.format("%m/%d/%Y");
 
 function milesovertime(csvdata) {
-    var margin = {top: 5, right: 50, bottom: 175, left: 20};
-    var width = 600;
+    var margin = {top: 5, right: 75, bottom: 175, left: 25};
+    var width = 850;
     var height = 190;
 
     var minDate = csvdata[0].pDate;
@@ -33,7 +33,7 @@ function milesovertime(csvdata) {
 
     var yAxis = d3.svg.axis()
 	  .scale(y)
-	  .ticks(10)
+	  .ticks(12)
 	  .orient("left");
     d3.select("#miles").select("svg").remove();
     // put the graph in the "miles" div
@@ -66,10 +66,8 @@ function milesovertime(csvdata) {
 	  .attr("transform", "translate(0," + height + ")")
 	  .call(xAxis)
 	  .selectAll("text")
-	  .attr("y", 9)
-	  .attr("x", 9)
-	  .attr("dy", ".35em")
-	  .attr("transform", "rotate(60)")
+	  .attr("y", 15)
+	  .attr("x", -30)
     .style("font-family", "sans-serif")
 	  .style("text-anchor", "start");
     svg.append("text")
