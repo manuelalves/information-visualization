@@ -292,7 +292,7 @@ function InitChart() {
         "month": "Dez",
         "year": "2015"
     }];
-    var vis = d3.select("#visualisation"),
+    var vis = d3.select("#linechart1"),
         WIDTH = 500,
         HEIGHT = 250,
         MARGINS = {
