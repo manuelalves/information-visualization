@@ -49,7 +49,7 @@ function milesovertime(csvdata) {
     //Mouseover tip
     var tip = d3.tip()
 	.attr('class', 'd3-tip')
-	.offset([120, 40])
+	.offset([65, 40])
 	.html(function(d) {
 	    return "<strong>" + d.Odometer +
                 " on ranking</strong><br>" +
@@ -97,6 +97,7 @@ function milesovertime(csvdata) {
     // draw the line
     svg.append("path")
 	  .attr("d", line(csvdata))
+
 
 
     svg.selectAll(".dot")
