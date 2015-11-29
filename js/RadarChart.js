@@ -163,9 +163,9 @@ var RadarChart = {
 		.attr("data-id", function(j){return j.axis})
 		.style("fill", cfg.color(series))
     .style("fill-opacity", .9)
-    .on('mouseover', tip.show)
-    /*.on('mouseover', function (d){
-             t = tip.show;
+    //.on('mouseover', tip.show)
+    .on('mouseover', function (d){
+             tip.show(d);
              z = "polygon."+d3.select(this).attr("class");
              g.selectAll("polygon")
               .transition(200)
@@ -173,14 +173,14 @@ var RadarChart = {
              g.selectAll(z)
               .transition(200)
               .style("fill-opacity", 0.8);
-            })*/
-    .on('mouseout', tip.hide);
-	  /*.on('mouseout', function(){
-             t =tip.hide;
+            })
+   // .on('mouseout', tip.hide);
+	  .on('mouseout', function(){
+             tip.hide(d);
              g.selectAll("polygon")
               .transition(200)
               .style("fill-opacity", cfg.opacityArea);
-    });*/
+    });
 
 
 	  series++;
