@@ -39,7 +39,16 @@ var RadarChart = {
 			.attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
 			;
 
-	var tooltip;
+  //Mouseover tip
+  var tip = d3.tip()
+			.attr('class', 'd3-tip')
+			.offset([120, 40])
+			.html(function(d) {
+	    return "<strong>" + (Math.round(d.value/4)) +" " + d.axis +
+                " </strong>";
+			});
+
+  g.call(tip);
 
 	//Circular segments
 	for(var j=0; j<cfg.levels; j++){
@@ -154,41 +163,28 @@ var RadarChart = {
 		.attr("data-id", function(j){return j.axis})
 		.style("fill", cfg.color(series))
     .style("fill-opacity", .9)
-		.on('mouseover', function (d){
-					newX =  parseFloat(d3.select(this).attr('cx')) - 10;
-					newY =  parseFloat(d3.select(this).attr('cy')) - 5;
-
-					tooltip
-						.attr('x', newX)
-						.attr('y', newY)
-						.text(Math.round(d.value/4))
-						.transition(200)
-						.style('opacity', 1);
-
-					z = "polygon."+d3.select(this).attr("class");
-					g.selectAll("polygon")
-						.transition(200)
-						.style("fill-opacity", 0);
-					g.selectAll(z)
-						.transition(200)
-						.style("fill-opacity", 0.8);
-				  })
-		.on('mouseout', function(){
-					tooltip
-						.transition(200)
-						.style('opacity', 0);
-					g.selectAll("polygon")
-						.transition(200)
-						.style("fill-opacity", cfg.opacityArea);
-				  })
+    .on('mouseover', tip.show)
+    /*.on('mouseover', function (d){
+             t = tip.show;
+             z = "polygon."+d3.select(this).attr("class");
+             g.selectAll("polygon")
+              .transition(200)
+              .style("fill-opacity", 0);
+             g.selectAll(z)
+              .transition(200)
+              .style("fill-opacity", 0.8);
+            })*/
+    .on('mouseout', tip.hide);
+	  /*.on('mouseout', function(){
+             t =tip.hide;
+             g.selectAll("polygon")
+              .transition(200)
+              .style("fill-opacity", cfg.opacityArea);
+    });*/
 
 
 	  series++;
 	});
-	//Tooltip
-	tooltip = g.append('text')
-			   .style('opacity', 0)
-			   .style('font-family', 'sans-serif')
-			   .style('font-size', '10px');
+
   }
 };
