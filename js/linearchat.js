@@ -1,5 +1,3 @@
-// plot a graph of miles vs. time
-
 function parser(d) {
     d.pMPG = +d.MPG;
     d.pOdometer = +d.Odometer;
@@ -28,7 +26,7 @@ function milesovertime(csvdata) {
 
     var xAxis = d3.svg.axis()
 	  .scale(x)
-	  .ticks(11)
+	  .ticks(12)
 	  .orient("bottom");
 
     var yAxis = d3.svg.axis()
@@ -67,9 +65,9 @@ function milesovertime(csvdata) {
 	  .call(xAxis)
 	  .selectAll("text")
 	  .attr("y", 15)
-	  .attr("x", -30)
+	  .attr("x", 0)
     .style("font-family", "sans-serif")
-	  .style("text-anchor", "start");
+	  .style("text-anchor", "middle");
     svg.append("text")
 	  .attr("class", "xlabel")
 	  .attr("text-anchor", "middle")
