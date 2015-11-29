@@ -8,7 +8,7 @@ function parser(d) {
 var format = d3.time.format("%m/%d/%Y");
 
 function milesovertime(csvdata) {
-    var margin = {top: 5, right: 75, bottom: 175, left: 25};
+    var margin = {top: 10, right: 75, bottom: 175, left: 25};
     var width = 850;
     var height = 190;
 
@@ -21,7 +21,7 @@ function milesovertime(csvdata) {
 	  .range([0, width]);
 
     var y = d3.scale.linear()
-	  .domain([11, 0])
+	  .domain([10, 0])
 	  .range([height, 0]);
 
     var xAxis = d3.svg.axis()
@@ -31,7 +31,7 @@ function milesovertime(csvdata) {
 
     var yAxis = d3.svg.axis()
 	  .scale(y)
-	  .ticks(12)
+	  .ticks(8)
 	  .orient("left");
     d3.select("#miles").select("svg").remove();
     // put the graph in the "miles" div
