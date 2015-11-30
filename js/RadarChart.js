@@ -1,5 +1,6 @@
 
 
+
 var RadarChart = {
   draw: function(id, d, options){
   var cfg = {
@@ -10,8 +11,7 @@ var RadarChart = {
 	 maxValue: 0,
 	 radians: 2 * Math.PI,
 	 opacityArea: 0,
-	 ToRight: 5,
-	 TranslateX: 90,
+	 TranslateX: 65,
 	 TranslateY: 25,
 	 ExtraWidthX: 100,
 	 ExtraWidthY: 100,
@@ -39,6 +39,7 @@ var RadarChart = {
 			.attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
 			;
 
+      legendFunction();
   //Mouseover tip
   var tip = d3.tip()
 			.attr('class', 'd3-tip')
@@ -49,6 +50,8 @@ var RadarChart = {
 			});
 
   g.call(tip);
+
+
 
 	//Circular segments
 	for(var j=0; j<cfg.levels; j++){
@@ -89,10 +92,9 @@ var RadarChart = {
 		.attr("class", "legend")
 		.text(function(d){return d})
 		.style("font-family", "sans-serif")
-		.style("font-size", "10px")
+		.style("font-size", "8px")
 		.attr("text-anchor", "middle")
-		.attr("dy", "1.5em")
-		.attr("transform", function(d, i){return "translate(0, -10)"})
+		.attr("transform", function(d, i){return "translate(0, 5)"})
 		.attr("x", function(d, i){return cfg.w/2*(1-cfg.factorLegend*Math.sin(i*cfg.radians/total))-60*Math.sin(i*cfg.radians/total);})
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
 

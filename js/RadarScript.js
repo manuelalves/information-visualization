@@ -4,7 +4,7 @@ var colorscale = d3.scale.category10();
 
 //Legend titles
 var legendOptions = ['Australian Open','Roland Garros', 'Wimbledon', 'USA Open'];
-var axisOptions = ['ace', 'df', '1stln', '1stWon', '2ndWon', 'bpFaced', 'bpSaved', 'SvGms'];
+var axisOptions = ['Aces', 'Double Faults', '1st Serve', '1st Serve Points Won', '2nd Serve Points Won', 'Break Points Faced', 'Break Points Saved', 'Service Games Played'];
 
 //Data
 var d = [
@@ -180,12 +180,46 @@ RadarChart.draw("#chart1", d1, mycfg);
 RadarChart.draw("#chart2", d2, mycfg);
 
 
+
 ////////////////////////////////////////////
 /////////// Initiate legend ////////////////
 ////////////////////////////////////////////
 
-var svg = d3.select('#body')
+function legendFunction(){
+var svg = d3.selectAll('#radar')
 	.selectAll('svg')
 	.append('svg')
-	.attr("width", w)
+	.attr("width", w+300)
 	.attr("height", h);
+
+
+	//Initiate Legend
+	var legend = svg.append("g")
+		.attr("class", "legend")
+		.attr("height", 100)
+		.attr("width", 200)
+		.attr('transform', 'translate(100,0)')
+		;
+		//Create colour squares
+		legend.selectAll('rect')
+		  .data(legendOptions)
+		  .enter()
+		  .append("rect")
+		  .attr("x", w + 50)
+		  .attr("y", function(d, i){ return i * 15;})
+		  .attr("width", 8)
+		  .attr("height", 8)
+		  .style("fill", function(d, i){ return colorscale(i);})
+		  ;
+		//Create text next to squares
+		legend.selectAll('text')
+		  .data(legendOptions)
+		  .enter()
+		  .append("text")
+		  .attr("x", w + 65)
+		  .attr("y", function(d, i){ return i * 15 + 7;})
+		  .attr("font-size", "8px")
+		  .attr("fill", "#737373")
+		  .text(function(d) { return d; })
+		  ;
+}
