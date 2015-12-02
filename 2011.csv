@@ -1,6 +1,6 @@
 Date,Brand,City,State,Odometer,MPG
 1/1/2011,Texaco,Mariposa,CA,3,9876
-1/1/2011,Texaco,Mariposa,CA,3,5678
+1/10/2011,Texaco,Mariposa,CA,3,5670
 2/1/2011,Chevron,Berkeley,CA,5,6789
 3/1/2011,Chevron,Tahoe City,CA,6,7890
 4/1/2011,Chevron,Meyers,CA,4,7890
@@ -11,4 +11,4 @@ Date,Brand,City,State,Odometer,MPG
 9/1/2011,Chevron,Bryce,UT,1,9987
 10/1/2011,Texaco,Scipio,UT,1,9989
 11/1/2011,Chevron,Ely,NV,1,9789
-12/1/2011,Chevron,Colfax,CA,1,9789
+12/1/2011,Chevron,Colfax,NV,1,9789

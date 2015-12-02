@@ -29,3 +29,23 @@ fill: #F8CA00;
   font-size:5px;
   color: #3E5367;
 }
+
+.area_grass {
+  fill: green;
+  stroke-width:0;
+  opacity: 0.3;
+}
+
+.area_clay {
+  fill: orange;
+  stroke-width:0;
+  opacity: 0.3;
+
+}
+
+.area_hard {
+  fill: #2A8FBD;
+  stroke-width:0;
+  opacity: 0.6;
+
+}

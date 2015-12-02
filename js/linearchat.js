@@ -1,20 +1,68 @@
 function parser(d) {
     d.pMPG = +d.MPG;
     d.pOdometer = +d.Odometer;
+    d.pState = d.State;
     d.pDate = new Date(d.Date);
     return d;
 }
 
 var format = d3.time.format("%m/%d/%Y");
 
+var clay = false;
+var hard = false;
+var grass = false;
+
+var year = 0;
+
+function select_clay() {
+	if(clay){
+		clay = false;
+	}
+	else {
+		clay = true;
+	}
+	optionYear(year);
+}
+
+function select_hard() {
+	if(hard){
+		hard = false;
+	}
+	else {
+		hard = true;
+	}
+	optionYear(year);
+
+}
+
+function select_grass() {
+	if(grass){
+		grass = false;
+	}
+	else {
+		grass = true;
+	}
+	optionYear(year);
+
+}
+
+
 function milesovertime(csvdata) {
+
     var margin = {top: 10, right: 75, bottom: 175, left: 25};
     var width = 850;
     var height = 190;
 
+    /// AREA
+ var area_grass = [];
+ var area_clay = [];
+ var area_hard = [];
+
+// FIM AREA 
+
+
     var minDate = csvdata[0].pDate;
     var maxDate = csvdata[csvdata.length - 1].pDate;
-	console.log(maxDate);
     // Set up time based x axis
     var x = d3.time.scale()
 	  .domain([minDate, maxDate])
@@ -26,7 +74,9 @@ function milesovertime(csvdata) {
 
     var xAxis = d3.svg.axis()
 	  .scale(x)
-	  .ticks(12)
+	  .ticks(d3.time.months)
+	  .tickSize(12, 0)
+      .tickFormat(d3.time.format("%B"))
 	  .orient("bottom");
 
     var yAxis = d3.svg.axis()
@@ -34,6 +84,33 @@ function milesovertime(csvdata) {
 	  .ticks(8)
 	  .orient("left");
     d3.select("#miles").select("svg").remove();
+
+
+// AREA////
+var area = d3.svg.area()
+		.interpolate("basis")
+    	.x(function(d) {return x(d.pDate);})
+    	.y0(height)
+    	.y1(function(d) {return y(y.domain()[1]);});
+
+
+for(var i = 0; i <= (csvdata.length-1); i++){
+ var surface_name = csvdata[i].pState;
+
+    if (surface_name == "UT") {
+        area_grass.push(csvdata[i]);
+    }
+    if (surface_name == "CA") {
+        area_clay.push(csvdata[i]);
+    }
+     if (surface_name == "NV") {
+        area_hard.push(csvdata[i]);
+    }
+}
+
+////FIM AREA//
+
+
     // put the graph in the "miles" div
     var svg = d3.select("#miles").append("svg")
 	  .attr("width", width + margin.left + margin.right)
@@ -94,6 +171,32 @@ function milesovertime(csvdata) {
 	  .attr("x", width/2)
 	  .style("text-anchor", "middle");
 
+/// AREA
+//draw area
+
+if(grass){
+svg.append("path")
+.datum(area_grass)
+.attr("class", "area_grass")
+.attr("d", area(area_grass));
+}
+
+if(clay){
+svg.append("path")
+.datum(area_clay)
+.attr("class", "area_clay")
+.attr("d", area(area_clay));
+}
+
+if(hard){
+svg.append("path")
+.datum(area_hard)
+.attr("class", "area_hard")
+.attr("d", area(area_hard));
+}
+
+/// FIM AREA
+
     // draw the line
     svg.append("path")
 	  .attr("d", line(csvdata))
@@ -117,6 +220,9 @@ function milesovertime(csvdata) {
 
 // Read in .csv data and make graph
 function optionYear(id){
+	d3.select("svg").remove();
+	year = id;
+
   if (id == 0){
     d3.csv("2010.csv", parser, function(error, csvdata) {
        	milesovertime(csvdata);

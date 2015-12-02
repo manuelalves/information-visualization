@@ -1,5 +1,5 @@
 Date,Brand,City,State,Odometer,MPG
-1/1/2014,Texaco,Mariposa,CA,6,6876
+1/15/2014,Texaco,Mariposa,CA,6,6876
 1/1/2014,Texaco,Mariposa,CA,6,4678
 2/1/2014,Chevron,Berkeley,CA,7,6789
 3/1/2014,Chevron,Tahoe City,CA,8,7890
@@ -11,4 +11,4 @@ Date,Brand,City,State,Odometer,MPG
 9/1/2014,Chevron,Bryce,UT,7,9987
 10/1/2014,Texaco,Scipio,UT,5,9989
 11/1/2014,Chevron,Ely,NV,7,3789
-12/1/2014,Chevron,Colfax,CA,7,9789
+12/1/2014,Chevron,Colfax,NV,7,9789
