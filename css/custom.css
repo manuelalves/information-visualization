@@ -112,6 +112,11 @@ body.nav-sm .profile {
     float: left;
 }
 
+/*Loading*/
+
+/*end loading*/
+
+
 /*MINE*/
 .profile_pic_small {
    position: relative;
@@ -217,6 +222,34 @@ body.nav-sm .menu_section h3 {
     width: 100%;
 }
 
+/*Legenda gráfico*/
+/* basic positioning */
+/*position: absolute;     margin-top: 260px;       display: inline-block; margin-left: 180px;*/
+.legenda { list-style: none; position: absolute;     margin-top: 260px;       display: inline-block; margin-left: 180px;
+}
+.legenda li { float: left; margin-right: 10px; margin-left: 10px; margin-top: 2px;}
+.legenda span { border: 0px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legenda .A { background-color: #d6616b; } /*2010 - vermelho*/
+.legenda .B { background-color: #a55194; } /*2011 - roxo*/
+.legenda .C { background-color: #8c564b; } /*2012 - castanho*/
+.legenda .D { background-color: #e7969c; } /*2013 - rosa*/
+.legenda .E { background-color: #7f7f7f; } /*2014 - cinzento*/
+.legenda .F { background-color: #17becf; } /*2015 - azul claro*/
+
+
+.rcorners {
+    margin-top: 260px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 500px;
+    height: 50px;
+}
+
+
+/*end legenda gráfico*/
+
 body.nav-md .container.body .col-md-3.left_col {
     width: 230px;
    height: 6px;
@@ -265,7 +298,7 @@ body.nav-md .container.body .right_col_small {
     font-size: 17px;
     padding: 2px 10px;
     text-align: left;
-    float: left; 
+    float: left;
 
 }
 .check_surface_hard label {
@@ -286,61 +319,61 @@ body.nav-md .container.body .right_col_small {
 
 /*
 .check_surface input[type=radio] + label:before {
-    content: "";  
-    display: inline-block;  
-    width: 15px;  
-    height: 15px;  
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
     vertical-align:middle;
-    margin-right: 8px;  
-    background-color: white;  
+    margin-right: 8px;
+    background-color: white;
     box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .3);
-    border-radius: 8px;  
+    border-radius: 8px;
 }*/
 
 .check_surface_clay input[type=checkbox] + label:before {
-    content: "";  
-    display: inline-block;  
-    width: 15px;  
-    height: 15px;  
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
     vertical-align:-2px;
-    margin-right: 8px;  
-    background-color: white;  
+    margin-right: 8px;
+    background-color: white;
     box-shadow: inset 0px 2px 2px rgba(251, 184, 41, .3);
-    border-radius: 4px;  
+    border-radius: 4px;
     border: 1px solid #FBB829
 
 }
 
 .check_surface_hard input[type=checkbox] + label:before {
-    content: "";  
-    display: inline-block;  
-    width: 15px;  
-    height: 15px;  
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
     vertical-align:-2px;
-    margin-right: 8px;  
-    background-color: white;  
+    margin-right: 8px;
+    background-color: white;
     box-shadow: inset 0px 2px 2px rgba(42, 143, 189, .3);
-    border-radius: 4px; 
+    border-radius: 4px;
     border: 1px solid #2A8FBD
 }
 
 .check_surface_grass input[type=checkbox] + label:before {
-    content: "";  
-    display: inline-block;  
-    width: 15px;  
-    height: 15px;  
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
     vertical-align:-2px;
-    margin-right: 8px;  
-    background-color: white;  
+    margin-right: 8px;
+    background-color: white;
     box-shadow: inset 0px 2px 2px rgba(127, 175, 27, .3);
-    border-radius: 4px; 
+    border-radius: 4px;
     border: 1px solid #7FAF1B
 }
 /*
 .check_surface input[type=radio]:checked + label:before {
-    content: "\2022"; // Bullet 
+    content: "\2022"; // Bullet
     color:white;
-    background-color: white; 
+    background-color: white;
     font-size:1.8em;
     text-align:center;
     line-height:14px;
@@ -351,7 +384,7 @@ body.nav-md .container.body .right_col_small {
 .check_surface_clay input[type=checkbox]:checked + label:before {
     content:"\2713"; /* Tick */
     color:#FBB829;
-    background-color: white; 
+    background-color: white;
     text-align:center;
     line-height:15px;
     text-shadow:0px 0px 3px #FBB829;
@@ -360,7 +393,7 @@ body.nav-md .container.body .right_col_small {
 .check_surface_hard input[type=checkbox]:checked + label:before {
     content:"\2713"; /* Tick */
     color:#2A8FBD;
-    background-color: white; 
+    background-color: white;
     text-align:center;
     line-height:15px;
     text-shadow:0px 0px 3px #2A8FBD;
@@ -369,7 +402,7 @@ body.nav-md .container.body .right_col_small {
 .check_surface_grass input[type=checkbox]:checked + label:before {
     content:"\2713"; /* Tick */
     color:#7FAF1B;
-    background-color: white; 
+    background-color: white;
     text-align:center;
     line-height:15px;
     text-shadow:0px 0px 3px #7FAF1B;
@@ -2393,7 +2426,7 @@ h4.graph_title {
 }
 
 #sidebar-menu .fa {
-    content: "\25AE"; 
+    content: "\25AE";
     font-family: FontAwesome;
     left:-5px;
     position:absolute;

@@ -27,12 +27,18 @@
     <link href="css/linearchat.css" rel="stylesheet">
     <script src="js/d3.v3.min.js"></script>
     <script src="js/d3.tip.v0.6.3.js"></script>
-    <script type="text/javascript" src="js/linearchat.js"></script>
+
+<script src="js/linearchat.js" type="text/javascript"></script>
+
+<script src="js/MultiLineChart.js" type="text/javascript"></script>
+
+
 
 </head>
 
 
-<body class="nav-md">
+<body class="nav-md"  onload="lineChart(); multiChart();">
+
 
     <div class="container body">
 
@@ -47,13 +53,65 @@
                     <div class="clearfix"></div>
 
                                 <div class="form-group">
-                                                <select id="playerList1" class="form-control" onchange="changePlayer4()">
-                                                    <option selected="selected" >Select Player</option>
-                                                    <option >Rafael Nadal</option>
-                                                    <option>Roger Federer</option>
+                                                <select id="playerList1" class="form-control" onchange="changePlayer4();lineChart(); multiChart();">
+                                                    <!--<option>Select Player</option>-->
+                                                    <option>Adrian Mannarino</option>
+                                                    <option>Alexandr Dolgopolov</option>
+                                                    <option>Andreas Seppi</option>
+                                                    <option>Andy Murray</option>
+                                                    <option>Benjamin Becker</option>
+                                                    <option>Denis Istomin</option>
+                                                    <option>David Ferrer</option>
+                                                    <option>David Goffin</option>
+                                                    <option>Dominic Thiem</option>
+                                                    <option>Ernests Gulbis</option>
+                                                    <option>Fabio Fognini</option>
+                                                    <option>Feliciano Lopez</option>
+                                                    <option>Fernando Verdasco</option>
+                                                    <option>Gael Monfils</option>
+                                                    <option>Gilles Muller</option>
+                                                    <option>Gilles Simon</option>
+                                                    <option>Grigor Dimitrov</option>
+                                                    <option>Guillermo Lopez</option>
+                                                    <option>Ivo Karlovic</option>
+                                                    <option>Jack Sock</option>
+                                                    <option>Jeremy Chardy</option>
+                                                    <option>Jerzy Janowicz</option>
+                                                    <option>Jo Tsonga</option>
+                                                    <option>John Isner</option>
+                                                    <option>Julien Benneteau</option>
+                                                    <option>Kei Nishikori</option>
+                                                    <option>Kevin Anderson</option>
+                                                    <option>Leonardo Mayer</option>
+                                                    <option>Lukas Rosol</option>
+                                                    <option>Marin Cilic</option>
+                                                    <option>Martin Klizan</option>
+                                                    <option>Mikhail Youzhny</option>
+                                                    <option>Milos Raonic</option>
+                                                    <option>Nick Kyrgios</option>
                                                     <option>Novak Djokovic</option>
+                                                    <option>Pablo Andujar</option>
+                                                    <option>Pablo  Busta</option>
+                                                    <option>Pablo Cuevas</option>
+                                                    <option>Philipp Kohlschreiber</option>
+                                                    <option selected="selected">Rafael Nadal</option>
+                                                    <option>Richard Gasquet</option>
+                                                    <option>Roberto Agut</option>
+                                                    <option>Roger Federer</option>
+                                                    <option>Sam Querrey</option>
+                                                    <option>Santiago Giraldo</option>
+                                                    <option>Stanislas Wawrinka</option>
+                                                    <option>Steve Johnson</option>
+                                                    <option>Tomas Berdych</option>
+                                                    <option>Tommy Robredo</option>
+                                                    <option>Yen Hsun Lu</option>
                                                 </select>
                                         </div>
+
+
+
+
+
 
                     <!-- menu prile quick info -->
                     <div class="profile">
@@ -142,40 +200,6 @@
                 </div>
                 <!-- /top tiles -->
 
-              <!--  <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="dashboard_graph">
-
-                           <div class="row x_title">
-                                <div class="col-md-6">
-                                    <h3>Tournment Performance </h3>
-
-                                </div>
-
-                            </div>
-
-                                     GRAFICOOOOO
-                           <!-- <div class="col-md-9 col-sm-9 col-xs-12">
-                                <div id="placeholder33" style="height: 160px; display: none" class="demo-placeholder"></div>
-                                <div style="width: 100%;">
-                                    <div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
-
-
-
-                            </div>
-
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-
-                </div>
-                <br />-->
 
                 <div class="row">
 
@@ -188,12 +212,39 @@
                             </div>
 
                             <div class="x_content">
+<!-- primeiro grafico-->
+
+                            <div id="content">
+                            <div id="rankYears"></div>
+                        </div>
+
+
+                         <div id="load" align="middle">
+                                <!-- this is the loading gif -->
+                              <img src="images/loading.gif" >
+
+                        </div>
+
+
+
+
+
+                            </div>
+                            <div class="legenda" style="border-size:2px; border-width: 2px;border-style:solid; border-color:#E9E9E9; border-radius: 5px;">
+                            <li><span class="A"></span>&nbsp 2010</li>
+                            <li><span class="B"></span>&nbsp 2011</li>
+                            <li><span class="C"></span>&nbsp 2012</li>
+                            <li><span class="D"></span>&nbsp 2013</li>
+                            <li><span class="E"></span>&nbsp 2014</li>
+                            <li><span class="F"></span>&nbsp 2015</li>
+
+
+                        </div>
+
 
                             </div>
 
 
-
-                            </div>
                         </div>
                 </div>
 
@@ -209,7 +260,7 @@
 <!-- Checkboxes -->
 <div class ="surface_title"> Select surface: </div>
 
-<div class="check_surface_clay"> 
+<div class="check_surface_clay">
 <input type="checkbox" id="cb1" name="cb" value="" onchange = "select_clay()">
 <label for="cb1">Clay</label>
 </div>
@@ -222,8 +273,16 @@
 <label for="cb3">Grass</label>
 </div>
                             <div class="x_content">
+                        <!-- segundo gráfico -->
+                        <div id="content">
+                        <div id="miles"></div>
+                    </div>
 
-                                <div id="miles" class="graph"></div>
+                <!--    <div id="load" align="middle">-->
+                           <!-- this is the loading gif -->
+                        <!-- <img src="images/loading.gif" >-->
+
+                  <!-- </div>-->
 
                             </div>
                         </div>
