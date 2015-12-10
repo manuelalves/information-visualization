@@ -1,21 +1,3 @@
-//playerArray = new Array("", "Rafael Nadal", "Roger Federer", "Novak Djokovic");
-//playerIdArray = new Array(104745,104745,103819,104925)
-
-/*playerIdArray = new Array(104925,104925,103819,104745,104527,105453,104918,104607,105683,105227,
-						  103970,105777,104542,105208,103852,105138,104731,103990,104545,104926,
-						  104792,104468,105676,105238,104259,103898,104755,103333,104919,104655,
-						  104586,104871,105053,104269,105373,105023,104198,105449,104229,106233,
-						  103794,104665,106058,105668,105173,104312,104180,104022,104797,105807,
-						  106401);
-*/
-/*playerArray = new Array("Novak,Djokovic", "Novak,Djokovic", "Roger Federer", "Rafael Nadal", "Stanislas Wawrinka", "Kei Nishikori", "Andy Murray", "Tomas Berdych", "Milos Raonic", "Marin Cilic",
-						"David Ferrer", "Grigor Dimitrov","Jo Wilfried Tsonga", "Ernests Gulbis", "Feliciano Lopez", "Roberto,Bautista Agut", "Kevin Anderson", "Tommy Robredo", "John Isner", "Fabio Fognini",
-						"Gael Monfils", "Gilles Simon", "David Goffin", "Alexandr Dolgopolov", "Philipp Kohlschreiber", "Julien Benneteau", "Richard Gasquet", "Ivo Karlovic", "Leonardo Mayer", "Pablo Cuevas",
-					    "Lukas Rosol", "Jeremy Chardy", "Santiago Giraldo", "Fernando Verdasco", "Martin Klizan", "Sam Querrey", "Guillermo Lopez", "Steve Johnson", "Yen Hsun Lu", "Dominic Thiem",
-						"Benjamin Becker", "Pablo Andujar", "Jack Sock", "Jerzy Janowicz", "Adrian Mannarino", "Andreas Seppi", "Gilles Muller", "Mikhail Youzhny", "Denis Istomin", "Pablo  Busta",
-						"Nick Kyrgios");
-*/
-
 
 // Com 50 jogadores
 playerArray = new Array("Adrian Mannarino","Alexandr Dolgopolov","Andreas Seppi","Andy Murray","Benjamin Becker",
@@ -36,22 +18,16 @@ playerIdArray = new Array(105173, 105238, 104312, 104918, 103794, 104797, 103970
 						  104665, 105807, 104655, 104259, 104745, 104755, 105138, 103819, 105023,
 						  105053, 104527, 105449, 104607, 103990, 104229);
 
-/*
-// Com 20 jogadores
-playerIdArray = new Array(104925,104918,103970,105208,104926,103852,
-							104792,105777,104542,104545,105453,
-							104731,105227,105683,104925,104745,
-							105138,103819,104527,104607,103990);
-
-playerArray = new Array("Rafael Nadal", "Andy Murray", "David Ferrer", "Ernests Gulbis","Fabio Fognini","Feliciano Lopez",
-						"Gael Monfils","Grigor Dimitrov","Jo Tsonga","John Isner","Kei Nishikori",
-						"Kevin Anderson","Marin Cilic","Milos Raonic","Novak,Djokovic","Rafael Nadal",
-						"Roberto Agut","Roger Federer","Stan Wawrinka","Tomas Berdych","Tommy Robredo");
-
-*/
 var clay = false;
 var hard = false;
 var grass = false;
+
+var lastYear = '-1';
+var lastPlayer = '-1';
+var changedYear = false;
+var changedPlayer = false;
+
+var img = false;
 
 
 function select_clay() {
@@ -94,11 +70,25 @@ var lineChart = function (){
     var year = index;
 
 
+	if(year == lastYear){
+		changedYear = false;
+	}if(year != lastYear){
+		changedYear = true;
+		lastYear=year;
+	}
+
 //Get the actual player
 	var playerList1 = document.getElementById("playerList1");
     var index1 = playerList1.selectedIndex;
 	var playerIndex = index1;
 	var playerId = playerIdArray[index1];
+
+	if(playerId == lastPlayer){
+		changedPlayer = false;
+	}if(playerId != lastPlayer){
+		changedPlayer = true;
+		lastPlayer=playerId;
+	}
 
 
 var format = d3.time.format("%m/%d/%Y");
@@ -115,8 +105,8 @@ function parser(d) {
 
 function milesovertime(csvdata) {
 
-    var margin = {top: 10, right: 75, bottom: 175, left: 25};
-    var width = 850;
+    var margin = {top: 10, right: 75, bottom: 175, left: 30};
+    var width = 750;
     var height = 190;
 
     /// AREA
@@ -165,6 +155,7 @@ if(id == playerId){
 }
 
 
+
 var y = d3.scale.linear()
   //.domain([minRanking, 0])
   .range([height, 0]);
@@ -176,50 +167,118 @@ var y = d3.scale.linear()
 var x = d3.time.scale()
   .range([0, width]);
 
+var min;
 //var minDate = new Date('1/1/2010');
 //var maxDate = new Date('1/31/2010');
 
-var tick;
 if(year == 0){
 	minDate = new Date('1/1/2010');
 	maxDate = year_2010[year_2010.length - 1].tourneyDate;
 	 x.domain([minDate, maxDate]);
-	 minRanking = (d3.max(year_2010, function(d) { return d.ranking; }) + 1);
+	 min = (d3.max(year_2010, function(d) { return d.ranking; }));
+	 if(min >=0 && min <= 10){
+		 minRanking = min + 1;
+	 }if(min>10 && min<=30){
+		 minRanking = min + 10;
+	 }if(min>30 && min<=70){
+		 minRanking = min + 15
+	 }if(min>70 && min<200){
+ 		minRanking = min + 20;
+	}if(min>=200){
+ 		minRanking = min + 30;
+ 	}
+
 	 y.domain([minRanking,0]);
 }
 if(year == 1){
     minDate = new Date('1/1/2011');
 	maxDate = year_2011[year_2011.length - 1].tourneyDate;
 	x.domain([minDate, maxDate]);
-	minRanking = (d3.max(year_2011, function(d) { return d.ranking; }) + 1);
+	min = (d3.max(year_2011, function(d) { return d.ranking; }));
+	if(min >=0 && min <= 10){
+		minRanking = min + 1;
+	}if(min>10 && min<=30){
+		minRanking = min + 10;
+	}if(min>30 && min<=70){
+		minRanking = min + 15
+	}if(min>70 && min<200){
+		minRanking = min + 20;
+	}if(min>=200){
+		minRanking = min + 30;
+	}
+
 	y.domain([minRanking,0]);
 }
 if(year == 2){
     minDate = new Date('1/1/2012');
 	maxDate = year_2012[year_2012.length - 1].tourneyDate;
 	x.domain([minDate, maxDate]);
-	minRanking = (d3.max(year_2012, function(d) { return d.ranking; }) + 1);
+	min = (d3.max(year_2012, function(d) { return d.ranking; }));
+	if(min >=0 && min <= 10){
+		minRanking = min + 1;
+	}if(min>10 && min<=30){
+		minRanking = min + 10;
+	}if(min>30 && min<=70){
+		minRanking = min + 15
+	}if(min>70 && min<200){
+		minRanking = min + 20;
+	}if(min>=200){
+		minRanking = min + 30;
+	}
 	y.domain([minRanking,0]);
 }
 if(year == 3){
     minDate = new Date('1/1/2013');
 	maxDate = year_2013[year_2013.length - 1].tourneyDate;
 	x.domain([minDate, maxDate]);
-	minRanking = (d3.max(year_2013, function(d) { return d.ranking; }) + 1);
+	min = (d3.max(year_2013, function(d) { return d.ranking; }));
+	if(min >=0 && min <= 10){
+		minRanking = min + 1;
+	}if(min>10 && min<=30){
+		minRanking = min + 10;
+	}if(min>30 && min<=70){
+		minRanking = min + 15
+	}if(min>70 && min<200){
+		minRanking = min + 20;
+	}if(min>=200){
+		minRanking = min + 30;
+	}
 	y.domain([minRanking,0]);
 }
 if(year == 4){
     minDate = new Date('1/1/2014');
 	maxDate = year_2014[year_2014.length - 1].tourneyDate;
 	x.domain([minDate, maxDate]);
-	minRanking = (d3.max(year_2014, function(d) { return d.ranking; }) + 1);
+	min = (d3.max(year_2014, function(d) { return d.ranking; }));
+	if(min >=0 && min <= 10){
+		minRanking = min + 1;
+	}if(min>10 && min<=30){
+		minRanking = min + 10;
+	}if(min>30 && min<=70){
+		minRanking = min + 15
+	}if(min>70 && min<200){
+		minRanking = min + 20;
+	}if(min>=200){
+		minRanking = min + 30;
+	}
 	y.domain([minRanking,0]);
 }
 if(year == 5){
     minDate = new Date('1/1/2015');
 	maxDate = year_2015[year_2015.length - 1].tourneyDate;
 	x.domain([minDate, maxDate]);
-	minRanking = (d3.max(year_2015, function(d) { return d.ranking; }) + 1);
+	min = (d3.max(year_2015, function(d) { return d.ranking; }) );
+	if(min >=0 && min <= 10){
+		minRanking = min + 1;
+	}if(min>10 && min<=30){
+		minRanking = min + 10;
+	}if(min>30 && min<=70){
+		minRanking = min + 15
+	}if(min>70 && min<200){
+		minRanking = min + 20;
+	}if(min>=200){
+		minRanking = min + 30;
+	}
 	y.domain([minRanking,0]);
 }
 
@@ -236,11 +295,12 @@ if(year == 5){
     var yAxis = d3.svg.axis()
 	  .scale(y)
 	 // .ticks(minRanking)
-	 .ticks(5)
+	 .ticks(2)
 	  .orient("left")
 	  .tickFormat(formatxAxis);
 
       d3.select("#miles").select("svg").remove();
+
 
 
 // AREA////
@@ -419,6 +479,32 @@ if(year==5 ){
       	    .append("g")
       	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+		   //	 d3.select("#miles").attr("xlink:href", '/images/no_data.png');
+
+if((playerId == '105173' && year=='2')||
+	(playerId == '106233' && year=='0')||(playerId == '106233' && year =='1')||(playerId == '106233' && year=='2')||(playerId == '106233' && year=='3')||
+	(playerId=='104180' && year=='0')||(playerId=='104180' && year=='3')||
+	(playerId=='105777' && year=='0')||
+	(playerId=='104198' && year=='3')||
+	(playerId=='106058' && year =='0')||
+	(playerId=='103898' && year =='5')||
+	(playerId=='105683' && year =='0')||
+	(playerId=='105668' && year=='0')||(playerId=='105668' && year=='1')||
+	(playerId=='104586' && year=='0')||
+	(playerId=='105373' && year=='0')||(playerId=='105373' && year=='1')||
+	(playerId=='106401' && year=='0')||(playerId=='106401' && year=='1')||(playerId=='106401' && year=='2')||
+	(playerId=='105807' && year=='0')||(playerId=='105807' && year=='1')||(playerId=='105807' && year=='2')||(playerId=='105807' && year=='3')||
+	(playerId=='105138' && year=='0')||(playerId=='105138' && year=='1')||
+	(playerId=='105449' && year=='0')||(playerId=='105449'&& year=='1')
+) {
+	img = true;
+		   lineGraph.append("svg:image")
+     			.attr('x',130)
+     			.attr('y',-170)
+     			.attr('width', 500)
+     			.attr('height', 500)
+     			.attr("xlink:href","images/no_data.png" );
+}else{img = false;}
 
     // function to draw the line
     var line = d3.svg.line()
@@ -480,6 +566,7 @@ if(year==5 ){
 //draw area
 
 if(grass){
+	changedArea = true;
 lineGraph.append("path")
 .datum(area_grass)
 .attr("class", "area_grass")
@@ -487,6 +574,7 @@ lineGraph.append("path")
 }
 
 if(clay){
+	changedArea = true;
 lineGraph.append("path")
 .datum(area_clay)
 .attr("class", "area_clay")
@@ -494,6 +582,7 @@ lineGraph.append("path")
 }
 
 if(hard){
+	changedArea = true;
 lineGraph.append("path")
 .datum(area_hard)
 .attr("class", "area_hard")
@@ -501,6 +590,7 @@ lineGraph.append("path")
 }
 
 if(hard){
+	changedArea = true;
 lineGraph.append("path")
 .datum(area_hard2)
 .attr("class", "area_hard")
@@ -509,19 +599,23 @@ lineGraph.append("path")
 
 /// FIM AREA
 
-
 if(year == 0 ){
      lineGraph.append("path")
       .datum(year_2010)
 	  .attr('stroke', '#d6616b')
       .attr("class", "year_2010")
-      .attr("d", line(year_2010));
-}
+	  .attr('d', line(year_2010));
+
+      //.attr("d", line(year_2010));
+  }
+
 
 if(year == 1 ){
      lineGraph.append("path")
       .datum(year_2011)
+
       .attr("class", "year_2011")
+
 	  .attr('stroke', '#a55194')
       .attr("d", line(year_2011));
 }
@@ -554,6 +648,7 @@ if(year == 5 ){
       .attr("d", line(year_2015));
 }
 
+
 if(year == 0){
     lineGraph.selectAll(".dot")
 	  .data(year_2010)
@@ -561,11 +656,11 @@ if(year == 0){
 	  .attr('class', 'datapoint')
 	  .attr('cx', function(d) { return x(d.tourneyDate); })
 	  .attr('cy', function(d) { return y(d.ranking); })
-	  .attr('r', 6)
 	  .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
 	  //.attr('fill', 'white')
 	  //.attr('stroke', '#F8CA00')
 	  .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#d6616b'}})
+	  .attr('r', function(d) { if(d.surface == 'none') {return 0;} else{return 6;}})
 	  .attr('stroke-width', '3')
 	  .on('mouseover', tip.show)
 	  .on('mouseout', tip.hide);
@@ -579,7 +674,7 @@ if(year == 1){
 	  .attr('class', 'datapoint')
 	  .attr('cx', function(d) { return x(d.tourneyDate); })
 	  .attr('cy', function(d) { return y(d.ranking); })
-	  .attr('r', 6)
+	  .attr('r', function(d) { if(d.surface == 'none') {return 0;} else{return 6;}})
 	  .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
 	  .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#a55194'}})
 	  .attr('stroke-width', '3')
@@ -593,7 +688,7 @@ if(year == 2){
 	  .attr('class', 'datapoint')
 	  .attr('cx', function(d) { return x(d.tourneyDate); })
 	  .attr('cy', function(d) { return y(d.ranking); })
-	  .attr('r', 6)
+	  .attr('r', function(d) { if(d.surface == 'none') {return 0;} else{return 6;}})
 	  .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
 	  .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#8c564b'}})
 	 // .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#F8CA00' '#BCBDAC'}})
@@ -608,7 +703,7 @@ if(year == 3){
 	  .attr('class', 'datapoint')
 	  .attr('cx', function(d) { return x(d.tourneyDate); })
 	  .attr('cy', function(d) { return y(d.ranking); })
-	  .attr('r', 6)
+	  .attr('r', function(d) { if(d.surface == 'none') {return 0;} else{return 6;}})
 	  .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
 	  .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#e7969c'}})
 	  .attr('stroke-width', '3')
@@ -622,7 +717,7 @@ if(year == 4){
 	  .attr('class', 'datapoint')
 	  .attr('cx', function(d) { return x(d.tourneyDate); })
 	  .attr('cy', function(d) { return y(d.ranking); })
-	  .attr('r', 6)
+	  .attr('r', function(d) { if(d.surface == 'none') {return 0;} else{return 6;}})
 	  .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
 	  .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#7f7f7f'}})
 	  .attr('stroke-width', '3')
@@ -636,7 +731,7 @@ if(year == 5){
 	  .attr('class', 'datapoint')
 	  .attr('cx', function(d) { return x(d.tourneyDate); })
 	  .attr('cy', function(d) { return y(d.ranking); })
-	  .attr('r', 6)
+	  .attr('r', function(d) { if(d.surface == 'none') {return 0;} else{return 6;}})
 	  .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
 	  .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#17becf'}})
 	  .attr('stroke-width', '3')
@@ -644,15 +739,58 @@ if(year == 5){
 	  .on('mouseout', tip.hide);
 }
 
+
+
+/*Tansição*/
+if(changedYear == true || changedPlayer == true){
+/* Add 'curtain' rectangle to hide entire graph */
+if(img == false){
+ var curtain = lineGraph.append('rect')
+   .attr('x', -1.001 * width)
+   .attr('y', -0.994 * height)
+   .attr('height', height)
+   .attr('width', width)
+   .attr('class', 'curtain')
+   .attr('transform', 'rotate(180)')
+   .style('fill', '#ffffff')
+
+   /* Optionally add a guideline */
+ var guideline = lineGraph.append('line')
+   .attr('stroke', '#333')
+   .attr('stroke-width', 0)
+   .attr('class', 'guide')
+   .attr('x1', 1)
+   .attr('y1', 1)
+   .attr('x2', 1)
+   .attr('y2', height)
+
+   /* Create a shared transition for anything we're animating */
+ var t = lineGraph.transition()
+   .delay(750)
+   .duration(2000)
+   .ease('linear')
+   .each('end', function() {
+	 d3.select('line.guide')
+	   .transition()
+	   .style('opacity', 0)
+	   .remove()
+   });
+
+ 	t.select('rect.curtain')
+  .attr('width', 0);
+	t.select('line.guide')
+  .attr('transform', 'translate(' + width + ', 0)')
+
+
+  d3.select("#show_guideline").on("change", function(e) {
+      guideline.attr('stroke-width', this.checked ? 1 : 0);
+      curtain.attr("opacity", this.checked ? 0.75 : 1);
+    })
 }
-/*function optionYear(id){
-	year = id;
+	/*end Transiçao*/
+}
+}
 
-    d3.csv("Performances.csv", parser, function(error, csvdata) {
-       	milesovertime(csvdata);
-	    });
-
-}*/
 
 d3.csv("data/Performances.csv", parser,
        function(error, csvdata) {

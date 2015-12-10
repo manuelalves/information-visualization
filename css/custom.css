@@ -222,6 +222,9 @@ body.nav-sm .menu_section h3 {
     width: 100%;
 }
 
+/*Legenda/Butoes*/
+
+
 /*Legenda gráfico*/
 /* basic positioning */
 /*position: absolute;     margin-top: 260px;       display: inline-block; margin-left: 180px;*/
@@ -1363,14 +1366,12 @@ h2 {
 }
 
 .player_ranking{
-    position: relative;
-        display: inline-block;
-        margin-top: 5px;
-        margin-left: 39px;
-        padding: 20px 15px;
+        position: relative;
+        display: block;
+        text-align: center;
+        margin-top: 8px;
         font-size: 26px;
         font-weight: 500;
-
 }
 
 .player_ranking strong{
@@ -1378,24 +1379,24 @@ h2 {
 }
 
 .player_ranking rank{
-    position: relative;
+        position: relative;
         display: inline-block;
-        margin-top: 5px;
-        margin-left: 0px;
+        text-align: center;
         color: #BDBDBD;
         font-weight: 900;
         font-size: 56px;
-        padding: 0px 40px;
-
 }
+
+.player_ranking actual{
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+}
+
 
 .player_ranking rankpoints{
     position: relative;
     font-size: 16px;
-    padding: 0px 0px 0px;
-    margin-left: 5px;
-
-
 
 }
 
@@ -2823,7 +2824,7 @@ legend {
     min-height: 1px;
     float: left;
     padding-right: 10px;
-    padding-left: 50px;
+    padding-left: 35px;
 
     margin-top: 30px;
     margin-bottom: 1px;
@@ -2843,16 +2844,20 @@ legend {
 
 
 .form-field {
-position: relative;
-    min-height: 1px;
+    position: relative;
+    display: block;
+   text-align: center;
+   line-height: 150%;
+   font-size: .85em;
+    /*min-height: 1px;
     float: left;
     padding-right: 10px;
-    padding-left: 55px;
+    padding-left: 45px;
     margin-top: 10px;
-    margin-bottom: 1px;
-
+    margin-bottom: 1px;*/
 font-size: 18px;
 }
+
 
 .form-group-year {
     position: relative;

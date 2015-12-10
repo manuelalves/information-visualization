@@ -302,7 +302,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105227,Marin Cilic        ,Clay,2010-520,05/24/2010,Roland ,R128,12,2945,5,2,51,38,23,11,8,16
 105227,Marin Cilic        ,Clay,2010-520,05/24/2010,Roland ,R64 ,12,2945,5,2,56,41,35,6,6,15
 105227,Marin Cilic        ,Clay,2010-520,05/24/2010,Roland ,R32 ,12,2945,12,6,90,65,49,14,11,26
-105238,Alexandr Dolgopolov,none,0,01/01/2010,Roland ,R128,56,824,14,4,76,59,40,7,4,23
+105238,Alexandr Dolgopolov,none,2010,01/01/2010,Roland ,R128,56,824,14,4,76,59,40,7,4,23
 105238,Alexandr Dolgopolov,Clay,2010-520,05/14/2010,Roland ,R128,56,824,14,4,76,59,40,7,4,23
 105238,Alexandr Dolgopolov,Clay,2010-520,05/24/2010,Roland ,R128,56,824,14,4,76,59,40,7,4,23
 105238,Alexandr Dolgopolov,Clay,2010-520,05/24/2010,Roland ,R64 ,56,824,9,2,48,35,26,7,5,14
@@ -575,36 +575,36 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105208,Ernests Gulbis     ,none,2010-352,12/01/2010,Paris M,R32 ,26,1415,7,1,20,18,9,3,3,6
 105227,Marin Cilic        ,Hard,2010-352,11/07/2010,Paris M,R32 ,15,2390,9,2,53,41,18,10,8,14
 105227,Marin Cilic        ,none,2010-352,12/01/2010,Paris M,R32 ,15,2390,9,2,53,41,18,10,8,14
-106058,Jack Sock          ,none,2010-560,01/01/2010,US Open,R128,555,47,13,6,61,47,24,6,3,18
-106058,Jack Sock          ,Hard,2010-560,12/01/2010,US Open,R128,555,47,13,6,61,47,24,6,3,18
-105668,Jerzy Janowicz     ,none,2010-540,01/01/2010,Wimbled,R128,136,397,19,1,68,57,11,1,0,18
-105668,Jerzy Janowicz     ,none,2010-540,12/01/2010,Wimbled,R128,136,397,19,1,68,57,11,1,0,18
-104586,Lukas Rosol        ,none,2010-520,01/01/2010,Roland ,R128,111,476,13,10,102,77,28,14,10,24
-105373,Martin Klizan      ,none,2010-520,01/01/2010,Roland ,R128,70,683,2,1,6,6,2,0,0,2
-105373,Martin Klizan      ,none,2010-520,12/12/2010,Roland ,R128,70,683,2,1,6,6,2,0,0,2
-105373,Martin Klizan      ,none,2011-520,01/01/2011,Roland ,R128,70,683,2,1,6,6,2,0,0,2
-105373,Martin Klizan      ,none,2011-520,12/01/2011,Roland ,R128,70,683,2,1,6,6,2,0,0,2
-104586,Lukas Rosol        ,none,2010-520,12/01/2010,Roland ,R128,111,476,13,10,102,77,28,14,10,24
-105683,Milos Raonic       ,none,2010-580,01/01/2010,Austral,R128,152,351,27,6,68,57,23,0,0,17
-105683,Milos Raonic       ,none,2010-580,12/01/2010,Austral,R128,152,351,27,6,68,57,23,0,0,17
-106401,Nick Kyrgios       ,none,2010-520,01/01/2010,Roland ,R128,262,175,10,7,78,64,35,6,5,18
-106401,Nick Kyrgios       ,none,2010-520,12/01/2010,Roland ,R128,262,175,10,7,78,64,35,6,5,18
-105807,Pablo Carreno Busta,none,2010-410,01/01/2010,Monte C,R64 ,62,730,4,1,21,19,17,0,0,9
-105807,Pablo Carreno Busta,none,2010-410,12/01/2010,Monte C,R64 ,62,730,4,1,21,19,17,0,0,9
-105138,Roberto Bautista Ag,none,2010-403,01/01/2010,Miami M,R128,169,313,4,2,41,31,15,5,2,13
-105138,Roberto Bautista Ag,none,2010-403,12/01/2010,Miami M,R128,169,313,4,2,41,31,15,5,2,13
-105449,Steve Johnson      ,none,2010-560,01/01/2010,US Open,R128,245,191,12,2,65,52,22,12,11,16
-105449,Steve Johnson      ,none,2010-560,12/01/2010,US Open,R128,245,191,12,2,65,52,22,12,11,16
-105449,Steve Johnson      ,none,2011-560,01/01/2011,US Open,R128,245,191,12,2,65,52,22,12,11,16
-105449,Steve Johnson      ,none,2011-560,12/01/2011,US Open,R128,245,191,12,2,65,52,22,12,11,16
-105138,Roberto Bautista Ag,none,2011-403,01/01/2011,Miami M,R128,169,313,4,2,41,31,15,5,2,13
-105138,Roberto Bautista Ag,none,2011-403,12/01/2011,Miami M,R128,169,313,4,2,41,31,15,5,2,13
-105807,Pablo Carreno Busta,none,2011-410,01/01/2011,Monte C,R64 ,62,730,4,1,21,19,17,0,0,9
-105807,Pablo Carreno Busta,none,2011-410,12/01/2011,Monte C,R64 ,62,730,4,1,21,19,17,0,0,9
-106401,Nick Kyrgios       ,none,2011-520,01/01/2011,Roland ,R128,262,175,10,7,78,64,35,6,5,18
-106401,Nick Kyrgios       ,none,2011-520,12/01/2011,Roland ,R128,262,175,10,7,78,64,35,6,5,18
-105668,Jerzy Janowicz     ,none,2011-540,01/01/2011,Wimbled,R128,136,397,19,1,68,57,11,1,0,18
-105668,Jerzy Janowicz     ,none,2011-540,12/01/2011,Wimbled,R128,136,397,19,1,68,57,11,1,0,18
+106058,Jack Sock          ,none,2010-560,01/01/2010,US Open,R128,-10,47,13,6,61,47,24,6,3,18
+106058,Jack Sock          ,none,2010-560,12/01/2010,US Open,R128,-10,47,13,6,61,47,24,6,3,18
+105668,Jerzy Janowicz     ,none,2010-540,01/01/2010,Wimbled,R128,-10,397,19,1,68,57,11,1,0,18
+105668,Jerzy Janowicz     ,none,2010-540,12/01/2010,Wimbled,R128,-10,397,19,1,68,57,11,1,0,18
+104586,Lukas Rosol        ,none,2010-520,01/01/2010,Roland ,R128,-10,476,13,10,102,77,28,14,10,24
+105373,Martin Klizan      ,none,2010-520,01/01/2010,Roland ,R128,-10,683,2,1,6,6,2,0,0,2
+105373,Martin Klizan      ,none,2010-520,12/12/2010,Roland ,R128,-10,683,2,1,6,6,2,0,0,2
+105373,Martin Klizan      ,none,2011-520,01/01/2011,Roland ,R128,-10,683,2,1,6,6,2,0,0,2
+105373,Martin Klizan      ,none,2011-520,12/01/2011,Roland ,R128,-10,683,2,1,6,6,2,0,0,2
+104586,Lukas Rosol        ,none,2010-520,12/01/2010,Roland ,R128,-10,476,13,10,102,77,28,14,10,24
+105683,Milos Raonic       ,none,2010-580,01/01/2010,Austral,R128,-10,351,27,6,68,57,23,0,0,17
+105683,Milos Raonic       ,none,2010-580,12/01/2010,Austral,R128,-10,351,27,6,68,57,23,0,0,17
+106401,Nick Kyrgios       ,none,2010-520,01/01/2010,Roland ,R128,-10,175,10,7,78,64,35,6,5,18
+106401,Nick Kyrgios       ,none,2010-520,12/01/2010,Roland ,R128,-10,175,10,7,78,64,35,6,5,18
+105807,Pablo Carreno Busta,none,2010-410,01/01/2010,Monte C,R64 ,-10,730,4,1,21,19,17,0,0,9
+105807,Pablo Carreno Busta,none,2010-410,12/01/2010,Monte C,R64 ,-10,730,4,1,21,19,17,0,0,9
+105138,Roberto Bautista Ag,none,2010-403,01/01/2010,Miami M,R128,-10,313,4,2,41,31,15,5,2,13
+105138,Roberto Bautista Ag,none,2010-403,12/01/2010,Miami M,R128,-10,313,4,2,41,31,15,5,2,13
+105449,Steve Johnson      ,none,2010-560,01/01/2010,US Open,R128,-10,191,12,2,65,52,22,12,11,16
+105449,Steve Johnson      ,none,2010-560,12/01/2010,US Open,R128,-10,191,12,2,65,52,22,12,11,16
+105449,Steve Johnson      ,none,2011-560,01/01/2011,US Open,R128,-10,191,12,2,65,52,22,12,11,16
+105449,Steve Johnson      ,none,2011-560,12/01/2011,US Open,R128,-10,191,12,2,65,52,22,12,11,16
+105138,Roberto Bautista Ag,none,2011-403,01/01/2011,Miami M,R128,-10,313,4,2,41,31,15,5,2,13
+105138,Roberto Bautista Ag,none,2011-403,12/01/2011,Miami M,R128,-10,313,4,2,41,31,15,5,2,13
+105807,Pablo Carreno Busta,none,2011-410,01/01/2011,Monte C,R64 ,-10,730,4,1,21,19,17,0,0,9
+105807,Pablo Carreno Busta,none,2011-410,12/01/2011,Monte C,R64 ,-10,730,4,1,21,19,17,0,0,9
+106401,Nick Kyrgios       ,none,2011-520,01/01/2011,Roland ,R128,-10,175,10,7,78,64,35,6,5,18
+106401,Nick Kyrgios       ,none,2011-520,12/01/2011,Roland ,R128,-10,175,10,7,78,64,35,6,5,18
+105668,Jerzy Janowicz     ,none,2011-540,01/01/2011,Wimbled,R128,-10,397,19,1,68,57,11,1,0,18
+105668,Jerzy Janowicz     ,none,2011-540,12/01/2011,Wimbled,R128,-10,397,19,1,68,57,11,1,0,18
 103794,Benjamin Becker    ,none,2011-580,01/01/2011,Austral,R128,55,870,12,2,56,47,20,5,4,15
 103794,Benjamin Becker    ,Hard,2011-580,01/17/2011,Austral,R128,55,870,12,2,56,47,20,5,4,15
 103819,Roger Federer      ,none,2011-580,01/01/2011,Austral,R128,2,9245,8,1,38,33,14,1,0,12
@@ -628,10 +628,10 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104022,Mikhail Youzhny    ,none,2011-580,01/01/2011,Austral,R128,10,2920,3,0,59,50,20,5,5,15
 104022,Mikhail Youzhny    ,Hard,2011-580,01/17/2011,Austral,R128,10,2920,3,0,59,50,20,5,5,15
 104022,Mikhail Youzhny    ,Hard,2011-580,01/17/2011,Austral,R64 ,10,2920,14,4,84,62,34,13,10,23
-104180,Gilles Muller      ,none,2010-580,01/01/2010,Austral,R128,122,466,11,1,74,56,19,8,6,16
-104180,Gilles Muller      ,none,2010-580,12/01/2010,Austral,R128,122,466,11,1,74,56,19,8,6,16
+104180,Gilles Muller      ,none,2010-580,01/01/2010,Austral,R128,-10,466,11,1,74,56,19,8,6,16
+104180,Gilles Muller      ,none,2010-580,12/01/2010,Austral,R128,-10,466,11,1,74,56,19,8,6,16
 104198,Guillermo Garcia Lo,none,2011-580,01/01/2011,Austral,R128,32,1300,8,5,77,55,19,14,10,19
-104198,Guillermo Garcia Lo,Hard,2011-580,01/17/2011,Austral,R128,32,1300,8,5,77,55,19,14,10,19
+104198,Guillermo Garcia Lo,Hard,2011-580,01/07/2011,Austral,R128,32,1300,8,5,77,55,19,14,10,19
 104198,Guillermo Garcia Lo,Hard,2011-580,01/17/2011,Austral,R64 ,32,1300,4,4,46,40,24,2,1,15
 104259,Philipp Kohlschreib,none,2011-580,01/01/2011,Austral,R128,35,1195,7,2,110,68,30,15,9,24
 104259,Philipp Kohlschreib,Hard,2011-580,01/17/2011,Austral,R128,35,1195,7,2,110,68,30,15,9,24
@@ -694,7 +694,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105227,Marin Cilic        ,Hard,2011-580,01/17/2011,Austral,R128,15,2140,8,0,42,34,16,1,1,12
 105227,Marin Cilic        ,Hard,2011-580,01/17/2011,Austral,R64 ,15,2140,13,7,48,40,33,12,11,15
 105227,Marin Cilic        ,Hard,2011-580,01/17/2011,Austral,R32 ,15,2140,22,8,106,81,54,11,10,29
-105238,Alexandr Dolgopolov,none,2011-580,01/17/2011,Austral,R128,46,953,16,3,35,31,23,2,0,14
+105238,Alexandr Dolgopolov,none,2011-580,01/01/2011,Austral,R128,46,953,16,3,35,31,23,2,0,14
 105238,Alexandr Dolgopolov,Hard,2011-580,01/17/2011,Austral,R128,46,953,16,3,35,31,23,2,0,14
 105238,Alexandr Dolgopolov,Hard,2011-580,01/17/2011,Austral,R64 ,46,953,18,2,50,43,31,1,0,18
 105238,Alexandr Dolgopolov,Hard,2011-580,01/17/2011,Austral,R32 ,46,953,9,3,57,45,25,10,5,20
@@ -706,8 +706,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105683,Milos Raonic       ,Hard,2011-580,01/17/2011,Austral,R128,152,351,27,6,68,57,23,0,0,17
 105683,Milos Raonic       ,Hard,2011-580,01/17/2011,Austral,R64 ,152,351,21,1,62,55,22,2,1,17
 105683,Milos Raonic       ,Hard,2011-580,01/17/2011,Austral,R32 ,152,351,28,2,77,55,22,5,1,21
-105777,Grigor Dimitrov    ,none,2010-580,01/01/2010,Austral,R128,105,518,2,2,40,31,23,3,3,13
-105777,Grigor Dimitrov    ,none,2010-580,12/01/2010,Austral,R128,105,518,2,2,40,31,23,3,3,13
+105777,Grigor Dimitrov    ,none,2010-580,01/01/2010,Austral,R128,-10,518,2,2,40,31,23,3,3,13
+105777,Grigor Dimitrov    ,none,2010-580,12/01/2010,Austral,R128,-10,518,2,2,40,31,23,3,3,13
 105777,Grigor Dimitrov    ,none,2011-580,01/01/2011,Austral,R128,105,518,2,2,40,31,23,3,3,13
 103333,Ivo Karlovic       ,none,2011-404,01/01/2011,Indian ,R128,239,205,17,2,61,52,16,1,0,16
 103333,Ivo Karlovic       ,Hard,2011-404,03/10/2011,Indian ,R128,239,205,17,2,61,52,16,1,0,16
@@ -804,7 +804,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104745,Rafael Nadal       ,Hard,2011-403,03/23/2011,Miami M,QF  ,1,12630,8,2,55,38,17,7,6,13
 104745,Rafael Nadal       ,Hard,2011-403,03/23/2011,Miami M,SF  ,1,12630,0,0,34,28,7,2,2,8
 104755,Richard Gasquet    ,Hard,2011-403,03/23/2011,Miami M,R64 ,18,1665,8,1,39,32,7,1,1,9
-104797,Denis Istomin      ,none,2011-403,01/12/2011,Miami M,R128,54,896,6,3,40,31,11,4,3,10
+104797,Denis Istomin      ,none,2011-403,01/01/2011,Miami M,R128,54,896,6,3,40,31,11,4,3,10
 104797,Denis Istomin      ,Hard,2011-403,03/13/2011,Miami M,R128,54,896,6,3,40,31,11,4,3,10
 104797,Denis Istomin      ,Hard,2011-403,03/23/2011,Miami M,R128,54,896,6,3,40,31,11,4,3,10
 104925,Novak Djokovic     ,Hard,2011-403,03/23/2011,Miami M,R64 ,2,8710,0,2,26,19,10,2,2,7
@@ -911,7 +911,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104542,Jo Wilfried Tsonga ,Clay,2011-520,05/22/2011,Roland ,R128,17,1570,8,1,48,35,22,2,2,13
 104542,Jo Wilfried Tsonga ,Clay,2011-520,05/22/2011,Roland ,R64 ,17,1570,12,4,61,52,24,4,3,16
 104586,Lukas Rosol        ,none,2011-520,01/01/2011,Roland ,R128,111,476,13,10,102,77,28,14,10,24
-104586,Lukas Rosol        ,Clay,2011-520,05/12/2011,Roland ,R128,111,476,13,10,102,77,28,14,10,24
+104586,Lukas Rosol        ,Clay,2011-520,05/02/2011,Roland ,R128,111,476,13,10,102,77,28,14,10,24
 104586,Lukas Rosol        ,Clay,2011-520,05/22/2011,Roland ,R64 ,111,476,14,6,124,89,42,13,8,27
 104586,Lukas Rosol        ,none,2011-520,12/01/2011,Roland ,R128,111,476,13,10,102,77,28,14,10,24
 104665,Pablo Andujar      ,Clay,2011-520,05/12/2011,Roland ,R128,49,985,6,0,76,50,22,15,13,15
@@ -979,7 +979,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104022,Mikhail Youzhny    ,Gras,2011-540,06/20/2011,Wimbled,R128,17,1740,4,2,88,63,26,6,2,23
 104022,Mikhail Youzhny    ,Gras,2011-540,06/20/2011,Wimbled,R64 ,17,1740,4,1,60,46,17,6,6,14
 104022,Mikhail Youzhny    ,Gras,2011-540,06/30/2011,Wimbled,R32 ,17,1740,18,3,92,78,18,11,10,21
-104022,Mikhail Youzhny    ,Gras,2011-540,12/01/2011,Wimbled,R32 ,17,1740,18,3,92,78,18,11,10,21
+104022,Mikhail Youzhny    ,none,2011-540,12/01/2011,Wimbled,R32 ,17,1740,18,3,92,78,18,11,10,21
 104180,Gilles Muller      ,none,2011-540,01/01/2011,Wimbled,R128,91,566,37,2,100,78,19,7,5,21
 104180,Gilles Muller      ,Gras,2011-540,06/10/2011,Wimbled,R128,91,566,37,2,100,78,19,7,5,21
 104180,Gilles Muller      ,Gras,2011-540,06/20/2011,Wimbled,R64 ,92,566,5,0,13,10,0,3,2,3
@@ -1021,7 +1021,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104792,Gael Monfils       ,Gras,2011-540,06/20/2011,Wimbled,R64 ,8,2780,15,2,84,63,22,9,6,20
 104797,Denis Istomin      ,Gras,2011-540,06/10/2011,Wimbled,R128,64,770,18,3,70,61,18,4,3,19
 104797,Denis Istomin      ,Gras,2011-540,06/20/2011,Wimbled,R128,65,770,18,3,70,61,18,4,3,19
-104918,Andy Murray        ,Gras,2011-540,06/20/2011,Wimbled,R128,4,6855,13,1,59,53,12,3,2,16
+104918,Andy Murray        ,Gras,2011-540,06/10/2011,Wimbled,R128,4,6855,13,1,59,53,12,3,2,16
 104918,Andy Murray        ,Gras,2011-540,06/20/2011,Wimbled,R64 ,4,6855,6,3,45,38,24,1,1,15
 104918,Andy Murray        ,Gras,2011-540,06/20/2011,Wimbled,R32 ,4,6855,15,7,73,57,21,6,3,20
 104918,Andy Murray        ,Gras,2011-540,06/20/2011,Wimbled,R16 ,4,6855,14,2,56,45,22,2,2,15
@@ -1208,7 +1208,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104269,Fernando Verdasco  ,Hard,2011-352,11/07/2011,Paris M,R64 ,23,1595,6,6,53,38,18,3,2,13
 104269,Fernando Verdasco  ,none,2011-352,12/01/2011,Paris M,R64 ,23,1595,6,6,53,38,18,3,2,13
 104312,Andreas Seppi      ,Hard,2011-352,11/07/2011,Paris M,R32 ,46,925,7,1,42,30,14,3,1,11
-104312,Andreas Seppi      ,none,2011-352,11/07/2011,Paris M,R64 ,46,925,4,2,45,35,20,7,5,12
+104312,Andreas Seppi      ,Hard,2011-352,11/17/2011,Paris M,R32 ,46,925,7,1,42,30,14,3,1,11
+104312,Andreas Seppi      ,none,2011-352,12/01/2011,Paris M,R64 ,46,925,4,2,45,35,20,7,5,12
 104542,Jo Wilfried Tsonga ,Hard,2011-352,11/07/2011,Paris M,R16 ,8,2935,13,1,39,34,10,2,2,10
 104542,Jo Wilfried Tsonga ,Hard,2011-352,11/07/2011,Paris M,R32 ,8,2935,9,0,42,30,18,6,5,10
 104542,Jo Wilfried Tsonga ,Hard,2011-352,11/07/2011,Paris M,SF  ,8,2935,12,5,68,57,29,9,8,16
@@ -1238,12 +1239,13 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105173,Adrian Mannarino   ,Hard,2011-352,11/17/2011,Paris M,R64 ,85,619,7,2,31,28,7,2,2,8
 105173,Adrian Mannarino   ,none,2011-352,12/01/2011,Paris M,R64 ,85,619,7,2,31,28,7,2,2,8
 105238,Alexandr Dolgopolov,Hard,2011-352,11/07/2011,Paris M,R32 ,17,1880,11,2,34,27,24,3,2,11
-105173,Adrian Mannarino   ,none,2012-352,01/01/2012,Paris M,R64 ,85,619,7,2,31,28,7,2,2,8
-105173,Adrian Mannarino   ,none,2012-352,12/01/2012,Paris M,R64 ,85,619,7,2,31,28,7,2,2,8
+105238,Alexandr Dolgopolov,none,2011-352,12/01/2011,Paris M,R32 ,17,1880,11,2,34,27,24,3,2,11
+105173,Adrian Mannarino   ,none,2012-352,01/01/2012,Paris M,R64 ,-100,619,7,2,31,28,7,2,2,8
+105173,Adrian Mannarino   ,none,2012-352,12/01/2012,Paris M,R64 ,-100,619,7,2,31,28,7,2,2,8
 104655,Pablo Cuevas       ,none,2012-403,01/01/2012,Miami M,R64 ,67,735,15,1,44,35,19,4,4,11
 104655,Pablo Cuevas       ,none,2012-403,12/01/2012,Miami M,R64 ,67,735,15,1,44,35,19,4,4,11
-106401,Nick Kyrgios       ,none,2012-520,01/01/2012,Roland ,R128,262,175,10,7,78,64,35,6,5,18
-106401,Nick Kyrgios       ,none,2012-520,12/01/2012,Roland ,R128,262,175,10,7,78,64,35,6,5,18
+106401,Nick Kyrgios       ,none,2012-520,01/01/2012,Roland ,R128,-10,175,10,7,78,64,35,6,5,18
+106401,Nick Kyrgios       ,none,2012-520,12/01/2012,Roland ,R128,-10,175,10,7,78,64,35,6,5,18
 103333,Ivo Karlovic       ,none,2012-580,01/01/2012,Austral,R128,57,842,24,3,81,61,10,7,5,16
 103333,Ivo Karlovic       ,Hard,2012-580,01/16/2012,Austral,R128,57,842,24,3,81,61,10,7,5,16
 103333,Ivo Karlovic       ,Hard,2012-580,01/16/2012,Austral,R64 ,57,842,20,2,87,63,28,12,9,20
@@ -1323,7 +1325,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105023,Sam Querrey        ,Hard,2012-580,01/16/2012,Austral,R128,95,589,12,4,47,42,17,5,5,13
 105053,Santiago Giraldo   ,none,2012-580,01/01/2012,Austral,R128,56,845,0,1,38,29,17,3,2,12
 105053,Santiago Giraldo   ,Hard,2012-580,01/16/2012,Austral,R128,56,845,0,1,38,29,17,3,2,12
-105238,Alexandr Dolgopolov,Hard,2012-580,01/01/2012,Austral,R128,13,2030,15,1,53,41,23,5,1,19
+105238,Alexandr Dolgopolov,none,2012-580,01/01/2012,Austral,R128,13,2030,15,1,53,41,23,5,1,19
 105238,Alexandr Dolgopolov,Hard,2012-580,01/16/2012,Austral,R128,13,2030,15,1,53,41,23,5,1,19
 105238,Alexandr Dolgopolov,Hard,2012-580,01/16/2012,Austral,R64 ,13,2030,16,4,91,69,25,16,10,24
 105453,Kei Nishikori      ,none,2012-580,01/01/2012,Austral,R128,26,1410,7,0,62,47,12,3,2,12
@@ -1374,7 +1376,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104745,Rafael Nadal       ,Hard,2012-404,03/08/2012,Indian ,R32 ,2,10415,4,1,34,27,13,2,2,9
 104745,Rafael Nadal       ,Hard,2012-404,03/08/2012,Indian ,R16 ,2,10415,4,0,33,27,12,5,5,9
 104745,Rafael Nadal       ,Hard,2012-404,03/08/2012,Indian ,QF  ,2,10415,3,0,62,45,18,6,4,16
-104797,Denis Istomin      ,Hard,2012-404,01/01/2012,Indian ,R128,51,917,6,1,37,32,14,0,0,10
+104797,Denis Istomin      ,none,2012-404,01/01/2012,Indian ,R128,51,917,6,1,37,32,14,0,0,10
 104797,Denis Istomin      ,Hard,2012-404,03/08/2012,Indian ,R128,51,917,6,1,37,32,14,0,0,10
 104797,Denis Istomin      ,Hard,2012-404,03/08/2012,Indian ,R64 ,51,917,9,4,65,42,33,11,6,18
 104797,Denis Istomin      ,Hard,2012-404,03/18/2012,Indian ,R32 ,51,917,5,0,30,24,12,3,2,9
@@ -1446,11 +1448,11 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105453,Kei Nishikori      ,Hard,2012-403,03/21/2012,Miami M,R64 ,16,1685,7,1,27,23,14,1,1,9
 105453,Kei Nishikori      ,Hard,2012-403,03/21/2012,Miami M,R32 ,16,1685,3,2,28,22,14,0,0,9
 105676,David Goffin       ,none,2010-403,01/01/2010,Miami M,R128,148,356,1,9,48,29,11,11,6,11
-105676,David Goffin       ,Hard,2010-403,03/21/2010,Miami M,R128,148,356,1,9,48,29,11,11,6,11
-105676,David Goffin       ,Hard,2010-403,05/21/2010,Miami M,R128,148,359,1,9,48,29,11,11,6,11
+105676,David Goffin       ,Hard,2010-403,03/11/2010,Miami M,R128,148,316,1,9,48,29,11,11,6,11
+105676,David Goffin       ,Hard,2010-403,03/21/2010,Miami M,R128,148,359,1,9,48,29,11,11,6,11
 105676,David Goffin       ,none,2010-403,12/01/2010,Miami M,R128,148,356,1,9,48,29,11,11,6,11
 105676,David Goffin       ,none,2011-403,01/01/2011,Miami M,R128,148,356,1,9,48,29,11,11,6,11
-105676,David Goffin       ,Hard,2011-403,04/21/2011,Miami M,R128,148,356,1,9,48,29,11,11,6,11
+105676,David Goffin       ,Hard,2011-403,08/11/2011,Miami M,R128,148,326,1,9,48,29,11,11,6,11
 105676,David Goffin       ,Hard,2011-403,08/21/2011,Miami M,R128,148,359,1,9,48,29,11,11,6,11
 105676,David Goffin       ,none,2011-403,12/01/2011,Miami M,R128,148,356,1,9,48,29,11,11,6,11
 105676,David Goffin       ,none,2012-403,01/01/2012,Miami M,R128,148,356,1,9,48,29,11,11,6,11
@@ -1586,7 +1588,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104745,Rafael Nadal       ,Clay,2012-520,05/27/2012,Roland ,QF  ,2,10060,10,1,67,56,17,4,4,15
 104745,Rafael Nadal       ,Clay,2012-520,05/27/2012,Roland ,SF  ,2,10060,2,1,39,33,15,2,2,11
 104745,Rafael Nadal       ,Clay,2012-520,05/27/2012,Roland ,F   ,2,10060,4,4,73,45,24,10,3,19
-104745,Rafael Nadal       ,Clay,2012-520,12/01/2012,Roland ,F   ,2,10060,4,4,73,45,24,10,3,19
+104745,Rafael Nadal       ,none,2012-520,12/01/2012,Roland ,F   ,2,10060,4,4,73,45,24,10,3,19
 104755,Richard Gasquet    ,Clay,2012-520,05/27/2012,Roland ,R128,20,1600,8,5,66,57,21,6,6,16
 104755,Richard Gasquet    ,Clay,2012-520,05/27/2012,Roland ,R64 ,20,1600,10,7,75,53,28,12,8,21
 104755,Richard Gasquet    ,Clay,2012-520,05/27/2012,Roland ,R32 ,20,1600,10,2,61,45,23,3,2,16
@@ -1676,7 +1678,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104797,Denis Istomin      ,Gras,2012-540,06/25/2012,Wimbled,R32 ,39,1032,16,4,91,68,24,8,7,20
 104871,Jeremy Chardy      ,Gras,2012-540,06/15/2012,Wimbled,R128,56,794,5,0,26,20,10,1,1,7
 104871,Jeremy Chardy      ,Gras,2012-540,06/25/2012,Wimbled,R128,57,794,5,0,26,20,10,1,1,7
-104918,Andy Murray        ,Gras,2012-540,06/25/2012,Wimbled,R128,4,6980,10,1,40,33,15,0,0,12
+104918,Andy Murray        ,Gras,2012-540,06/15/2012,Wimbled,R128,4,6980,10,1,40,33,15,0,0,12
 104918,Andy Murray        ,Gras,2012-540,06/25/2012,Wimbled,R64 ,4,6980,11,6,78,66,33,1,0,22
 104918,Andy Murray        ,Gras,2012-540,06/25/2012,Wimbled,R32 ,4,6980,10,4,74,51,28,8,5,20
 104918,Andy Murray        ,Gras,2012-540,06/25/2012,Wimbled,R16 ,4,6980,16,1,60,43,20,8,7,15
@@ -1925,15 +1927,15 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105777,Grigor Dimitrov    ,Hard,2012-352,10/19/2012,Paris M,R64 ,55,796,16,0,35,28,18,2,1,10
 105777,Grigor Dimitrov    ,Hard,2012-352,10/29/2012,Paris M,R64 ,55,796,16,0,35,28,18,2,1,10
 105777,Grigor Dimitrov    ,none,2012-352,12/01/2012,Paris M,R64 ,55,796,16,0,35,28,18,2,1,10
-105807,Pablo Carreno Busta,none,2012-410,01/01/2012,Monte C,R64 ,62,730,4,1,21,19,17,0,0,9
-105807,Pablo Carreno Busta,none,2012-410,12/01/2012,Monte C,R64 ,62,730,4,1,21,19,17,0,0,9
+105807,Pablo Carreno Busta,none,2012-410,01/01/2012,Monte C,R64 ,-10,730,4,1,21,19,17,0,0,9
+105807,Pablo Carreno Busta,none,2012-410,12/01/2012,Monte C,R64 ,-10,730,4,1,21,19,17,0,0,9
 105449,Steve Johnson      ,none,2013-560,01/01/2013,US Open,R128,245,191,12,2,65,52,22,12,11,16
 105449,Steve Johnson      ,none,2013-560,12/01/2013,US Open,R128,245,191,12,2,65,52,22,12,11,16
-105807,Pablo Carreno Busta,none,2013-410,01/01/2013,Monte C,R64 ,62,730,4,1,21,19,17,0,0,9
-105807,Pablo Carreno Busta,none,2013-410,12/01/2013,Monte C,R64 ,62,730,4,1,21,19,17,0,0,9
+105807,Pablo Carreno Busta,none,2013-410,01/01/2013,Monte C,R64 ,-10,730,4,1,21,19,17,0,0,9
+105807,Pablo Carreno Busta,none,2013-410,12/01/2013,Monte C,R64 ,-10,730,4,1,21,19,17,0,0,9
 103794,Benjamin Becker    ,none,2013-580,01/01/2013,Austral,R128,66,733,16,7,63,48,34,11,6,21
-103794,Benjamin Becker    ,Hard,2013-580,01/04/2013,Austral,R128,66,733,16,7,63,48,34,11,6,21
-103794,Benjamin Becker    ,Hard,2013-580,01/14/2013,Austral,R128,66,733,16,7,63,48,34,11,6,21
+103794,Benjamin Becker    ,Hard,2013-580,01/05/2013,Austral,R128,66,733,16,7,63,48,34,11,6,21
+103794,Benjamin Becker    ,Hard,2013-580,01/15/2013,Austral,R128,66,733,16,7,63,48,34,11,6,21
 103819,Roger Federer      ,none,2013-580,01/01/2013,Austral,R128,2,10265,3,0,45,38,14,3,3,12
 103819,Roger Federer      ,Hard,2013-580,01/14/2013,Austral,R128,2,10265,3,0,45,38,14,3,3,12
 103819,Roger Federer      ,Hard,2013-580,01/14/2013,Austral,R64 ,2,10265,9,2,62,47,19,0,0,15
@@ -1941,11 +1943,11 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 103819,Roger Federer      ,Hard,2013-580,01/14/2013,Austral,R16 ,2,10265,14,1,50,45,21,0,0,15
 103819,Roger Federer      ,Hard,2013-580,01/14/2013,Austral,QF  ,2,10265,6,3,98,76,33,9,4,26
 103852,Feliciano Lopez    ,none,2013-580,01/01/2013,Austral,R128,42,1005,26,3,48,43,16,2,2,14
-103852,Feliciano Lopez    ,Hard,2013-580,01/04/2013,Austral,R128,42,1005,26,3,48,43,16,2,2,14
-103852,Feliciano Lopez    ,Hard,2013-580,01/14/2013,Austral,R128,42,1005,26,3,48,43,16,2,2,14
+103852,Feliciano Lopez    ,Hard,2013-580,01/05/2013,Austral,R128,42,1005,26,3,48,43,16,2,2,14
+103852,Feliciano Lopez    ,Hard,2013-580,01/15/2013,Austral,R128,42,1005,26,3,48,43,16,2,2,14
 103898,Julien Benneteau   ,none,2013-580,01/01/2013,Austral,R128,38,1015,6,2,47,40,16,3,2,14
-103898,Julien Benneteau   ,Hard,2013-580,01/14/2013,Austral,R128,38,1015,6,2,47,40,16,3,2,14
-103898,Julien Benneteau   ,Hard,2013-580,01/14/2013,Austral,R64 ,38,1015,9,5,95,65,28,15,8,23
+103898,Julien Benneteau   ,Hard,2013-580,01/05/2013,Austral,R128,38,1015,6,2,47,40,16,3,2,14
+103898,Julien Benneteau   ,Hard,2013-580,01/15/2013,Austral,R64 ,38,1015,9,5,95,65,28,15,8,23
 103970,David Ferrer       ,none,2013-580,01/01/2013,Austral,R128,5,6505,2,0,48,37,15,5,3,14
 103970,David Ferrer       ,Hard,2013-580,01/14/2013,Austral,R128,5,6505,2,0,48,37,15,5,3,14
 103970,David Ferrer       ,Hard,2013-580,01/14/2013,Austral,R64 ,5,6505,3,3,66,49,23,10,7,19
@@ -1957,11 +1959,11 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104229,Yen Hsun Lu        ,none,2013-580,01/01/2013,Austral,R128,61,759,10,1,53,41,24,3,2,16
 104229,Yen Hsun Lu        ,Hard,2013-580,01/14/2013,Austral,R128,61,759,10,1,53,41,24,3,2,16
 104259,Philipp Kohlschreib,none,2013-580,01/01/2013,Austral,R128,19,1830,10,2,50,46,12,3,3,14
-104259,Philipp Kohlschreib,Hard,2013-580,01/04/2013,Austral,R128,19,1830,10,2,50,46,12,3,3,14
-104259,Philipp Kohlschreib,Hard,2013-580,01/14/2013,Austral,R64 ,19,1830,12,0,53,48,23,3,3,15
+104259,Philipp Kohlschreib,Hard,2013-580,01/05/2013,Austral,R128,19,1830,10,2,50,46,12,3,3,14
+104259,Philipp Kohlschreib,Hard,2013-580,01/15/2013,Austral,R64 ,19,1830,12,0,53,48,23,3,3,15
 104269,Fernando Verdasco  ,none,2013-580,01/01/2013,Austral,R128,24,1445,5,9,84,61,30,13,8,24
-104269,Fernando Verdasco  ,Hard,2013-580,01/04/2013,Austral,R128,24,1445,5,9,84,61,30,13,8,24
-104269,Fernando Verdasco  ,Hard,2013-580,01/14/2013,Austral,R64 ,24,1445,2,3,52,35,14,6,4,12
+104269,Fernando Verdasco  ,Hard,2013-580,01/05/2013,Austral,R128,24,1445,5,9,84,61,30,13,8,24
+104269,Fernando Verdasco  ,Hard,2013-580,01/15/2013,Austral,R64 ,24,1445,2,3,52,35,14,6,4,12
 104312,Andreas Seppi      ,none,2013-580,01/01/2013,Austral,R128,23,1595,12,1,43,37,17,3,3,13
 104312,Andreas Seppi      ,Hard,2013-580,01/14/2013,Austral,R128,23,1595,12,1,43,37,17,3,3,13
 104312,Andreas Seppi      ,Hard,2013-580,01/14/2013,Austral,R64 ,23,1595,13,6,111,84,47,7,6,28
@@ -1995,8 +1997,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104755,Richard Gasquet    ,Hard,2013-580,01/14/2013,Austral,R64 ,10,2720,12,1,39,31,19,2,1,13
 104755,Richard Gasquet    ,Hard,2013-580,01/14/2013,Austral,R32 ,10,2720,11,1,63,55,24,5,3,19
 104792,Gael Monfils       ,none,2013-580,01/01/2013,Austral,R128,86,600,26,15,80,67,23,7,3,21
-104792,Gael Monfils       ,Hard,2013-580,01/04/2013,Austral,R128,86,600,26,15,80,67,23,7,3,21
-104792,Gael Monfils       ,Hard,2013-580,01/14/2013,Austral,R64 ,86,600,30,23,97,74,28,10,5,25
+104792,Gael Monfils       ,Hard,2013-580,01/05/2013,Austral,R128,86,600,26,15,80,67,23,7,3,21
+104792,Gael Monfils       ,Hard,2013-580,01/15/2013,Austral,R64 ,86,600,30,23,97,74,28,10,5,25
 104797,Denis Istomin      ,none,2013-580,01/01/2013,Austral,R128,50,840,3,1,64,47,26,4,2,19
 104797,Denis Istomin      ,Hard,2013-580,01/14/2013,Austral,R128,50,840,3,1,64,47,26,4,2,19
 104871,Jeremy Chardy      ,none,2013-580,01/01/2013,Austral,R128,36,1063,21,8,72,64,23,4,3,20
@@ -2022,8 +2024,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105023,Sam Querrey        ,Hard,2013-580,01/14/2013,Austral,R128,22,1650,27,2,80,64,22,0,0,20
 105023,Sam Querrey        ,Hard,2013-580,01/14/2013,Austral,R64 ,22,1650,5,1,30,21,9,4,3,8
 105138,Roberto Bautista Ag,none,2013-580,01/01/2013,Austral,R128,56,786,1,7,77,49,26,9,4,20
-105138,Roberto Bautista Ag,Hard,2013-580,01/04/2013,Austral,R128,56,786,1,7,77,49,26,9,4,20
-105138,Roberto Bautista Ag,Hard,2013-580,01/14/2013,Austral,R128,56,786,1,7,77,49,26,9,4,20
+105138,Roberto Bautista Ag,Hard,2013-580,01/05/2013,Austral,R128,56,786,1,7,77,49,26,9,4,20
+105138,Roberto Bautista Ag,Hard,2013-580,01/15/2013,Austral,R128,56,786,1,7,77,49,26,9,4,20
 105227,Marin Cilic        ,none,2013-580,01/01/2013,Austral,R128,14,2210,9,3,58,44,29,11,11,15
 105227,Marin Cilic        ,Hard,2013-580,01/14/2013,Austral,R128,14,2210,9,3,58,44,29,11,11,15
 105227,Marin Cilic        ,Hard,2013-580,01/14/2013,Austral,R64 ,14,2210,9,2,41,38,23,0,0,15
@@ -2507,7 +2509,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104022,Mikhail Youzhny    ,Hard,2013-560,08/26/2013,US Open,R64 ,24,1475,8,3,45,33,23,9,7,14
 104022,Mikhail Youzhny    ,Hard,2013-560,08/26/2013,US Open,R32 ,24,1475,9,6,57,43,21,8,5,17
 104022,Mikhail Youzhny    ,Hard,2013-560,08/26/2013,US Open,R16 ,24,1475,9,6,85,55,29,12,4,26
-104022,Mikhail Youzhny    ,Hard,2013-560,12/01/2013,US Open,R16 ,24,1475,9,6,85,55,29,12,4,26
+104022,Mikhail Youzhny    ,none,2013-560,12/01/2013,US Open,R16 ,24,1475,9,6,85,55,29,12,4,26
 104229,Yen Hsun Lu        ,Hard,2013-560,08/16/2013,US Open,R128,60,790,4,4,61,49,19,2,1,16
 104229,Yen Hsun Lu        ,Hard,2013-560,08/26/2013,US Open,R128,60,790,4,4,61,49,19,2,1,16
 104229,Yen Hsun Lu        ,none,2013-560,12/01/2013,US Open,R128,60,790,4,4,61,49,19,2,1,16
@@ -2543,6 +2545,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104755,Richard Gasquet    ,Hard,2013-560,08/26/2013,US Open,QF  ,9,2625,6,3,84,57,31,14,11,22
 104792,Gael Monfils       ,Hard,2013-560,08/16/2013,US Open,R128,43,1080,5,1,41,33,4,1,0,10
 104792,Gael Monfils       ,Hard,2013-560,08/26/2013,US Open,R128,39,1080,5,1,41,33,4,1,0,10
+104792,Gael Monfils       ,none,2013-560,12/01/2013,US Open,R128,39,1080,5,1,41,33,4,1,0,10
 104797,Denis Istomin      ,Hard,2013-560,08/26/2013,US Open,R128,65,750,13,2,69,50,23,9,6,18
 104797,Denis Istomin      ,Hard,2013-560,08/26/2013,US Open,R64 ,65,750,6,3,30,24,21,2,0,13
 104797,Denis Istomin      ,Hard,2013-560,08/26/2013,US Open,R32 ,65,750,24,6,95,66,22,18,14,22
@@ -2644,8 +2647,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105777,Grigor Dimitrov    ,Hard,2013-352,10/28/2013,Paris M,R64 ,22,1500,13,3,57,49,16,5,4,15
 105777,Grigor Dimitrov    ,Hard,2013-352,10/28/2013,Paris M,R32 ,22,1500,7,4,47,36,12,12,6,15
 105777,Grigor Dimitrov    ,none,2013-352,12/01/2013,Paris M,R32 ,22,1500,7,4,47,36,12,12,6,15
-104198,Guillermo Garcia Lo,none,2013-580,01/01/2013,Austral,R128,65,801,7,3,35,27,11,2,1,9
-104198,Guillermo Garcia Lo,none,2013-580,12/01/2013,Austral,R128,65,801,7,3,35,27,11,2,1,9
+104198,Guillermo Garcia Lo,none,2013-580,01/01/2013,Austral,R128,-10,801,7,3,35,27,11,2,1,9
+104198,Guillermo Garcia Lo,none,2013-580,12/01/2013,Austral,R128,-10,801,7,3,35,27,11,2,1,9
 103819,Roger Federer      ,none,2014-580,01/01/2014,Austral,R128,6,4355,11,5,45,40,19,1,1,14
 103819,Roger Federer      ,Hard,2014-580,01/13/2014,Austral,R128,6,4355,11,5,45,40,19,1,1,14
 103819,Roger Federer      ,Hard,2014-580,01/13/2014,Austral,R64 ,6,4355,11,0,58,45,9,2,1,13
@@ -2653,8 +2656,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 103819,Roger Federer      ,Hard,2014-580,01/13/2014,Austral,R16 ,6,4355,7,1,48,42,25,1,1,16
 103819,Roger Federer      ,Hard,2014-580,01/13/2014,Austral,QF  ,6,4355,10,0,78,60,29,2,1,21
 103852,Feliciano Lopez    ,none,2014-580,01/01/2014,Austral,R128,27,1310,12,2,62,50,18,7,5,16
-103852,Feliciano Lopez    ,Hard,2014-580,01/03/2014,Austral,R128,27,1310,12,2,62,50,18,7,5,16
-103852,Feliciano Lopez    ,Hard,2014-580,01/13/2014,Austral,R64 ,27,1310,8,3,60,45,23,4,2,16
+103852,Feliciano Lopez    ,Hard,2014-580,01/05/2014,Austral,R128,27,1310,12,2,62,50,18,7,5,16
+103852,Feliciano Lopez    ,Hard,2014-580,01/15/2014,Austral,R64 ,27,1310,8,3,60,45,23,4,2,16
 103898,Julien Benneteau   ,none,2014-580,01/01/2014,Austral,R128,38,1090,16,4,87,62,24,5,1,22
 103898,Julien Benneteau   ,Hard,2014-580,01/13/2014,Austral,R128,38,1090,16,4,87,62,24,5,1,22
 103970,David Ferrer       ,none,2014-580,01/01/2014,Austral,R128,3,5640,2,6,44,28,21,7,2,15
@@ -2667,8 +2670,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 103990,Tommy Robredo      ,Hard,2014-580,01/13/2014,Austral,R64 ,18,1810,17,2,81,61,38,11,10,21
 103990,Tommy Robredo      ,Hard,2014-580,01/13/2014,Austral,R32 ,18,1810,16,3,90,70,21,9,6,21
 104022,Mikhail Youzhny    ,none,2014-580,01/01/2014,Austral,R128,15,2145,5,2,59,39,17,5,3,13
-104022,Mikhail Youzhny    ,Hard,2014-580,01/03/2014,Austral,R128,15,2145,5,2,59,39,17,5,3,13
-104022,Mikhail Youzhny    ,Hard,2014-580,01/13/2014,Austral,R128,15,2145,5,2,59,39,17,5,3,13
+104022,Mikhail Youzhny    ,Hard,2014-580,01/05/2014,Austral,R128,15,2145,5,2,59,39,17,5,3,13
+104022,Mikhail Youzhny    ,Hard,2014-580,01/15/2014,Austral,R128,15,2145,5,2,59,39,17,5,3,13
 104198,Guillermo Garcia Lo,none,2014-580,01/01/2014,Austral,R128,58,801,7,3,35,27,11,2,1,9
 104198,Guillermo Garcia Lo,Hard,2014-580,01/13/2014,Austral,R128,58,801,7,3,35,27,11,2,1,9
 104229,Yen Hsun Lu        ,none,2014-580,01/01/2014,Austral,R128,53,860,9,5,47,33,11,7,4,12
@@ -2678,8 +2681,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104312,Andreas Seppi      ,none,2014-580,01/01/2014,Austral,R128,25,1360,17,5,103,72,40,13,6,29
 104312,Andreas Seppi      ,Hard,2014-580,01/13/2014,Austral,R128,25,1360,17,5,103,72,40,13,6,29
 104468,Gilles Simon       ,none,2014-580,01/01/2014,Austral,R128,19,1790,32,17,143,114,57,25,23,35
-104468,Gilles Simon       ,Hard,2014-580,01/03/2014,Austral,R128,19,1790,32,17,143,114,57,25,23,35
-104468,Gilles Simon       ,Hard,2014-580,01/13/2014,Austral,R64 ,19,1790,7,8,89,65,41,15,8,25
+104468,Gilles Simon       ,Hard,2014-580,01/05/2014,Austral,R128,19,1790,32,17,143,114,57,25,23,35
+104468,Gilles Simon       ,Hard,2014-580,01/15/2014,Austral,R64 ,19,1790,7,8,89,65,41,15,8,25
 104527,Stanislas Wawrinka ,none,2014-580,01/01/2014,Austral,R128,8,3890,4,1,22,20,6,2,1,7
 104527,Stanislas Wawrinka ,Hard,2014-580,01/13/2014,Austral,R128,8,3890,4,1,22,20,6,2,1,7
 104527,Stanislas Wawrinka ,Hard,2014-580,01/13/2014,Austral,R64 ,8,3890,9,4,68,57,31,7,5,20
@@ -2698,8 +2701,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104607,Tomas Berdych      ,Hard,2014-580,01/13/2014,Austral,R16 ,7,4180,7,3,37,33,21,0,0,13
 104607,Tomas Berdych      ,Hard,2014-580,01/13/2014,Austral,QF  ,7,4180,10,4,67,52,27,12,9,18
 104665,Pablo Andujar      ,none,2014-580,01/01/2014,Austral,R128,48,946,2,1,66,40,15,7,4,14
-104665,Pablo Andujar      ,Hard,2014-580,01/03/2014,Austral,R128,48,946,2,1,66,40,15,7,4,14
-104665,Pablo Andujar      ,Hard,2014-580,01/13/2014,Austral,R128,48,946,2,1,66,40,15,7,4,14
+104665,Pablo Andujar      ,Hard,2014-580,01/05/2014,Austral,R128,48,946,2,1,66,40,15,7,4,14
+104665,Pablo Andujar      ,Hard,2014-580,01/15/2014,Austral,R128,48,946,2,1,66,40,15,7,4,14
 104731,Kevin Anderson     ,none,2014-580,01/01/2014,Austral,R128,21,1580,21,9,92,76,28,6,4,25
 104731,Kevin Anderson     ,Hard,2014-580,01/13/2014,Austral,R128,21,1580,21,9,92,76,28,6,4,25
 104731,Kevin Anderson     ,Hard,2014-580,01/13/2014,Austral,R64 ,21,1580,15,5,51,43,18,2,2,15
@@ -2728,14 +2731,14 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104918,Andy Murray        ,Hard,2014-580,01/13/2014,Austral,R32 ,4,5560,6,2,58,50,16,1,0,15
 104918,Andy Murray        ,Hard,2014-580,01/13/2014,Austral,R16 ,4,5560,7,3,77,58,26,6,5,18
 104919,Leonardo Mayer     ,none,2014-580,01/01/2014,Austral,R128,98,579,13,1,33,31,13,0,0,11
-104919,Leonardo Mayer     ,Hard,2014-580,01/03/2014,Austral,R128,98,579,13,1,33,31,13,0,0,11
-104919,Leonardo Mayer     ,Hard,2014-580,01/13/2014,Austral,R128,98,579,13,1,33,31,13,0,0,11
+104919,Leonardo Mayer     ,Hard,2014-580,01/05/2014,Austral,R128,98,579,13,1,33,31,13,0,0,11
+104919,Leonardo Mayer     ,Hard,2014-580,01/15/2014,Austral,R128,98,579,13,1,33,31,13,0,0,11
 104925,Novak Djokovic     ,none,2014-580,01/01/2014,Austral,R128,2,12260,9,0,54,45,17,3,2,15
 104925,Novak Djokovic     ,Hard,2014-580,01/13/2014,Austral,R128,2,12260,9,0,54,45,17,3,2,15
 104925,Novak Djokovic     ,Hard,2014-580,01/13/2014,Austral,R64 ,2,12260,12,2,44,36,17,0,0,13
 104925,Novak Djokovic     ,Hard,2014-580,01/13/2014,Austral,R32 ,2,12260,6,1,48,37,21,1,0,15
 104925,Novak Djokovic     ,Hard,2014-580,01/13/2014,Austral,R16 ,2,12260,8,2,43,38,12,0,0,12
-104926,Fabio Fognini      ,Hard,2014-580,01/01/2014,Austral,R128,16,1930,3,4,27,19,14,6,4,8
+104926,Fabio Fognini      ,none,2014-580,01/01/2014,Austral,R128,16,1930,3,4,27,19,14,6,4,8
 104926,Fabio Fognini      ,Hard,2014-580,01/13/2014,Austral,R128,16,1930,3,4,27,19,14,6,4,8
 104926,Fabio Fognini      ,Hard,2014-580,01/13/2014,Austral,R64 ,16,1930,9,12,88,66,26,16,14,19
 104926,Fabio Fognini      ,Hard,2014-580,01/13/2014,Austral,R32 ,16,1930,9,3,54,40,27,4,3,16
@@ -2755,15 +2758,15 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105238,Alexandr Dolgopolov,none,2014-580,01/01/2014,Austral,R128,56,825,8,4,53,42,23,3,2,16
 105238,Alexandr Dolgopolov,Hard,2014-580,01/13/2014,Austral,R128,56,825,8,4,53,42,23,3,2,16
 105373,Martin Klizan      ,none,2014-580,01/01/2014,Austral,R128,106,518,9,2,32,27,21,3,3,11
-105373,Martin Klizan      ,Hard,2014-580,01/03/2014,Austral,R128,106,518,9,2,32,27,21,3,3,11
-105373,Martin Klizan      ,Hard,2014-580,01/13/2014,Austral,R64 ,106,518,16,5,67,49,34,4,1,21
+105373,Martin Klizan      ,Hard,2014-580,01/05/2014,Austral,R128,106,518,9,2,32,27,21,3,3,11
+105373,Martin Klizan      ,Hard,2014-580,01/15/2014,Austral,R64 ,106,518,16,5,67,49,34,4,1,21
 105453,Kei Nishikori      ,none,2014-580,01/01/2014,Austral,R128,17,1915,6,5,96,69,26,9,6,23
 105453,Kei Nishikori      ,Hard,2014-580,01/13/2014,Austral,R128,17,1915,6,5,96,69,26,9,6,23
 105453,Kei Nishikori      ,Hard,2014-580,01/13/2014,Austral,R64 ,17,1915,5,3,52,43,15,5,4,13
 105453,Kei Nishikori      ,Hard,2014-580,01/13/2014,Austral,R32 ,17,1915,3,1,41,29,21,4,3,12
 105668,Jerzy Janowicz     ,none,2014-580,01/01/2014,Austral,R128,20,1615,17,11,104,74,27,10,7,21
-105668,Jerzy Janowicz     ,Hard,2014-580,01/13/2014,Austral,R128,20,1615,17,11,104,74,27,10,7,21
-105668,Jerzy Janowicz     ,Hard,2014-580,01/13/2014,Austral,R64 ,20,1615,15,5,107,76,25,11,8,22
+105668,Jerzy Janowicz     ,Hard,2014-580,01/05/2014,Austral,R128,20,1615,17,11,104,74,27,10,7,21
+105668,Jerzy Janowicz     ,Hard,2014-580,01/15/2014,Austral,R64 ,20,1615,15,5,107,76,25,11,8,22
 105683,Milos Raonic       ,none,2014-580,01/01/2014,Austral,R128,11,2860,21,7,65,56,17,6,3,18
 105683,Milos Raonic       ,Hard,2014-580,01/13/2014,Austral,R128,11,2860,21,7,65,56,17,6,3,18
 105683,Milos Raonic       ,Hard,2014-580,01/13/2014,Austral,R64 ,11,2860,27,3,67,57,23,5,5,16
@@ -2775,11 +2778,11 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 106058,Jack Sock          ,none,2014-580,01/01/2014,Austral,R128,95,582,16,12,74,54,43,12,10,21
 106058,Jack Sock          ,Hard,2014-580,01/13/2014,Austral,R128,95,582,16,12,74,54,43,12,10,21
 106233,Dominic Thiem      ,none,2014-580,01/01/2014,Austral,R128,136,422,20,3,76,60,31,8,5,21
-106233,Dominic Thiem      ,Hard,2014-580,01/03/2014,Austral,R128,136,422,20,3,76,60,31,8,5,21
-106233,Dominic Thiem      ,Hard,2014-580,01/13/2014,Austral,R128,136,422,20,3,76,60,31,8,5,21
+106233,Dominic Thiem      ,Hard,2014-580,01/05/2014,Austral,R128,136,422,20,3,76,60,31,8,5,21
+106233,Dominic Thiem      ,Hard,2014-580,01/15/2014,Austral,R128,136,422,20,3,76,60,31,8,5,21
 106401,Nick Kyrgios       ,none,2014-580,01/01/2014,Austral,R128,183,277,34,13,69,63,22,7,4,21
-106401,Nick Kyrgios       ,Hard,2014-580,01/03/2014,Austral,R128,183,277,34,13,69,63,22,7,4,21
-106401,Nick Kyrgios       ,Hard,2014-580,01/13/2014,Austral,R128,183,277,34,13,69,63,22,7,4,21
+106401,Nick Kyrgios       ,Hard,2014-580,01/05/2014,Austral,R128,183,277,34,13,69,63,22,7,4,21
+106401,Nick Kyrgios       ,Hard,2014-580,01/15/2014,Austral,R128,183,277,34,13,69,63,22,7,4,21
 103333,Ivo Karlovic       ,none,2014-404,01/01/2014,Indian ,R128,51,897,8,1,32,25,10,4,2,10
 103333,Ivo Karlovic       ,Hard,2014-404,03/06/2014,Indian ,R128,51,897,8,1,32,25,10,4,2,10
 103819,Roger Federer      ,Hard,2014-404,03/06/2014,Indian ,R64 ,8,4625,9,1,38,32,12,2,1,10
@@ -2825,7 +2828,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104925,Novak Djokovic     ,Hard,2014-404,03/06/2014,Indian ,QF  ,2,10260,7,3,27,25,8,0,0,8
 104925,Novak Djokovic     ,Hard,2014-404,03/06/2014,Indian ,SF  ,2,10260,7,2,63,47,15,6,4,16
 104925,Novak Djokovic     ,Hard,2014-404,03/06/2014,Indian ,F   ,2,10260,6,5,62,47,17,3,1,15
-104926,Fabio Fognini      ,Hard,2014-404,03/06/2014,Indian ,R64 ,14,2230,7,5,68,43,19,10,7,15
+104926,Fabio Fognini      ,none,2014-404,03/06/2014,Indian ,R64 ,14,2230,7,5,68,43,19,10,7,15
 104926,Fabio Fognini      ,Hard,2014-404,03/06/2014,Indian ,R32 ,14,2230,1,3,39,26,21,11,6,14
 105023,Sam Querrey        ,Hard,2014-404,03/06/2014,Indian ,R128,57,800,8,1,26,22,18,2,2,9
 105053,Santiago Giraldo   ,none,2014-404,01/01/2014,Indian ,R128,71,703,4,2,48,34,29,7,5,15
@@ -2913,14 +2916,14 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105683,Milos Raonic       ,Hard,2014-403,03/19/2014,Miami M,R16 ,12,2575,15,3,41,35,14,8,8,10
 105777,Grigor Dimitrov    ,Hard,2014-403,03/19/2014,Miami M,R64 ,16,2130,12,3,48,46,20,2,2,15
 106058,Jack Sock          ,Hard,2014-403,03/19/2014,Miami M,R128,103,562,8,3,31,25,18,0,0,10
-106233,Dominic Thiem      ,none,2010-403,01/01/2010,Miami M,R128,86,625,5,2,35,30,21,4,3,11
-106233,Dominic Thiem      ,none,2010-403,12/01/2010,Miami M,R128,86,625,5,2,35,30,21,4,3,11
-106233,Dominic Thiem      ,none,2011-403,01/01/2011,Miami M,R128,86,625,5,2,35,30,21,4,3,11
-106233,Dominic Thiem      ,none,2011-403,12/01/2011,Miami M,R128,86,625,5,2,35,30,21,4,3,11
-106233,Dominic Thiem      ,none,2012-403,01/01/2012,Miami M,R128,86,625,5,2,35,30,21,4,3,11
-106233,Dominic Thiem      ,none,2012-403,01/01/2013,Miami M,R128,86,625,5,2,35,30,21,4,3,11
-106233,Dominic Thiem      ,none,2013-403,12/01/2013,Miami M,R128,86,625,5,2,35,30,21,4,3,11
-106233,Dominic Thiem      ,none,2013-403,12/01/2012,Miami M,R128,86,625,5,2,35,30,21,4,3,11
+106233,Dominic Thiem      ,none,2010-403,01/01/2010,Miami M,R128,-10,625,5,2,35,30,21,4,3,11
+106233,Dominic Thiem      ,none,2010-403,12/01/2010,Miami M,R128,-10,625,5,2,35,30,21,4,3,11
+106233,Dominic Thiem      ,none,2011-403,01/01/2011,Miami M,R128,-10,625,5,2,35,30,21,4,3,11
+106233,Dominic Thiem      ,none,2011-403,12/01/2011,Miami M,R128,-10,625,5,2,35,30,21,4,3,11
+106233,Dominic Thiem      ,none,2012-403,01/01/2012,Miami M,R128,-10,625,5,2,35,30,21,4,3,11
+106233,Dominic Thiem      ,none,2012-403,12/01/2012,Miami M,R128,-10,625,5,2,35,30,21,4,3,11
+106233,Dominic Thiem      ,none,2013-403,01/01/2013,Miami M,R128,-10,625,5,2,35,30,21,4,3,11
+106233,Dominic Thiem      ,none,2013-403,12/01/2013,Miami M,R128,-10,625,5,2,35,30,21,4,3,11
 106233,Dominic Thiem      ,Hard,2014-403,03/19/2014,Miami M,R128,86,625,5,2,35,30,21,4,3,11
 103819,Roger Federer      ,Clay,2014-410,04/13/2014,Monte C,R32 ,4,5355,2,1,33,29,4,2,2,8
 103819,Roger Federer      ,Clay,2014-410,04/13/2014,Monte C,R16 ,4,5355,6,1,31,28,9,4,3,9
@@ -3131,8 +3134,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 103990,Tommy Robredo      ,Gras,2014-540,06/23/2014,Wimbled,R32 ,22,1630,15,3,103,83,22,3,1,25
 104022,Mikhail Youzhny    ,Gras,2014-540,06/13/2014,Wimbled,R128,16,1790,2,1,46,34,18,3,3,12
 104022,Mikhail Youzhny    ,Gras,2014-540,06/23/2014,Wimbled,R128,16,1790,2,1,46,34,18,3,3,12
-104180,Gilles Muller      ,none,2013-540,01/01/2013,Wimbled,R128,103,555,28,5,64,62,18,1,1,17
-104180,Gilles Muller      ,none,2013-540,01/12/2013,Wimbled,R128,103,555,28,5,64,62,18,1,1,17
+104180,Gilles Muller      ,none,2013-540,01/01/2013,Wimbled,R128,-10,555,28,5,64,62,18,1,1,17
+104180,Gilles Muller      ,none,2013-540,12/01/2013,Wimbled,R128,-10,555,28,5,64,62,18,1,1,17
 104180,Gilles Muller      ,none,2014-540,01/01/2014,Wimbled,R128,103,555,28,5,64,62,18,1,1,17
 104180,Gilles Muller      ,Gras,2014-540,06/13/2014,Wimbled,R128,103,555,28,5,64,62,18,1,1,17
 104180,Gilles Muller      ,Gras,2014-540,06/23/2014,Wimbled,R128,103,555,28,5,64,62,18,1,1,17
@@ -3391,7 +3394,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104925,Novak Djokovic     ,Hard,2014-560,08/25/2014,US Open,R16 ,1,12770,6,0,55,42,21,2,2,15
 104925,Novak Djokovic     ,Hard,2014-560,08/25/2014,US Open,QF  ,1,12770,8,3,96,64,29,16,12,21
 104926,Fabio Fognini      ,Hard,2014-560,08/25/2014,US Open,R128,17,1835,6,2,49,39,23,8,7,14
-104926,Fabio Fognini      ,Hard,2014-560,12/01/2014,US Open,R128,17,1835,6,2,49,39,23,8,7,14
+104926,Fabio Fognini      ,none,2014-560,12/01/2014,US Open,R128,17,1835,6,2,49,39,23,8,7,14
 105023,Sam Querrey        ,Hard,2014-560,08/25/2014,US Open,R128,57,820,30,5,82,67,30,11,8,24
 105023,Sam Querrey        ,Hard,2014-560,08/25/2014,US Open,R64 ,57,820,16,1,48,42,22,2,2,15
 105138,Roberto Bautista Ag,Hard,2014-560,08/25/2014,US Open,R128,19,1800,10,3,95,65,34,13,8,25
@@ -3511,8 +3514,8 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 106058,Jack Sock          ,none,2014-352,12/01/2014,Paris M,R64 ,44,896,1,2,20,18,13,5,4,7
 106233,Dominic Thiem      ,Hard,2014-352,10/27/2014,Paris M,R64 ,37,1024,1,3,46,33,12,6,4,12
 106233,Dominic Thiem      ,none,2014-352,12/01/2014,Paris M,R64 ,37,1024,1,3,46,33,12,6,4,12
-103898,Julien Benneteau   ,none,2015-560,01/01/2015,US Open,R64 ,30,1185,9,2,53,39,18,9,6,14
-103898,Julien Benneteau   ,none,2015-560,12/01/2015,US Open,R64 ,30,1185,9,2,53,39,18,9,6,14
+103898,Julien Benneteau   ,none,2015-560,01/01/2015,US Open,R64 ,-10,1185,9,2,53,39,18,9,6,14
+103898,Julien Benneteau   ,none,2015-560,12/01/2015,US Open,R64 ,-10,1185,9,2,53,39,18,9,6,14
 103333,Ivo Karlovic       ,none,2015-580,01/01/2015,Austral,R12 ,27,1365,19,3,50,46,11,2,2,14
 103333,Ivo Karlovic       ,Hard,2015-580,01/19/2015,Austral,R12 ,27,1365,19,3,50,46,11,2,2,14
 103333,Ivo Karlovic       ,Hard,2015-580,01/29/2015,Austral,R12 ,27,1365,19,3,50,46,11,2,2,14
@@ -3533,7 +3536,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104180,Gilles Muller      ,Hard,2015-580,01/09/2015,Austral,R12 ,42,964,29,3,70,62,21,9,9,17
 104180,Gilles Muller      ,Hard,2015-580,01/19/2015,Austral,R64 ,42,964,27,6,77,63,21,8,6,19
 104180,Gilles Muller      ,Hard,2015-580,01/19/2015,Austral,R32 ,42,964,23,3,59,53,28,1,1,17
-104198,Guillermo Garcia Lo,Hard,2015-580,01/01/2015,Austral,R12 ,37,1020,6,5,63,49,21,6,4,17
+104198,Guillermo Garcia Lo,none,2015-580,01/01/2015,Austral,R12 ,37,1020,6,5,63,49,21,6,4,17
 104198,Guillermo Garcia Lo,Hard,2015-580,01/19/2015,Austral,R12 ,37,1020,6,5,63,49,21,6,4,17
 104198,Guillermo Garcia Lo,Hard,2015-580,01/19/2015,Austral,R64 ,37,1020,7,5,44,33,23,4,3,13
 104198,Guillermo Garcia Lo,Hard,2015-580,01/19/2015,Austral,R32 ,37,1020,3,4,38,27,35,6,5,14
@@ -4138,7 +4141,7 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 104731,Kevin Anderson     ,Hard,2015-422,08/16/2015,Cincinn,R64 ,15,1955,20,3,56,47,18,6,5,14
 104731,Kevin Anderson     ,Hard,2015-422,08/16/2015,Cincinn,R32 ,15,1955,17,4,37,33,15,1,0,11
 104745,Rafael Nadal       ,Hard,2015-422,08/16/2015,Cincinn,R32 ,8,3680,3,4,49,37,14,9,9,10
-104745,Rafael Nadal       ,Hard,2015-422,12/16/2015,Cincinn,R32 ,8,3680,3,4,49,37,14,9,9,10
+104745,Rafael Nadal       ,none,2015-422,12/01/2015,Cincinn,R32 ,8,3680,3,4,49,37,14,9,9,10
 104755,Richard Gasquet    ,Hard,2015-422,08/16/2015,Cincinn,R64 ,13,2105,4,1,20,16,17,2,2,8
 104755,Richard Gasquet    ,Hard,2015-422,08/16/2015,Cincinn,R32 ,13,2105,3,2,37,30,17,1,1,10
 104755,Richard Gasquet    ,Hard,2015-422,08/16/2015,Cincinn,R16 ,13,2105,3,2,67,47,13,7,6,11
@@ -4154,9 +4157,9 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105023,Sam Querrey        ,none,2015-422,12/01/2015,Cincinn,R64 ,34,1165,12,1,31,29,17,0,0,10
 105138,Roberto Bautista Ag,Hard,2015-422,08/16/2015,Cincinn,R64 ,22,1555,4,2,30,24,18,1,1,10
 105227,Marin Cilic        ,Hard,2015-422,08/16/2015,Cincinn,R32 ,9,3505,6,2,29,23,13,1,0,9
-105238,Alexandr Dolgopolov,Hard,2015-422,08/16/2015,Cincinn,R32 ,66,750,6,1,24,21,14,3,3,8
+105238,Alexandr Dolgopolov,Hard,2015-422,08/06/2015,Cincinn,R32 ,66,750,6,1,24,21,14,3,3,8
 105238,Alexandr Dolgopolov,Hard,2015-422,08/16/2015,Cincinn,R16 ,66,750,11,4,51,36,19,7,4,14
-105238,Alexandr Dolgopolov,none,2015-422,08/16/2015,Cincinn,QF  ,66,750,5,0,24,22,14,0,0,9
+105238,Alexandr Dolgopolov,none,2015-422,12/01/2015,Cincinn,QF  ,66,750,5,0,24,22,14,0,0,9
 105373,Martin Klizan      ,Hard,2015-422,08/16/2015,Cincinn,R64 ,39,1100,16,10,72,55,25,12,9,17
 105668,Jerzy Janowicz     ,Hard,2015-422,08/16/2015,Cincinn,R64 ,52,850,7,6,36,33,12,1,1,11
 105668,Jerzy Janowicz     ,Hard,2015-422,08/26/2015,Cincinn,R32 ,52,850,6,2,51,39,15,6,5,11
@@ -4286,6 +4289,6 @@ player_id,player_name,surface,tourney_id,tourney_date,tourney_name,round,ranking
 105807,Pablo Carreno Busta,none,2015-560,12/01/2015,US Open,R12 ,54,855,9,0,67,48,31,9,7,19
 106058,Jack Sock          ,Hard,2015-560,08/31/2015,US Open,R12 ,28,1250,2,5,42,30,21,3,2,13
 106058,Jack Sock          ,none,2015-560,12/01/2015,US Open,R12 ,28,1250,2,5,42,30,21,3,2,13
-106233,Dominic Thiem      ,Hard,2015-560,08/31/2015,US Open,R12 ,20,1645,3,3,62,46,23,4,3,17
+106233,Dominic Thiem      ,Hard,2015-560,08/21/2015,US Open,R12 ,20,1645,3,3,62,46,23,4,3,17
 106233,Dominic Thiem      ,Hard,2015-560,08/31/2015,US Open,R64 ,20,1645,3,0,36,29,12,0,0,11
 106233,Dominic Thiem      ,none,2015-560,12/01/2015,US Open,R64 ,20,1645,3,0,36,29,12,0,0,11

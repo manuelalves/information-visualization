@@ -1,15 +1,3 @@
-/*
-// Com 20 jogadores
-playerIdArray = new Array(104925,104918,103970,105208,104926,103852,
-							104792,105777,104542,104545,105453,
-							104731,105227,105683,104925,104745,
-							105138,103819,104527,104607,103990);
-
-playerArray = new Array("Rafael Nadal", "Andy Murray", "David Ferrer", "Ernests Gulbis","Fabio Fognini","Feliciano Lopez",
-						"Gael Monfils","Grigor Dimitrov","Jo Tsonga","John Isner","Kei Nishikori",
-						"Kevin Anderson","Marin Cilic","Milos Raonic","Novak,Djokovic","Rafael Nadal",
-						"Roberto Agut","Roger Federer","Stan Wawrinka","Tomas Berdych","Tommy Robredo");
-*/
 
 // Com 50 jogadores
 playerArray = new Array("Adrian Mannarino","Alexandr Dolgopolov","Andreas Seppi","Andy Murray","Benjamin Becker",
@@ -31,9 +19,12 @@ playerIdArray = new Array(105173, 105238, 104312, 104918, 103794, 104797, 103970
 						  105053, 104527, 105449, 104607, 103990, 104229);
 
 
+var lastPlayerM = '-1';
+var changedPlayerM = false;
+
 var multiChart = function(){
 
-    d3.select("#rankYears").select("svg").remove();
+    //d3.select("#rankYears").select("svg").remove();
 
     //Get the actual year
     var dateList = document.getElementById("yearList");
@@ -46,7 +37,12 @@ var multiChart = function(){
 	var playerIndex = index1;
 	var playerId = playerIdArray[index1];
 
-    //console.log('player chosed' + playerId);
+	if(playerId == lastPlayerM){
+		changedPlayerM = false;
+	}if(playerId != lastPlayerM){
+		changedPlayerM = true;
+		lastPlayerM=playerId;
+	}
 
     var format = d3.time.format("%m/%d");
     var monthNameFormat = d3.time.format("%B");
@@ -65,8 +61,8 @@ function parser(d) {
 
 
 function rankByYear(datacsv) {
-    var margin = {top: 10, right: 75, bottom: 175, left: 25};
-    var width = 850;
+    var margin = {top: 10, right: 75, bottom: 175, left: 30};
+    var width = 750;
     var height = 190;
 
     var stroke_2015_on = 0.3;
@@ -99,7 +95,8 @@ function rankByYear(datacsv) {
  var line_2015 = [];
 // End Years
 
-var minRanking = 10;
+var min = 10;
+var minRanking;
 
 for(var i = 0; i <= (datacsv.length-1); i++){
  //var line_year = csvdata[i].tourneyDate.getFullYear();
@@ -135,18 +132,56 @@ for(var i = 0; i <= (datacsv.length-1); i++){
         minAux = (d3.max(line_2015, function(d) { return d.ranking; }) + 1);
     }
 
-    if(minAux > minRanking){
-        minRanking = minAux;
+    if(minAux > min){
+        min = minAux;
     }
 }
 }
 
+
+/*Ajustar valor minimo y*/
+if(min>=0 && min<=10){
+	minRanking = min + 1;
+}
+if(min>10 && min<=30){
+	minRanking = min + 1;
+}
+if(min>30 && min<=70){
+	minRanking = min + 15;
+}
+if(min>70 && min<=200){
+	minRanking = min + 20;
+}
+if(min>=200){
+	minRanking = min + 30;
+}
+
+
+
+if((playerId == '105173' && year=='2')||
+	(playerId == '106233' && year=='0')||(playerId == '106233' && year =='1')||(playerId == '106233' && year=='2')||(playerId == '106233' && year=='3')||
+	(playerId=='104180' && year=='0')||(playerId=='104180' && year=='3')||
+	(playerId=='105777' && year=='0')||
+	(playerId=='104198' && year=='3')||
+	(playerId=='106058' && year =='0')||
+	(playerId=='103898' && year =='5')||
+	(playerId=='105683' && year =='0')||
+	(playerId=='105668' && year=='0')||(playerId=='105668' && year=='1')||
+	(playerId=='104586' && year=='0')||
+	(playerId=='105373' && year=='0')||(playerId=='105373' && year=='1')||
+	(playerId=='106401' && year=='0')||(playerId=='106401' && year=='1')||(playerId=='106401' && year=='2')||
+	(playerId=='105807' && year=='0')||(playerId=='105807' && year=='1')||(playerId=='105807' && year=='2')||(playerId=='105807' && year=='3')||
+	(playerId=='105138' && year=='0')||(playerId=='105138' && year=='1')||
+	(playerId=='105449' && year=='0')||(playerId=='105449'&& year=='1')
+) {
+
+}else{d3.select("#rankYears").select("svg").remove();}
+
 //    var minDate = line_2015[0].tourneyDate;
 //    var maxDate = line_2015[11].tourneyDate;
 
-
     var minDate = new Date('1/1/1900');
-    var maxDate = new Date('12/31/1900');
+    var maxDate = new Date('12/01/1900');
 
     // Set up time based x axis
     var x = d3.time.scale()
@@ -388,114 +423,56 @@ multiGraph.append("path")
 })
 .attr("d", line(line_2010));
 
-/*
-//2010
-if(year == '0'){
-multiGraph.selectAll(".dot")
-      .data(line_2010)
-      .enter().append("circle")
-      .attr('class', 'datapoint')
-      .attr('cx', function(d) { return x(d.tourneyDate); })
-      .attr('cy', function(d) { return y(d.ranking); })
-      .attr('r', 3)
-      .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
-      .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#d6616b'}})
-      .attr('stroke-width', '3')
-      .on('mouseover', tip_circle.show)
-      .on('mouseout', tip_circle.hide);
-  }
 
-//2011
-if(year == '1'){
-  multiGraph.selectAll(".dot")
-      .data(line_2011)
-      .enter().append("circle")
-      .attr('class', 'datapoint')
-      .attr('cx', function(d) { return x(d.tourneyDate); })
-      .attr('cy', function(d) { return y(d.ranking); })
-      .attr('r', 3)
-      .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
-      .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#a55194'}})
-      .attr('stroke-width', '3')
-      .on('mouseover', tip_circle.show)
-      .on('mouseout', tip_circle.hide);
+/*Tansição*/
+//if(changedPlayerM == true){
+/* Add 'curtain' rectangle to hide entire graph */
+ var curtain = multiGraph.append('rect')
+   .attr('x', -1.001 * width)
+   .attr('y', -0.994 * height)
+   .attr('height', height)
+   .attr('width', width)
+   .attr('class', 'curtain')
+   .attr('transform', 'rotate(180)')
+   .style('fill', '#ffffff')
+
+   /* Optionally add a guideline */
+ var guideline = multiGraph.append('line')
+   .attr('stroke', '#333')
+   .attr('stroke-width', 0)
+   .attr('class', 'guide')
+   .attr('x1', 1)
+   .attr('y1', 1)
+   .attr('x2', 1)
+   .attr('y2', height)
+
+   /* Create a shared transition for anything we're animating */
+ var t = multiGraph.transition()
+   .delay(750)
+   .duration(2000)
+   .ease('linear')
+   .each('end', function() {
+	 d3.select('line.guide')
+	   .transition()
+	   .style('opacity', 0)
+	   .remove()
+   });
+
+ 	t.select('rect.curtain')
+  .attr('width', 0);
+	t.select('line.guide')
+  .attr('transform', 'translate(' + width + ', 0)')
+
+
+  d3.select("#show_guideline").on("change", function(e) {
+      guideline.attr('stroke-width', this.checked ? 1 : 0);
+      curtain.attr("opacity", this.checked ? 0.75 : 1);
+    })
 }
+	/*end Transiçao*/
+//}
 
-//2012
-if(year == '2'){
-  multiGraph.selectAll(".dot")
-      .data(line_2012)
-      .enter().append("circle")
-      .attr('class', 'datapoint')
-      .attr('cx', function(d) { return x(d.tourneyDate); })
-      .attr('cy', function(d) { return y(d.ranking); })
-      .attr('r', 3)
-      .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
-      .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#8c564b'}})
-      .attr('stroke-width', '3')
-      .on('mouseover', tip_circle.show)
-      .on('mouseout', tip_circle.hide);
-}
 
-//2013
-if(year == '3'){
-  multiGraph.selectAll(".dot")
-      .data(line_2013)
-      .enter().append("circle")
-      .attr('class', 'datapoint')
-      .attr('cx', function(d) { return x(d.tourneyDate); })
-      .attr('cy', function(d) { return y(d.ranking); })
-      .attr('r', 3)
-      .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
-	  .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#e7969c'}})
-	  .attr('stroke-width', '3')
-      .on('mouseover', tip_circle.show)
-      .on('mouseout', tip_circle.hide);
-}
-
-//2014
-if(year == '4'){
-  multiGraph.selectAll(".dot")
-      .data(line_2014)
-      .enter().append("circle")
-      .attr('class', 'datapoint')
-      .attr('cx', function(d) { return x(d.tourneyDate); })
-      .attr('cy', function(d) { return y(d.ranking); })
-      .attr('r', 3)
-      .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
-      .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#7f7f7f'}})
-	  .attr('stroke-width', '3')
-      .on('mouseover', tip_circle.show)
-      .on('mouseout', tip_circle.hide);
-}
-
-//2015
-if(year == '5'){
-  multiGraph.selectAll(".dot")
-      .data(line_2015)
-      .enter().append("circle")
-      .attr('class', 'datapoint')
-      .attr('cx', function(d) { return x(d.tourneyDate); })
-      .attr('cy', function(d) { return y(d.ranking); })
-      .attr('r', 3)
-      .attr('fill', function(d) { if (hard == true && d.surface == 'Hard') {return '#C1DEEC';} if (clay == true && d.surface == 'Clay') {return '#FEDDA7'} if(grass == true && d.surface == 'Gras') {return '#B7D9B7'} else {return 'white'}})
-	  .attr('stroke', function(d) { if (hard == true && d.surface == 'Hard') {return '#7BA5D1';} if (clay == true && d.surface == 'Clay') {return 'orange'} if(grass == true && d.surface == 'Gras') {return '#7FAF1B'} else {return '#17becf'}})
-	  .attr('stroke-width', '3')
-      .on('mouseover', tip_circle.show)
-      .on('mouseout', tip_circle.hide);
-}
-
-*/
-
-}
-
-/*function rank_teste(index){
-year = index;
-    d3.csv("AllRankings-Nadal.csv", parser,
-           function(error, datacsv) {
-         rankByYear(datacsv);
-    });
-}*/
 
 d3.csv("data/Rankings.csv", parser,
        function(error, datacsv) {
