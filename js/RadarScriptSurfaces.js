@@ -3,100 +3,100 @@ var w = 200, h = 200;
 var colorscale = d3.scale.category10();
 
 //Legend titles
-var legendOptions = ['Hard','Clay', 'Grass'];
-var axisOptions = ['Aces', 'Double Faults', '1st Serve', '1st Serve Points Won', '2nd Serve Points Won', 'Break Points Faced', 'Break Points Saved', 'Service Games Played'];
+var legendSurfaceOptions = ['Hard','Clay', 'Grass'];
+var axisSurfaceOptions = ['Aces', 'Double Faults', '1st Serve', '1st Serve Points Won', '2nd Serve Points Won', 'Break Points Faced', 'Break Points Saved', 'Service Games Played'];
 
 //Data
-var d = [
+var ds = [
 		  [
-			{axis:axisOptions[0],value:150},
-			{axis:axisOptions[1],value:280},
-			{axis:axisOptions[2],value:658},
-			{axis:axisOptions[3],value:485},
-			{axis:axisOptions[4],value:220},
-			{axis:axisOptions[5],value:263},
-			{axis:axisOptions[6],value:348},
-			{axis:axisOptions[7],value:465}
+			{axis:axisSurfaceOptions[0],value:150},
+			{axis:axisSurfaceOptions[1],value:280},
+			{axis:axisSurfaceOptions[2],value:658},
+			{axis:axisSurfaceOptions[3],value:485},
+			{axis:axisSurfaceOptions[4],value:220},
+			{axis:axisSurfaceOptions[5],value:263},
+			{axis:axisSurfaceOptions[6],value:348},
+			{axis:axisSurfaceOptions[7],value:465}
 		  ],[
-		  	{axis:axisOptions[0],value:327},
-			{axis:axisOptions[1],value:210},
-			{axis:axisOptions[2],value:659},
-			{axis:axisOptions[3],value:476},
-			{axis:axisOptions[4],value:126},
-			{axis:axisOptions[5],value:161},
-			{axis:axisOptions[6],value:646},
-			{axis:axisOptions[7],value:243}
+		  	{axis:axisSurfaceOptions[0],value:327},
+			{axis:axisSurfaceOptions[1],value:210},
+			{axis:axisSurfaceOptions[2],value:659},
+			{axis:axisSurfaceOptions[3],value:476},
+			{axis:axisSurfaceOptions[4],value:126},
+			{axis:axisSurfaceOptions[5],value:161},
+			{axis:axisSurfaceOptions[6],value:646},
+			{axis:axisSurfaceOptions[7],value:243}
 		  ],[
-		  	{axis:axisOptions[0],value:764},
-			{axis:axisOptions[1],value:490},
-			{axis:axisOptions[2],value:569},
-			{axis:axisOptions[3],value:464},
-			{axis:axisOptions[4],value:203},
-			{axis:axisOptions[5],value:229},
-			{axis:axisOptions[6],value:121},
-			{axis:axisOptions[7],value:359}
+		  	{axis:axisSurfaceOptions[0],value:764},
+			{axis:axisSurfaceOptions[1],value:490},
+			{axis:axisSurfaceOptions[2],value:569},
+			{axis:axisSurfaceOptions[3],value:464},
+			{axis:axisSurfaceOptions[4],value:203},
+			{axis:axisSurfaceOptions[5],value:229},
+			{axis:axisSurfaceOptions[6],value:121},
+			{axis:axisSurfaceOptions[7],value:359}
 		  ]
 		];
 
-		var d1 = [
+		var ds1 = [
 				  [
-					{axis:axisOptions[0],value:350},
-					{axis:axisOptions[1],value:280},
-					{axis:axisOptions[2],value:558},
-					{axis:axisOptions[3],value:385},
-					{axis:axisOptions[4],value:320},
-					{axis:axisOptions[5],value:363},
-					{axis:axisOptions[6],value:248},
-					{axis:axisOptions[7],value:365}
+					{axis:axisSurfaceOptions[0],value:350},
+					{axis:axisSurfaceOptions[1],value:280},
+					{axis:axisSurfaceOptions[2],value:558},
+					{axis:axisSurfaceOptions[3],value:385},
+					{axis:axisSurfaceOptions[4],value:320},
+					{axis:axisSurfaceOptions[5],value:363},
+					{axis:axisSurfaceOptions[6],value:248},
+					{axis:axisSurfaceOptions[7],value:365}
 				  ],[
-				  {axis:axisOptions[0],value:227},
-					{axis:axisOptions[1],value:110},
-					{axis:axisOptions[2],value:759},
-					{axis:axisOptions[3],value:576},
-					{axis:axisOptions[4],value:226},
-					{axis:axisOptions[5],value:191},
-					{axis:axisOptions[6],value:646},
-					{axis:axisOptions[7],value:143}
+				  {axis:axisSurfaceOptions[0],value:227},
+					{axis:axisSurfaceOptions[1],value:110},
+					{axis:axisSurfaceOptions[2],value:759},
+					{axis:axisSurfaceOptions[3],value:576},
+					{axis:axisSurfaceOptions[4],value:226},
+					{axis:axisSurfaceOptions[5],value:191},
+					{axis:axisSurfaceOptions[6],value:646},
+					{axis:axisSurfaceOptions[7],value:143}
 				  ],[
-				  {axis:axisOptions[0],value:664},
-					{axis:axisOptions[1],value:390},
-					{axis:axisOptions[2],value:669},
-					{axis:axisOptions[3],value:564},
-					{axis:axisOptions[4],value:303},
-					{axis:axisOptions[5],value:329},
-					{axis:axisOptions[6],value:221},
-					{axis:axisOptions[7],value:459}
+				  {axis:axisSurfaceOptions[0],value:664},
+					{axis:axisSurfaceOptions[1],value:390},
+					{axis:axisSurfaceOptions[2],value:669},
+					{axis:axisSurfaceOptions[3],value:564},
+					{axis:axisSurfaceOptions[4],value:303},
+					{axis:axisSurfaceOptions[5],value:329},
+					{axis:axisSurfaceOptions[6],value:221},
+					{axis:axisSurfaceOptions[7],value:459}
 				  ]
 				];
 
-				var d2 = [
+				var ds2 = [
 						  [
-							{axis:axisOptions[0],value:280},
-							{axis:axisOptions[1],value:580},
-							{axis:axisOptions[2],value:258},
-							{axis:axisOptions[3],value:185},
-							{axis:axisOptions[4],value:120},
-							{axis:axisOptions[5],value:463},
-							{axis:axisOptions[6],value:298},
-							{axis:axisOptions[7],value:315}
+							{axis:axisSurfaceOptions[0],value:280},
+							{axis:axisSurfaceOptions[1],value:580},
+							{axis:axisSurfaceOptions[2],value:258},
+							{axis:axisSurfaceOptions[3],value:185},
+							{axis:axisSurfaceOptions[4],value:120},
+							{axis:axisSurfaceOptions[5],value:463},
+							{axis:axisSurfaceOptions[6],value:298},
+							{axis:axisSurfaceOptions[7],value:315}
 						  ],[
-						  {axis:axisOptions[0],value:377},
-							{axis:axisOptions[1],value:390},
-							{axis:axisOptions[2],value:689},
-							{axis:axisOptions[3],value:244},
-							{axis:axisOptions[4],value:400},
-							{axis:axisOptions[5],value:483},
-							{axis:axisOptions[6],value:521},
-							{axis:axisOptions[7],value:677}
+						  {axis:axisSurfaceOptions[0],value:377},
+							{axis:axisSurfaceOptions[1],value:390},
+							{axis:axisSurfaceOptions[2],value:689},
+							{axis:axisSurfaceOptions[3],value:244},
+							{axis:axisSurfaceOptions[4],value:400},
+							{axis:axisSurfaceOptions[5],value:483},
+							{axis:axisSurfaceOptions[6],value:521},
+							{axis:axisSurfaceOptions[7],value:677}
 						  ],[
-						  {axis:axisOptions[0],value:464},
-							{axis:axisOptions[1],value:490},
-							{axis:axisOptions[2],value:769},
-							{axis:axisOptions[3],value:364},
-							{axis:axisOptions[4],value:503},
-							{axis:axisOptions[5],value:429},
-							{axis:axisOptions[6],value:621},
-							{axis:axisOptions[7],value:359}
+						  {axis:axisSurfaceOptions[0],value:464},
+							{axis:axisSurfaceOptions[1],value:490},
+							{axis:axisSurfaceOptions[2],value:769},
+							{axis:axisSurfaceOptions[3],value:364},
+							{axis:axisSurfaceOptions[4],value:503},
+							{axis:axisSurfaceOptions[5],value:429},
+							{axis:axisSurfaceOptions[6],value:621},
+							{axis:axisSurfaceOptions[7],value:359}
 						  ]
 						];
 
@@ -111,45 +111,45 @@ var mycfg = {
 
 //Call function to draw the Radar chart
 //Will expect that data is in %'s
-function writeRadarChart(id){
+function writeRadarChartSurface1(id){
 	if (id == 1){
-		RadarChart.draw("#surfacechart", d, mycfg);
+		RadarChart.draw("#surfacechart", ds, mycfg);
 	}
 	if (id == 2){
-		RadarChart.draw("#surfacechart", d1, mycfg);
+		RadarChart.draw("#surfacechart", ds1, mycfg);
 	}
 	if (id == 3){
-		RadarChart.draw("#surfacechart", d2, mycfg);
+		RadarChart.draw("#surfacechart", ds2, mycfg);
 	}
 }
 
-function writeRadarChart2(id){
+function writeRadarChartSurface2(id){
 	if (id == 1){
-		RadarChart.draw("#surfacechart1", d, mycfg);
+		RadarChart.draw("#surfacechart1", ds, mycfg);
 	}
 	if (id == 2){
-		RadarChart.draw("#surfacechart1", d1, mycfg);
+		RadarChart.draw("#surfacechart1", ds1, mycfg);
 	}
 	if (id == 3){
-		RadarChart.draw("#surfacechart1", d2, mycfg);
+		RadarChart.draw("#surfacechart1", ds2, mycfg);
 	}
 }
 
-function writeRadarChart3(id){
+function writeRadarChartSurface3(id){
 	if (id == 1){
-		RadarChart.draw("#surfacechart2", d, mycfg);
+		RadarChart.draw("#surfacechart2", ds, mycfg);
 	}
 	if (id == 2){
-		RadarChart.draw("#surfacechart2", d1, mycfg);
+		RadarChart.draw("#surfacechart2", ds1, mycfg);
 	}
 	if (id == 3){
-		RadarChart.draw("#surfacechart2", d2, mycfg);
+		RadarChart.draw("#surfacechart2", ds2, mycfg);
 	}
 }
 
-RadarChart.draw("#surfacechart", d, mycfg);
-RadarChart.draw("#surfacechart1", d1, mycfg);
-RadarChart.draw("#surfacechart2", d2, mycfg);
+RadarChart.draw("#surfacechart", ds, mycfg);
+RadarChart.draw("#surfacechart1", ds1, mycfg);
+RadarChart.draw("#surfacechart2", ds2, mycfg);
 
 
 
@@ -157,7 +157,7 @@ RadarChart.draw("#surfacechart2", d2, mycfg);
 /////////// Initiate legend ////////////////
 ////////////////////////////////////////////
 
-function legendFunction(){
+function legendSurfaceFunction(){
 var svg = d3.selectAll('#surfaceradar')
 	.selectAll('svg')
 	.append('svg')
@@ -174,7 +174,7 @@ var svg = d3.selectAll('#surfaceradar')
 		;
 		//Create colour squares
 		legend.selectAll('rect')
-		  .data(legendOptions)
+		  .data(legendSurfaceOptions)
 		  .enter()
 		  .append("rect")
 		  .attr("x", w + 50)
@@ -185,7 +185,7 @@ var svg = d3.selectAll('#surfaceradar')
 		  ;
 		//Create text next to squares
 		legend.selectAll('text')
-		  .data(legendOptions)
+		  .data(legendSurfaceOptions)
 		  .enter()
 		  .append("text")
 		  .attr("x", w + 65)

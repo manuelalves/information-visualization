@@ -1,30 +1,29 @@
 
+var axisTournamentOptions = ['Aces', 'Double Faults', '1st Serve', '1st Serve Points Won', '2nd Serve Points Won', 'Break Points Faced', 'Break Points Saved', 'Service Games Played'];
+
+/*[
+{axis:axisTournamentOptions[0],value:150},*/
 
 
 var RadarChart = {
-  draw: function(id, d, options){
+  draw: function(id, d){
   var cfg = {
 	 radius: 3,
 	 factor: 1,
 	 factorLegend: .85,
-	 levels: 3,
-	 maxValue: 0,
+	 levels: 6,
+	 maxValue: 0.6,
 	 radians: 2 * Math.PI,
 	 opacityArea: 0,
-	 TranslateX: 65,
+	 TranslateX: 100,
 	 TranslateY: 25,
-	 ExtraWidthX: 100,
+	 ExtraWidthX: 300,
 	 ExtraWidthY: 100,
+   w: 200,
+   h: 200,
 	 color: d3.scale.category10()
 	};
 
-	if('undefined' !== typeof options){
-	  for(var i in options){
-		    if('undefined' !== typeof options[i]){
-		        cfg[i] = options[i];
-		    }
-    }
-	}
 	cfg.maxValue = Math.max(cfg.maxValue, d3.max(d, function(i){return d3.max(i.map(function(o){return o.value;}))}));
 	var allAxis = (d[0].map(function(i, j){return i.axis}));
 	var total = allAxis.length;
@@ -39,7 +38,6 @@ var RadarChart = {
 			.attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
 			;
 
-      legendFunction();
   //Mouseover tip
   var tip = d3.tip()
 			.attr('class', 'd3-tip')

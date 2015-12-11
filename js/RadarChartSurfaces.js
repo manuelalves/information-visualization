@@ -39,7 +39,7 @@ var RadarChart = {
 			.attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
 			;
 
-      legendFunction();
+      legendSurfaceFunction();
   //Mouseover tip
   var tip = d3.tip()
 			.attr('class', 'd3-tip')

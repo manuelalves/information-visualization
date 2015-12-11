@@ -11,7 +11,7 @@ body.nav-sm .container.body .right_col {
     margin-left: 70px;
     z-index: 2;
 }
-.right_col{min-height: 1000px;}
+.right_col{min-height: 100px;}
 body.nav-sm .navbar.nav_title {
     width: 70px;
 }
@@ -222,6 +222,19 @@ body.nav-sm .menu_section h3 {
     width: 100%;
 }
 
+.option_menu {
+    float: left;
+    /*background: #F4F6F9;
+    border-bottom: 1px solid #E6E9ED;*/
+    background: #FFF;
+    border-bottom: 2px solid #D9DEE4;
+    width: 39%;
+    padding: 6px;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
 /*Legenda/Butoes*/
 
 
@@ -290,6 +303,8 @@ body.nav-md .container.body .right_col_small {
     text-align: left;
 
 }
+
+
 
 .check_surface input[type=radio], input[type=checkbox] {
     display:none;
@@ -409,6 +424,142 @@ body.nav-md .container.body .right_col_small {
     text-align:center;
     line-height:15px;
     text-shadow:0px 0px 3px #7FAF1B;
+}
+
+/*Tournament Check */
+
+.tournament_title {
+    float: left;
+    font-size: 12px;
+    font-weight: 350;
+    padding: 0px 10px;
+    text-align: left;
+}
+
+.check_tournament input[type=radio], input[type=checkbox] {
+    display:none;
+
+}
+
+.check_tournament_clay label {
+    font-weight: 300;
+    font-size: 12px;
+    padding: 0px 5px;
+    text-align: left;
+    float: left;
+
+}
+.check_tournament_hard label {
+    font-weight: 300;
+    font-size: 12px;
+    padding: 0px 5px;
+    text-align: left;
+    float: left;
+}
+.check_tournament_grass label {
+    font-weight: 300;
+    font-size: 12px;
+    padding: 0px 5px;
+    text-align: left;
+    float: left;
+
+}
+
+.check_tournament_hard2 label {
+    font-weight: 300;
+    font-size: 12px;
+    padding: 0px 5px;
+    text-align: left;
+    float: left;
+}
+
+.check_tournament_clay input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align:-2px;
+    margin-right: 8px;
+    background-color: white;
+    box-shadow: inset 0px 2px 2px rgba(251, 184, 41, .3);
+    border-radius: 4px;
+    border: 1px solid #FBB829
+
+}
+
+.check_tournament_hard input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align:-2px;
+    margin-right: 8px;
+    background-color: white;
+    box-shadow: inset 0px 2px 2px rgba(42, 143, 189, .3);
+    border-radius: 4px;
+    border: 1px solid #2A8FBD
+}
+
+.check_tournament_grass input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align:-2px;
+    margin-right: 8px;
+    background-color: white;
+    box-shadow: inset 0px 2px 2px rgba(127, 175, 27, .3);
+    border-radius: 4px;
+    border: 1px solid #7FAF1B
+}
+
+.check_tournament_hard2 input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align:-2px;
+    margin-right: 8px;
+    background-color: white;
+    box-shadow: inset 0px 2px 2px rgba(214, 39, 40, .3);
+    border-radius: 4px;
+    border: 1px solid #d62728
+}
+
+.check_tournament_clay input[type=checkbox]:checked + label:before {
+    content:"\2713"; /* Tick */
+    color:#FBB829;
+    background-color: white;
+    text-align:center;
+    line-height:12px;
+    text-shadow:0px 0px 3px #FBB829;
+}
+
+.check_tournament_hard input[type=checkbox]:checked + label:before {
+    content:"\2713"; /* Tick */
+    color:#2A8FBD;
+    background-color: white;
+    text-align:center;
+    line-height:12px;
+    text-shadow:0px 0px 3px #2A8FBD;
+}
+
+.check_tournament_grass input[type=checkbox]:checked + label:before {
+    content:"\2713"; /* Tick */
+    color:#7FAF1B;
+    background-color: white;
+    text-align:center;
+    line-height:12px;
+    text-shadow:0px 0px 3px #7FAF1B;
+}
+
+.check_tournament_hard2 input[type=checkbox]:checked + label:before {
+    content:"\2713"; /* Tick */
+    color:#d62728;
+    background-color: white;
+    text-align:center;
+    line-height:12px;
+    text-shadow:0px 0px 3px #2A8FBD;
 }
 /*ENND MINE*/
 
@@ -1142,9 +1293,9 @@ li.current-page a {
 
 footer {
     background: #fff;
-    padding: 5px 20px 0;
+    padding: 10px 20px 0;
     height: 45px;
-    margin: 10px -19px;
+    margin: 0px -19px;
 }
 
 .tile-stats.sparkline {

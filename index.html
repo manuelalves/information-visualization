@@ -27,6 +27,7 @@
     <script src="js/d3.tip.v0.6.3.js"></script>
     <script src="js/RadarChartSurfaces.js"></script>
     <script src="js/RadarScriptSurfaces.js"></script>
+    <script src="js/RadarChart.js"></script>
 
 </head>
 
@@ -36,38 +37,78 @@
     <div class="container body">
 
         <div class="main_container">
-
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
-
                     <div class="navbar nav_title" style="border: 0;">
                         <a href="index.html" class="site_title"> <img src="images/tennis_ball.png"></img> <span>iTennistics</span></a>
                     </div>
                     <div class="clearfix"></div>
-
-                                <div class="form-group">
-                                                <select id="playerList1" class="form-control" onchange="changePlayer1()">
-                                                    <option >Select Player</option>
-                                                    <option >Rafael Nadal</option>
-                                                    <option>Roger Federer</option>
-                                                    <option>Novak Djokovic</option>
-                                                </select>
-                                        </div>
+                    <div class="form-group">
+                      <select id="playerList1" class="form-control" onchange="changePlayer1();">
+                          <!--<option>Select Player</option>-->
+                          <option>Adrian Mannarino</option>
+                          <option>Alexandr Dolgopolov</option>
+                          <option>Andreas Seppi</option>
+                          <option>Andy Murray</option>
+                          <option>Benjamin Becker</option>
+                          <option>Denis Istomin</option>
+                          <option>David Ferrer</option>
+                          <option>David Goffin</option>
+                          <option>Dominic Thiem</option>
+                          <option>Ernests Gulbis</option>
+                          <option>Fabio Fognini</option>
+                          <option>Feliciano Lopez</option>
+                          <option>Fernando Verdasco</option>
+                          <option>Gael Monfils</option>
+                          <option>Gilles Muller</option>
+                          <option>Gilles Simon</option>
+                          <option>Grigor Dimitrov</option>
+                          <option>Guillermo Lopez</option>
+                          <option>Ivo Karlovic</option>
+                          <option>Jack Sock</option>
+                          <option>Jeremy Chardy</option>
+                          <option>Jerzy Janowicz</option>
+                          <option>Jo Tsonga</option>
+                          <option>John Isner</option>
+                          <option>Julien Benneteau</option>
+                          <option>Kei Nishikori</option>
+                          <option>Kevin Anderson</option>
+                          <option>Leonardo Mayer</option>
+                          <option>Lukas Rosol</option>
+                          <option>Marin Cilic</option>
+                          <option>Martin Klizan</option>
+                          <option>Mikhail Youzhny</option>
+                          <option>Milos Raonic</option>
+                          <option>Nick Kyrgios</option>
+                          <option>Novak Djokovic</option>
+                          <option>Pablo Andujar</option>
+                          <option>Pablo  Busta</option>
+                          <option>Pablo Cuevas</option>
+                          <option>Philipp Kohlschreiber</option>
+                          <option selected="selected">Rafael Nadal</option>
+                          <option>Richard Gasquet</option>
+                          <option>Roberto Agut</option>
+                          <option>Roger Federer</option>
+                          <option>Sam Querrey</option>
+                          <option>Santiago Giraldo</option>
+                          <option>Stanislas Wawrinka</option>
+                          <option>Steve Johnson</option>
+                          <option>Tomas Berdych</option>
+                          <option>Tommy Robredo</option>
+                          <option>Yen Hsun Lu</option>
+                        </select>
+                      </div>
 
                     <!-- menu prile quick info -->
-                    <div class="profile">
-                        <div class="profile_pic">
-                            <img id="player_photo1" alt="Rafael Nadal" class="img-circle profile_img" src="images/players/nadal.png" name="photo1"></img>
+                      <div class="profile">
+                          <div class="profile_pic">
+                              <img id="player_photo1" alt="Rafael Nadal" class="img-circle profile_img" src="images/players/nadal.png" name="photo1"></img>
 
-                            <label class="form-field"> <span id="list1"> Rafael Nadal </span>
-                               <img id="flag_photo1" alt="Spain" class="flag_img" src="images/flags/es.png" name="flag"></img>
-                            </label>
-
-                       </div>
-
-
-
-                    </div>
+                              <label class="form-field"> <span id="list1"> Rafael Nadal </span>
+                                 <img id="flag_photo1" alt="Spain" class="flag_img" src="images/flags/esp.png" name="flag"></img>
+                              </label>
+                          </div>
+                      </div>
                     <!-- /menu prile quick info -->
 
                     <br/>
@@ -75,47 +116,39 @@
                     <!-- sidebar menu -->
 
 
-                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                      <div class="form-group-year1" >
+                          <select id="yearList" class="form-year" onchange="myYear()" >
 
-                   <div class="form-group-year1" >
-
-                                    <select id="yearList" class="form-year" onchange="myYear()" >
-
-                                                    <option selected="selected">2010</option>
-                                                    <option>2011</option>
-                                                    <option>2012</option>
-                                                    <option>2013</option>
-                                                    <option>2014</option>
-                                                    <option>2015</option>
-
-
-                                                </select>
-                    </div>
+                                          <option selected="selected">2010</option>
+                                          <option>2011</option>
+                                          <option>2012</option>
+                                          <option>2013</option>
+                                          <option>2014</option>
+                                          <option>2015</option>
+                          </select>
+                      </div>
                     </div>
 
                     <!-- /sidebar menu -->
-                     <div class= "player_text">
-                    <hr>
-
-                       <strong>Age:</strong> <span id="player_age"> 29 </span>  <br>
-                       <strong>Birthdate:</strong> <span id="player_birthdate"> 1986.06.03 </span>  <br>
-                       <strong>Birthplace:</strong> <span id="player_birthplace"> Mallorca, Spain </span>  <br>
-                        <strong>Height:</strong> <span id="player_height"> 185 </span> cm <br>
-                        <strong>Hand:</strong> <span id="player_hand"> Left </span><br>
-                     </div>
+                    <div class= "player_text">
+                      <br>
+                      <strong>Age:</strong> <span id="player_age"> 29 </span>  <br>
+                      <strong>Birthdate:</strong> <span id="player_birthdate"> 1986.06.03 </span>  <br>
+                      <strong>Birthplace:</strong> <span id="player_birthplace"> Mallorca, Spain </span>  <br>
+                      <strong>Height:</strong> <span id="player_height"> 185 </span> cm <br>
+                      <strong>Hand:</strong> <span id="player_hand"> Left </span><br>
+                    </div>
 
                      <div class ="player_ranking">
-                          <strong>Ranking</strong> <br>
+                          <strong>Ranking</strong>  <actual style="display:block; height: 20px;" >Actual</actual>
                           <rank><span id="player_rank"> 7 </span></rank> <br>
                           <rankpoints>Points: </rankpoints>
                           <points> <span id="player_points"> 4330 </span></points>
                      </div>
 
                 </div>
-
-
-
-            </div>
+              </div>
 
 
 
@@ -130,7 +163,6 @@
 
                      </div>
                 </div>
-
             </div>
             <!-- /top navigation -->
 
@@ -229,8 +261,29 @@
                                 <h2>Tournament Stats </h2>
 
                                 <div class="clearfix"></div>
+
                             </div>
-                            <div class="x_content">
+
+                                <div class="check_tournament_hard">
+                                  <input type="checkbox" id="cb1" name="cb"value="" onchange = "select_usa_open()">
+                                  <label for="cb1">Australian Open</label>
+                                </div>
+                                <div class="check_tournament_clay">
+                                    <input type="checkbox" id="cb2" name="cb" value="" onchange = "select_roland_garros()">
+                                    <label for="cb2">Roland Garros</label>
+                                </div>
+
+                                <div class="check_tournament_grass">
+                                    <input type="checkbox" id="cb3" name="cb" value="" onchange = "select_wimbledon()">
+                                      <label for="cb3">Wimbledon</label>
+                                </div>
+                                <div class="check_tournament_hard2">
+                                    <input type="checkbox" id="cb4" name="cb" value="" onchange = "select_usa_open()">
+                                    <label for="cb4">USA Open</label>
+                                </div>
+
+
+                            <div class="x_content_tournament">
                               <div id="radar">
                                 <div id="chart"></div>
                             </div>
@@ -249,7 +302,7 @@
 
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="x_content">
+                                    <div class="x_content_surface">
                                       <div id="surfaceradar">
                                         <div id="surfacechart"></div>
                                         <script type="text/javascript" src="js/RadarScriptSurfaces.js"></script>
@@ -263,7 +316,7 @@
                     </div>
 
                 </div>
-
+              </div>
                 <!-- footer content -->
 
                 <footer>
