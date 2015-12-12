@@ -31,6 +31,55 @@ var multiChart = function(){
     var index = dateList.selectedIndex;
     var year = index;
 
+	if(year == '0'){
+		document.getElementById("A").style.opacity = "1";
+		document.getElementById("B").style.opacity = "0.3";
+		document.getElementById("C").style.opacity = "0.3";
+		document.getElementById("D").style.opacity = "0.3";
+		document.getElementById("E").style.opacity = "0.3";
+		document.getElementById("F").style.opacity = "0.3";
+	}
+	if(year == '1'){
+		document.getElementById("B").style.opacity = "1";
+		document.getElementById("A").style.opacity = "0.3";
+		document.getElementById("C").style.opacity = "0.3";
+		document.getElementById("D").style.opacity = "0.3";
+		document.getElementById("E").style.opacity = "0.3";
+		document.getElementById("F").style.opacity = "0.3";
+	}
+	if(year == '2'){
+		document.getElementById("C").style.opacity = "1";
+		document.getElementById("A").style.opacity = "0.3";
+		document.getElementById("B").style.opacity = "0.3";
+		document.getElementById("D").style.opacity = "0.3";
+		document.getElementById("E").style.opacity = "0.3";
+		document.getElementById("F").style.opacity = "0.3";
+	}
+	if(year == '3'){
+		document.getElementById("D").style.opacity = "1";
+		document.getElementById("A").style.opacity = "0.3";
+		document.getElementById("B").style.opacity = "0.3";
+		document.getElementById("C").style.opacity = "0.3";
+		document.getElementById("E").style.opacity = "0.3";
+		document.getElementById("F").style.opacity = "0.3";
+	}
+	if(year == '4'){
+		document.getElementById("E").style.opacity = "1";
+		document.getElementById("A").style.opacity = "0.3";
+		document.getElementById("B").style.opacity = "0.3";
+		document.getElementById("C").style.opacity = "0.3";
+		document.getElementById("D").style.opacity = "0.3";
+		document.getElementById("F").style.opacity = "0.3";
+	}
+	if(year == '5'){
+		document.getElementById("F").style.opacity = "1";
+		document.getElementById("A").style.opacity = "0.3";
+		document.getElementById("B").style.opacity = "0.3";
+		document.getElementById("C").style.opacity = "0.3";
+		document.getElementById("D").style.opacity = "0.3";
+		document.getElementById("E").style.opacity = "0.3";
+	}
+
     //Get the actual player
 	var playerList1 = document.getElementById("playerList1");
     var index1 = playerList1.selectedIndex;
@@ -79,12 +128,12 @@ function rankByYear(datacsv) {
     var stroke_2011_off = 0.3;
     var stroke_2010_off = 0.3;
 
-    var stroke_2015 = 2;
-    var stroke_2014 = 2;
-    var stroke_2013 = 2;
-    var stroke_2012 = 2;
-    var stroke_2011 = 2;
-    var stroke_2010 = 2;
+    var stroke_2015 = 2.5;
+    var stroke_2014 = 2.5;
+    var stroke_2013 = 2.5;
+    var stroke_2012 = 2.5;
+    var stroke_2011 = 2.5;
+    var stroke_2010 = 2.5;
 
 //Years
  var line_2010 = [];
@@ -319,8 +368,16 @@ var line = d3.svg.line()
    .datum(line_2015)
    .attr("class", "line_2015")
    .style("stroke", '#17becf')
-  // .style("opacity", "0.5")
-   .style("stroke-width", stroke_2015)
+   .on('click', function(d){
+	   if(year != '5'){
+   			document.getElementById("yearList").selectedIndex = 5;
+   			multiChart();
+   			lineChart();
+			tip_line.hide();
+
+		}
+   })
+    .style("stroke-width", stroke_2015)
    .style("opacity", stroke_2015_on)
    .on('mouseover', function(d){
         d3.select(this).style("opacity", "1")
@@ -340,6 +397,14 @@ multiGraph.append("path")
 .style("stroke-width", stroke_2014)
 //.style("opacity", "0.5")
 .style("opacity", stroke_2014_on)
+.on('click', function(d){
+	if(year != '4'){
+		document.getElementById("yearList").selectedIndex = 4;
+		multiChart();
+		lineChart();
+		tip_line.hide();
+}
+})
 .on('mouseover', function(d){
      d3.select(this).style("opacity", "1")
      tip_line.show('2014');
@@ -359,6 +424,14 @@ multiGraph.append("path")
 .style("stroke-width", stroke_2013)
 //.style("opacity", "0.5")
 .style("opacity", stroke_2013_on)
+.on('click', function(d){
+	if(year != '3'){
+		document.getElementById("yearList").selectedIndex = 3;
+		multiChart();
+		lineChart();
+		tip_line.hide();
+}
+})
 .on('mouseover', function(d){
      d3.select(this).style("opacity", "1")
      tip_line.show('2013');
@@ -376,8 +449,14 @@ multiGraph.append("path")
 .style("stroke", '#8c564b')
 .style("opacity", stroke_2012_on)
 .style("stroke-width", stroke_2012)
-//.style("opacity", "0.5")
-.on('mouseover', function(d){
+.on('click', function(d){
+	if(year != '2'){
+		document.getElementById("yearList").selectedIndex = 2;
+		multiChart();
+		lineChart();
+		tip_line.hide();
+}
+}).on('mouseover', function(d){
      d3.select(this).style("opacity", "1")
      tip_line.show('2012');
 })
@@ -394,8 +473,14 @@ multiGraph.append("path")
 .style("stroke", '#a55194')
 .style("opacity", stroke_2011_on)
 .style("stroke-width", stroke_2011)
-//.style("opacity", "0.5")
-.on('mouseover', function(d){
+.on('click', function(d){
+	if(year!='1'){
+		document.getElementById("yearList").selectedIndex = 1;
+		multiChart();
+		lineChart();
+		tip_line.hide();
+	}
+}).on('mouseover', function(d){
      d3.select(this).style("opacity", "1")
      tip_line.show('2011');
 })
@@ -412,7 +497,14 @@ multiGraph.append("path")
 .style("stroke", '#d6616b')
 .style("opacity", stroke_2010_on)
 .style("stroke-width", stroke_2010)
-//.style("opacity", "0.5")
+.on('click', function(d){
+	if(year != '0'){
+		document.getElementById("yearList").selectedIndex = 0;
+		multiChart();
+		lineChart();
+		tip_line.hide();
+	}
+})
 .on('mouseover', function(d){
      d3.select(this).style("opacity", "1")
      tip_line.show('2010');

@@ -237,22 +237,39 @@ body.nav-sm .menu_section h3 {
 
 /*Legenda/Butoes*/
 
-
 /*Legenda gráfico*/
 /* basic positioning */
 /*position: absolute;     margin-top: 260px;       display: inline-block; margin-left: 180px;*/
 .legenda { list-style: none; position: absolute;     margin-top: 260px;       display: inline-block; margin-left: 180px;
 }
 .legenda li { float: left; margin-right: 10px; margin-left: 10px; margin-top: 2px;}
-.legenda span { border: 0px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+.legenda span { border: 0px solid #fff; float: left; width: 14px; height: 14px; margin: 2px; }
 /* your colors */
-.legenda .A { background-color: #d6616b; } /*2010 - vermelho*/
-.legenda .B { background-color: #a55194; } /*2011 - roxo*/
-.legenda .C { background-color: #8c564b; } /*2012 - castanho*/
-.legenda .D { background-color: #e7969c; } /*2013 - rosa*/
-.legenda .E { background-color: #7f7f7f; } /*2014 - cinzento*/
-.legenda .F { background-color: #17becf; } /*2015 - azul claro*/
+.legenda .A { background-color: #d6616b; opacity: 0.3; border-style: solid; border-width: 2px;} /*2010 - vermelho*/
+.legenda .B { background-color: #a55194; opacity: 0.3; border-style: solid; border-width: 2px;} /*2011 - roxo*/
+.legenda .C { background-color: #8c564b; opacity: 0.3; border-style: solid; border-width: 2px;} /*2012 - castanho*/
+.legenda .D { background-color: #e7969c; opacity: 0.3; border-style: solid; border-width: 2px;} /*2013 - rosa*/
+.legenda .E { background-color: #7f7f7f; opacity: 0.3; border-style: solid; border-width: 2px;} /*2014 - cinzento*/
+.legenda .F { background-color: #17becf; opacity: 0.3; border-style: solid; border-width: 2px; } /*2015 - azul claro*/
 
+.legenda .A:hover{
+    border-color: #d6616b;
+}
+.legenda .B:hover{
+    border-color: #a55194;
+}
+.legenda .C:hover{
+    border-color: #8c564b;
+}
+.legenda .D:hover{
+    border-color: #e7969c;
+}
+.legenda .E:hover{
+    border-color: #7f7f7f;
+}
+.legenda .F:hover{
+    border-color: #17becf;
+}
 
 .rcorners {
     margin-top: 260px;
