@@ -13,6 +13,13 @@ var roland_check = false;
 var wimbledon_check = false;
 var usa_check = false;
 
+var australian_box_check = false;
+var roland_box_check = false;
+var wimbledon_box_check = false;
+var usa_box_check = false;
+
+var page_global = null;
+
 //Get the actual year
   var dateList = null;
   var yearsList = ["yearList", "yearList1", "yearList2", "yearList3"];
@@ -23,10 +30,53 @@ var usa_check = false;
 
   var charts = ["#chart", "#chart1", "#chart2"];
 
+  var colour_selected = false;
+
+  function select_australian(page) {
+  	if(australian_box_check){
+  		australian_box_check = false;
+  	}
+  	else {
+  		australian_box_check = true;
+  	}
+  	radar(page);
+  }
+
+  function select_roland(page) {
+  	if(roland_box_check){
+  		roland_box_check = false;
+  	}
+  	else {
+  		roland_box_check = true;
+  	}
+  	radar(page);
+  }
+
+  function select_wimbledon(page) {
+  	if(wimbledon_box_check){
+  		wimbledon_box_check = false;
+  	}
+  	else {
+  		wimbledon_box_check = true;
+  	}
+  	radar(page);
+  }
+
+  function select_usa(page) {
+  	if(usa_box_check){
+  		usa_box_check = false;
+  	}
+  	else {
+  		usa_box_check = true;
+  	}
+  	radar(page);
+  }
+
 
 /*[
 {axis:axisTournamentOptions[0],value:150},*/
 var radar = function(page){
+  page_global = page;
   var format = d3.time.format("%m/%d/%Y");
   function parser(d) {
       d.player = +d.player_id;
@@ -56,6 +106,12 @@ function definePrintArea(csvdata, page){
         dateList = document.getElementById(yearsList[0]);
         playerList1 = document.getElementById(playersList[0]);
         dataTransform(csvdata, charts[0]);
+    }else if (page == "3") {
+      for (var i = 1; i < 3; i++) {
+        dateList = document.getElementById(yearsList[i + 1]);
+        playerList1 = document.getElementById(playersList[i]);
+        dataTransform(csvdata, charts[i]);
+      }
     }else {
       for (var i = 0; i < 3; i++) {
         dateList = document.getElementById(yearsList[i + 1]);
@@ -365,21 +421,52 @@ var RadarChart = {
 						 return str;
 					  })
 					 .style("fill", function(j, i){return cfg.color(series)})
-					 .style("fill-opacity", cfg.opacityArea)
-					 .on('mouseover', function (d){
-										z = "polygon."+d3.select(this).attr("class");
-										g.selectAll("polygon")
-										 .transition(200)
-										 .style("fill-opacity", 0);
-										g.selectAll(z)
-										 .transition(200)
-										 .style("fill-opacity", 0.8);
-									  })
-					 .on('mouseout', function(){
-										g.selectAll("polygon")
-										 .transition(200)
-										 .style("fill-opacity", cfg.opacityArea);
-					 });
+					 .style("fill-opacity", function(d){
+               if(australian_box_check || roland_box_check || wimbledon_box_check || usa_box_check){
+                 if ((australian_box_check && australian_check && cfg.color(series) == blue_colour) || (roland_box_check && roland_check && cfg.color(series) == orange_colour) || (wimbledon_box_check && roland_check && cfg.color(series) == green_colour) || (usa_box_check && usa_check && cfg.color(series) == red_colour)) {
+                   return 0.5;
+                 }else {
+                   return 0;
+                 }
+               }
+
+              if (cfg.color(series) == colour_selected) {
+                    return 0.5;
+              }
+
+                return cfg.opacityArea;
+              })
+              .on('mouseover', function (d){
+                       z = "polygon."+d3.select(this).attr("class");
+
+                       if(australian_box_check || roland_box_check || wimbledon_box_check || usa_box_check){
+
+                       }else{
+                         g.selectAll("polygon")
+                          .transition(200)
+                          .style("fill-opacity", 0);
+                         g.selectAll(z)
+                          .transition(200)
+                          .style("fill-opacity", 0.8);
+
+                          colour_selected = z.fill();
+                          console.log(colour_selected);
+                          radar("3");
+                         }
+                       }
+                  )
+              .on('mouseout', function(){
+                if(australian_box_check || roland_box_check || wimbledon_box_check || usa_box_check){
+                      if ((australian_box_check && australian_check && cfg.color(series) == blue_colour) || (roland_box_check && roland_check && cfg.color(series) == orange_colour) || (wimbledon_box_check && roland_check && cfg.color(series) == green_colour) || (usa_box_check && usa_check && cfg.color(series) == red_colour)) {
+                      }
+                  }else{
+                       g.selectAll("polygon")
+                        .transition(200)
+                        .style("fill-opacity", cfg.opacityArea);
+                  }
+              });
+
+
 	  series++;
 	});
 	series=0;
@@ -418,10 +505,15 @@ var RadarChart = {
             })
    // .on('mouseout', tip.hide);
 	  .on('mouseout', function(){
-             tip.hide(d);
-             g.selectAll("polygon")
-              .transition(200)
-              .style("fill-opacity", cfg.opacityArea);
+      tip.hide(d);
+      if(australian_box_check || roland_box_check || wimbledon_box_check || usa_box_check){
+            RadarChart.draw(id, d);
+      }else{
+          g.selectAll("polygon")
+           .transition(200)
+           .style("fill-opacity", cfg.opacityArea);
+        }
+
     });
 
 
