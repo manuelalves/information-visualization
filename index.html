@@ -32,7 +32,7 @@
 </head>
 
 
-<body class="nav-md">
+<body class="nav-md" onload="radar('1');">
 
     <div class="container body">
 
@@ -44,7 +44,7 @@
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group">
-                      <select id="playerList1" class="form-control" onchange="changePlayer1();">
+                      <select id="playerList1" class="form-control" onchange="changePlayer1(); radar('1');">
                           <!--<option>Select Player</option>-->
                           <option>Adrian Mannarino</option>
                           <option>Alexandr Dolgopolov</option>
@@ -118,7 +118,7 @@
 
                     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                       <div class="form-group-year1" >
-                          <select id="yearList" class="form-year" onchange="myYear()" >
+                          <select id="yearList" class="form-year" onchange=" radar('1');" >
 
                                           <option selected="selected">2010</option>
                                           <option>2011</option>
@@ -287,7 +287,7 @@
                               <div id="radar">
                                 <div id="chart"></div>
                             </div>
-                              <script type="text/javascript" src="js/RadarScript.js"></script>
+
                             </div>
 
 

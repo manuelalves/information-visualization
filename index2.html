@@ -24,13 +24,12 @@
     <script src="js/d3.v3.min.js"></script>
     <script src="js/d3.tip.v0.6.3.js"></script>
     <script src="js/RadarChart.js"></script>
-    <script src="js/RadarScript.js"></script>
 
 
 </head>
 
 
-<body class="nav-md">
+<body class="nav-md"  onload="radar('2');">
 
     <div class="container body">
 
@@ -50,7 +49,7 @@
 <!-- Player 1 -->
 
                                 <div class="form-group">
-                                  <select id="playerList1" class="form-control" onchange="changePlayer1();">
+                                  <select id="playerList1" class="form-control" onchange="radar('2'); changePlayer1(); ">
                                       <!--<option>Select Player</option>-->
                                       <option>Adrian Mannarino</option>
                                       <option>Alexandr Dolgopolov</option>
@@ -123,7 +122,7 @@
                                    <div class="form-group-year" >
 
 
-                                                    <select id="yearList1" class="form-year" onchange="myYear1()" >
+                                                    <select id="yearList1" class="form-year" onchange="radar('2'); " >
 
                                                                     <option selected="selected">2010</option>
                                                                     <option>2011</option>
@@ -144,7 +143,7 @@
                                    <div class="form-group">
                                      <br>
                                        <br>
-                                     <select id="playerList2" class="form-control" onchange="changePlayer2();">
+                                     <select id="playerList2" class="form-control" onchange=" radar('2'); changePlayer2(); ">
                                          <!--<option>Select Player</option>-->
                                          <option>Adrian Mannarino</option>
                                          <option>Alexandr Dolgopolov</option>
@@ -216,7 +215,7 @@
 
                                    <div class="form-group-year" >
 
-                                                    <select id="yearList2" class="form-year" onchange="myYear2()" >
+                                                    <select id="yearList2" class="form-year" onchange="radar('2');" >
 
                                                                     <option selected="selected">2010</option>
                                                                     <option>2011</option>
@@ -237,7 +236,7 @@
                                    <div class="form-group">
                                      <br>
 
-                                     <select id="playerList3" class="form-control" onchange="changePlayer3();">
+                                     <select id="playerList3" class="form-control" onchange="radar('2'); changePlayer3(); ">
                                          <!--<option>Select Player</option>-->
                                          <option>Adrian Mannarino</option>
                                          <option>Alexandr Dolgopolov</option>
@@ -309,7 +308,7 @@
 
                                    <div class="form-group-year" >
 
-                                                    <select id="yearList3" class="form-year" onchange="myYear3()" >
+                                                    <select id="yearList3" class="form-year" onchange="radar('2');" >
 
                                                                     <option selected="selected">2010</option>
                                                                     <option>2011</option>
@@ -398,7 +397,6 @@
                            <div id="radar">
                              <div id="chart"></div>
                            </div>
-                           <script type="text/javascript" src="js/RadarScript.js"></script>
 
                          </div>
                      </div>
@@ -445,7 +443,7 @@
                               <div id="radar">
                                 <div id="chart1"></div>
                               </div>
-                              <script type="text/javascript" src="js/RadarScript.js"></script>
+
 
 
                             </div>
@@ -489,8 +487,6 @@
                               <div id="radar">
                                 <div id="chart2"></div>
                               </div>
-                              <script type="text/javascript" src="js/RadarScript.js"></script>
-
                             </div>
                         </div>
                     </div>

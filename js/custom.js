@@ -256,7 +256,7 @@ function changePlayer1() {
     var index1 = playerList1.selectedIndex;
     var strUser1 = playerList1.options[index1].value;
 
-    writeRadarChartTournaments1(index1);
+    //writeRadarChartTournaments1(index1);
     writeRadarChartSurface1(index1);
 
     document.getElementById("list1").innerHTML = strUser1;
@@ -293,7 +293,6 @@ function changePlayer2() {
 
     document.getElementById("flag_photo2").src = flagArray[index2];
 
-    writeRadarChartTournaments2(index2);
     writeRadarChartSurface2(index2);
 
 
@@ -314,7 +313,7 @@ function changePlayer3() {
 
     document.getElementById("flag_photo3").src = flagArray[index3];
 
-    writeRadarChartTournaments3(index3);
+
     writeRadarChartSurface3(index3);
 
 
