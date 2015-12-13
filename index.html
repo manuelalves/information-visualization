@@ -20,6 +20,7 @@
 
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/linearchat.css" rel="stylesheet">
+    <link href="css/lastlinechart.css" rel="stylesheet">
 
     <script src="js/custom.js"></script>
 
@@ -28,11 +29,12 @@
     <script src="js/RadarChartSurfaces.js"></script>
     <script src="js/RadarScriptSurfaces.js"></script>
     <script src="js/RadarChart.js"></script>
+    <script src="js/SurfaceLineChart.js"></script>
 
 </head>
 
 
-<body class="nav-md" onload="radar('1');">
+<body class="nav-md" onload="radar('1'); linesurfaceChart();">
 
     <div class="container body">
 
@@ -44,7 +46,9 @@
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group">
-                      <select id="playerList1" class="form-control4" onchange="changePlayer1(); radar('1');">
+
+                      <select id="playerList1" class="form-control4" onchange="changePlayer1(); radar('1'); linesurfaceChart();">
+
                           <!--<option>Select Player</option>-->
                           <option>Adrian Mannarino</option>
                           <option>Alexandr Dolgopolov</option>
@@ -118,7 +122,7 @@
 
                     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                       <div class="form-group-year1" >
-                          <select id="yearList" class="form-year" onchange=" radar('1');" >
+                          <select id="yearList" class="form-year" onchange=" radar('1');myYear1()" >
 
                                           <option selected="selected">2010</option>
                                           <option>2011</option>
@@ -243,8 +247,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-
-<!-- GRAFICO -->
+                                <div id="surfacelinearchart" class="surfacelinegraph"></div>
                             </div>
                         </div>
                     </div>
@@ -299,7 +302,7 @@
                     <div class="col-md-5 col-sm-5 col-xs-12">
                                 <div class="x_panel fixed_height_320">
                                     <div class="x_title">
-                                        <h2>Surface Influence on Ranking & Performance </h2>
+                                        <h2>Surface Influence on Performance Stats </h2>
 
                                         <div class="clearfix"></div>
                                     </div>

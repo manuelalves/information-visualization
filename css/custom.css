@@ -240,7 +240,7 @@ body.nav-sm .menu_section h3 {
 /*Legenda gráfico*/
 /* basic positioning */
 /*position: absolute;     margin-top: 260px;       display: inline-block; margin-left: 180px;*/
-.legenda { list-style: none; position: absolute;     margin-top: 260px;       display: inline-block; margin-left: 180px;
+.legenda { list-style: none; position: absolute;     margin-top: 250px;        margin-left: 170px;
 }
 .legenda li { float: left; margin-right: 10px; margin-left: 10px; margin-top: 2px;}
 .legenda span { border: 0px solid #fff; float: left; width: 14px; height: 14px; margin: 2px; }
@@ -589,8 +589,6 @@ body.nav-md .container.body .right_col_small {
     background: #2A3F54;
     border-radius: 0;
     height: 7px;
-    position: fixed;
-    z-index: 2;
 }
 
 @media (max-width: 991px) {
@@ -727,7 +725,8 @@ dark,
 
 .container {
     width: 170%;
-    padding: 0
+    padding: 0;
+
 }
 
 .navbar-nav>li>a,
@@ -773,9 +772,10 @@ body {
     display: block;
     padding: 10px 20px 0;
     margin-left: 230px;
+    
 }
 
-.main_container {}
+.main_container {   }
 
 .no-padding {
     padding: 0 !important;
@@ -3047,7 +3047,7 @@ legend {
     height: 33px;
     line-height: 24px;
     font-size: 15px;
-    margin-top: 135px;
+    margin-top: 85px;
 }
 
 .form-group .form-control2{
@@ -3056,7 +3056,7 @@ legend {
     height: 33px;
     line-height: 24px;
     font-size: 15px;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 .form-group .form-control3{
@@ -3065,7 +3065,7 @@ legend {
     height: 33px;
     line-height: 24px;
     font-size: 15px;
-    margin-top: 55px;
+    margin-top: 70px;
 }
 
 .form-group .form-control4{
@@ -3074,7 +3074,7 @@ legend {
     height: 33px;
     line-height: 24px;
     font-size: 15px;
-    margin-top: 95px;
+    margin-top: 50px;
 }
 
 
