@@ -351,7 +351,10 @@ function myYear() {
    lineChart();
    multiChart();
 
+}
 
+function myYear1() {
+   linesurfaceChart();
 
 }
 

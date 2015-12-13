@@ -240,7 +240,7 @@ body.nav-sm .menu_section h3 {
 /*Legenda gráfico*/
 /* basic positioning */
 /*position: absolute;     margin-top: 260px;       display: inline-block; margin-left: 180px;*/
-.legenda { list-style: none; position: absolute;     margin-top: 260px;       display: inline-block; margin-left: 180px;
+.legenda { list-style: none; position: absolute;     margin-top: 2px;       display: inline-block; margin-left: 18px;
 }
 .legenda li { float: left; margin-right: 10px; margin-left: 10px; margin-top: 2px;}
 .legenda span { border: 0px solid #fff; float: left; width: 14px; height: 14px; margin: 2px; }

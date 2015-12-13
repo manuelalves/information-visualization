@@ -1,0 +1,24 @@
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+path {
+  stroke-width: 3;
+  fill: none;
+}
+.axis path, .axis line {
+  fill: none;
+  stroke: #BEBEBE;
+  shape-rendering: crispEdges;
+}
+.datapoint:hover{
+fill: #BEBEBE;
+}
+.xlabel, .ylabel {
+  font-weight:bold;
+  font-size:20px;
+}
