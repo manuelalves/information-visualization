@@ -93,8 +93,6 @@ playerArray = new Array("Rafael Nadal","Adrian Mannarino","Alexandr Dolgopolov",
 
 // when user browses to page
 
-
-
 $('#content').hide();
 $('#load').show();
 // then when the #content div has loaded
