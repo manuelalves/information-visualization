@@ -228,7 +228,8 @@ body.nav-sm .menu_section h3 {
     border-bottom: 1px solid #E6E9ED;*/
     background: #FFF;
     border-bottom: 2px solid #D9DEE4;
-    width: 23%;
+    width: 22.3%;
+
     padding: 6px;
     position: relative;
     margin-top: 5px;
@@ -729,6 +730,8 @@ dark,
 
 }
 
+
+
 .navbar-nav>li>a,
 .navbar-brand,
 .navbar-nav>li>a {
@@ -772,7 +775,7 @@ body {
     display: block;
     padding: 10px 20px 0;
     margin-left: 230px;
-    
+
 }
 
 .main_container {   }
@@ -958,7 +961,7 @@ table.no-margin .progress {
     float: left;
     padding-right: 0px;
     padding-left: 10px;
-    width: 450px;
+    width: 500px;
 }
 
 .col-md-10b,
@@ -981,6 +984,16 @@ table.no-margin .progress {
     padding-left: 0px;
     margin-left:10px;
 
+}
+.col-md-5c,
+.col-sm-5c,
+.col-xs-12c {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding-right: 0px;
+  padding-left: 10px;
+  width: 600px;
 }
 
 .row {
@@ -3056,7 +3069,7 @@ legend {
     height: 33px;
     line-height: 24px;
     font-size: 15px;
-    margin-top: 45px;
+    margin-top: 85px;
 }
 
 .form-group .form-control3{
@@ -3065,7 +3078,7 @@ legend {
     height: 33px;
     line-height: 24px;
     font-size: 15px;
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .form-group .form-control4{

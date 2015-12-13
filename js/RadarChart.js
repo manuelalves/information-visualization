@@ -31,6 +31,7 @@ var page_global = null;
   var charts = ["#chart", "#chart1", "#chart2"];
 
   var colour_selected = false;
+  var changed = false;
 
   function select_australian(page) {
   	if(australian_box_check){
@@ -174,9 +175,9 @@ function dataTransform(csvdata, chart_pos){
         }
       }
     }
-
+    var data = [];
     if(australian_check || roland_check || wimbledon_check || usa_check){
-      var data = [];
+
 
         if(australian_check){
           var australian_data = [
@@ -301,6 +302,13 @@ function dataTransform(csvdata, chart_pos){
 
             RadarChart.draw(chart_pos, data);
     }
+    else {
+
+
+
+        RadarChart.draw(chart_pos, data);
+
+    }
 }
 var RadarChart = {
   draw: function(id, d){
@@ -312,22 +320,25 @@ var RadarChart = {
 	 maxValue: 0.6,
 	 radians: 2 * Math.PI,
 	 opacityArea: 0,
-	 TranslateX: 100,
-	 TranslateY: 25,
+	 TranslateX: 80,
+	 TranslateY: 20,
 	 ExtraWidthX: 300,
-	 ExtraWidthY: 100,
-   w: 200,
-   h: 200,
+	 ExtraWidthY: 50,
+   w: 250,
+   h: 250,
    color:graph_colour
 
 	};
 
 	//cfg.maxValue = Math.max(cfg.maxValue, d3.max(d, function(i){return d3.max(i.map(function(o){return o.value;}))}));
-  cfg.maxValue = 500;
+  cfg.maxValue = 600;
 	var allAxis = axisTournamentOptions;
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
 	d3.select(id).select("svg").remove();
+
+
+
 
 	var g = d3.select(id)
 			.append("svg")
@@ -395,6 +406,8 @@ var RadarChart = {
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
 
 
+
+
 	d.forEach(function(y, x){
 	  dataValues = [];
 	  g.selectAll(".nodes")
@@ -430,8 +443,10 @@ var RadarChart = {
                  }
                }
 
-              if (cfg.color(series) == colour_selected) {
-                    return 0.5;
+              if ((cfg.color(x) == colour_selected) && changed) {
+                    return 0.8;
+              }else {
+                return 0;
               }
 
                 return cfg.opacityArea;
@@ -448,10 +463,9 @@ var RadarChart = {
                          g.selectAll(z)
                           .transition(200)
                           .style("fill-opacity", 0.8);
-
-                          colour_selected = z.fill();
-                          console.log(colour_selected);
-                          radar("3");
+                          colour_selected = cfg.color(x);
+                          changed = true;
+                          radar("2");
                          }
                        }
                   )
@@ -463,6 +477,8 @@ var RadarChart = {
                        g.selectAll("polygon")
                         .transition(200)
                         .style("fill-opacity", cfg.opacityArea);
+                        changed = false;
+                        radar("2");
                   }
               });
 
@@ -502,6 +518,15 @@ var RadarChart = {
              g.selectAll(z)
               .transition(200)
               .style("fill-opacity", 0.8);
+
+              if(australian_box_check || roland_box_check || wimbledon_box_check || usa_box_check){
+
+              }else {
+                changed = true;
+                radar("2");
+              }
+
+
             })
    // .on('mouseout', tip.hide);
 	  .on('mouseout', function(){
@@ -512,6 +537,8 @@ var RadarChart = {
           g.selectAll("polygon")
            .transition(200)
            .style("fill-opacity", cfg.opacityArea);
+           changed = false;
+           radar("2");
         }
 
     });
@@ -519,6 +546,22 @@ var RadarChart = {
 
 	  series++;
 	});
+  if (d.length == 0) {
+    d3.select(id).select("svg").remove();
+    var g = d3.select(id)
+  			.append("svg")
+  			.attr("width", cfg.w+cfg.ExtraWidthX)
+  			.attr("height", cfg.h+cfg.ExtraWidthY)
+  			.append("g")
+  			.attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
+  			;
 
+      g.append("svg:image")
+        .attr('x',-100)
+        .attr('y',-300)
+        .attr('width', 400)
+        .attr('height', 800)
+        .attr("xlink:href","images/no_data.png" );
+  }
   }
 };
