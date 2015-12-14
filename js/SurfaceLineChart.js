@@ -324,9 +324,11 @@ var rankingclaymedio = Math.round(rankingclay / ciclosclay);
 var rankinggrassmedio = Math.round(rankinggrass / ciclosgrass);
 */
 
-var mediaMax = rankinghardmedio;
+var mediaMax = 0;
 
-if(mediaMax < rankingclaymedio){
+if(mediaMax < rankinghardmedio){
+	mediaMax = rankinghardmedio
+}if(mediaMax < rankingclaymedio){
 	mediaMax = rankingclaymedio;
 }
 if(mediaMax < rankinggrassmedio){
@@ -347,10 +349,13 @@ if(mediaMax > 20 && mediaMax<=50){
 if(mediaMax > 50 && mediaMax<=80){
 	max = mediaMax + 15;
 }
-if(mediaMax > 80 && mediaMax<=150){
-	max = mediaMax + 20;
+if(mediaMax > 80 && mediaMax<=100){
+	max = mediaMax + 15;
+}if(mediaMax > 100 && mediaMax<=120){
+	console.log("entrei");
+	max = mediaMax + 25;
 }
-if(mediaMax > 150 && mediaMax<=200){
+if(mediaMax > 120 && mediaMax<=200){
 	max = mediaMax + 25;
 }
 
