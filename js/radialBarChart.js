@@ -236,6 +236,12 @@ function update(page) {
                 d3.select('#chart7')
                   .datum(data_radial)
                   .call(chart5);
+        }else {
+          initData("1");
+
+          d3.select('#chart5')
+            .datum(data_radial)
+            .call(chart5);
         }
 
 
