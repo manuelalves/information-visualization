@@ -386,6 +386,26 @@
                     </div>
                   </div>
 
+
+
+                <div class="option_menu3">
+                    <div class ="surface_tournament"> Select Surface: </div>
+                    <div class="check_hard">
+                      <input type="checkbox" id="cs1" name="cs"value="" onchange = "select_hard('2')">
+                      <label for="cs1">Hard</label>
+                    </div>
+                    <div class="check_clay">
+                        <input type="checkbox" id="cs2" name="cs" value="" onchange = "select_clay('2')">
+                        <label for="cs2">Clay</label>
+                    </div>
+
+                    <div class="check_grass">
+                        <input type="checkbox" id="cs3" name="cs" value="" onchange = "select_grass('2')">
+                          <label for="cs3">Grass</label>
+
+                    </div>
+                  </div>
+
                   <div class="option_menu2">
 
                     <div class ="select_year"> Select Year: </div>
@@ -416,23 +436,6 @@
                     </div>
                 </div>
 
-                <div class="option_menu3">
-                    <div class ="surface_tournament"> Select Surface: </div>
-                    <div class="check_hard">
-                      <input type="checkbox" id="cs1" name="cs"value="" onchange = "select_hard('2')">
-                      <label for="cs1">Hard</label>
-                    </div>
-                    <div class="check_clay">
-                        <input type="checkbox" id="cs2" name="cs" value="" onchange = "select_clay('2')">
-                        <label for="cs2">Clay</label>
-                    </div>
-
-                    <div class="check_grass">
-                        <input type="checkbox" id="cs3" name="cs" value="" onchange = "select_grass('2')">
-                          <label for="cs3">Grass</label>
-
-                    </div>
-                  </div>
               </div>
 
 
@@ -460,29 +463,12 @@
                  </div>
 
 
-                 <div class="col-md-5 col-sm-5 col-xs-12">
-                        <div class="x_panel fixed_height_900">
-                            <div class="x_title">
-                                <h2>Other 1 </h2>
 
-                                <div class="clearfix"></div>
-                            </div>
-
-                            <div class="x_content_tournament1">
-                              <div id="bubble">
-                                <div id="chart"></div>
-                              </div>
-                              <script type="text/javascript" src="js/bubbleChart.js"></script>
-
-
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="col-md-5 col-sm-5 col-xs-12">
                            <div class="x_panel fixed_height_390">
                                <div class="x_title">
-                                   <h2>Other 2 </h2>
+                                   <h2>Tournament Performance</h2>
 
                                    <div class="clearfix"></div>
                                </div>
@@ -496,6 +482,7 @@
                                </div>
                            </div>
                        </div>
+
 
 
                     <div class="col-md-5 col-sm-5 col-xs-12">
@@ -512,13 +499,30 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                           <div class="x_panel fixed_height_1200">
+                               <div class="x_title">
+                                   <h2>Ranking Points by Surface </h2>
 
+                                   <div class="clearfix"></div>
+                               </div>
+
+                               <div class="x_content_tournament1">
+                                 <div id="bubble">
+                                   <div id="chart"></div>
+                                 </div>
+                                 <script type="text/javascript" src="js/bubbleChart.js"></script>
+
+
+                               </div>
+                           </div>
+                       </div>
                 </div>
 
 
 
 
-                <div class="row">
+                <div class="row2">
                     <div class="col-md-5 col-sm-5 col-xs-12">
                         <div class="x_panel fixed_height_390">
                             <div class="x_title">
@@ -541,7 +545,7 @@
                     <div class="col-md-5 col-sm-5 col-xs-12">
                            <div class="x_panel fixed_height_390">
                                <div class="x_title">
-                                   <h2>Other 3 </h2>
+                                   <h2>Tournament Performance</h2>
 
                                    <div class="clearfix"></div>
                                </div>
@@ -557,23 +561,6 @@
                            </div>
                        </div>
 
-                       <div class="col-md-5 col-sm-5 col-xs-12">
-                              <div class="x_panel fixed_height_390">
-                                  <div class="x_title">
-                                      <h2>Other 4 </h2>
-
-                                      <div class="clearfix"></div>
-                                  </div>
-
-                                  <div class="x_content_tournament1">
-                                    <div id="radar">
-                                      <div id="chart"></div>
-                                    </div>
-                            <!--        <script type="text/javascript" src="js/RadarScript.js"></script>-->
-
-                                  </div>
-                              </div>
-                          </div>
 
                     <div class="col-md-5 col-sm-5 col-xs-12">
                                 <div class="x_panel fixed_height_390">
@@ -595,7 +582,7 @@
 
 
 
-                   <div class="row">
+                   <div class="row3">
                     <div class="col-md-5 col-sm-5 col-xs-12">
                         <div class="x_panel fixed_height_390">
                             <div class="x_title">
@@ -631,40 +618,27 @@
                            </div>
                        </div>
 
-                       <div class="col-md-5 col-sm-5 col-xs-12">
+
+
+
+                </div>
+
+                <div class="row4">
+                  <div class="col-md-5 col-sm-5 col-xs-12">
                               <div class="x_panel fixed_height_390">
                                   <div class="x_title">
-                                      <h2>Other 6 </h2>
+                                      <h2>Surface Influence on Perfomance Stats </h2>
 
                                       <div class="clearfix"></div>
                                   </div>
-
-                                  <div class="x_content_tournament1">
-                                    <div id="radar">
-                                      <div id="chart"></div>
-                                    </div>
-                            <!--        <script type="text/javascript" src="js/RadarScript.js"></script>-->
-
+                                  <div class="x_content_surface3">
+                                    <div id="surfaceradar">
+                                      <div id="surfacechart2"></div>
+                                      </div>
                                   </div>
                               </div>
-                          </div>
 
-                    <div class="col-md-5 col-sm-5 col-xs-12">
-                                <div class="x_panel fixed_height_390">
-                                    <div class="x_title">
-                                        <h2>Surface Influence on Perfomance Stats </h2>
-
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="x_content_surface3">
-                                      <div id="surfaceradar">
-                                        <div id="surfacechart2"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                    </div>
-
+                  </div>
                 </div>
 
 

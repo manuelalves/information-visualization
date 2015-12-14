@@ -35,9 +35,9 @@ function select_year(y) {
 
 var bubbleChart = function(){
 
-  var margin = {top: 130, right: 10, bottom: 30, left: 80},
+  var margin = {top: 150, right: 10, bottom: 30, left: 80},
   	width = 600,
-  	height = 550;
+  	height = 800;
 
   var start_month = 1,
   	end_month = 12;
@@ -316,6 +316,7 @@ for(var j = 1; j <= (year_3.length)-1; j++){
   			.attr("y",j*40+15)
   			.attr("class","label")
   			.text(truncate(data[j]['name'],60,"..."))
+				.style("font-size", "14px")
   			.style("fill", function(d) { return "#999"; })
             .on("mouseover", mouseover)
   			.on("mouseout", mouseout)

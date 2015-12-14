@@ -242,9 +242,9 @@ body.nav-sm .menu_section h3 {
     border-bottom: 2px solid #D9DEE4;
     width: 22.3%;
     padding: 6px;
-    position: relative;
+    position: absolute;
     margin-top: 5px;
-    margin-left: 100px;
+    margin-left: 1510px;
 
 }
 
@@ -257,9 +257,9 @@ body.nav-sm .menu_section h3 {
     width: 22.3%;
 
     padding: 6px;
-    position: relative;
+    position: absolute;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left:1010px;
 }
 
 /*Legenda/Butoes*/
@@ -1147,8 +1147,8 @@ body {
     margin: 10px 0;
 }
 
-.fixed_height_900 {
-    height: 900px;
+.fixed_height_1200 {
+    height: 1200px;
 }
 
 .fixed_height_320 {
@@ -1341,6 +1341,25 @@ table.no-margin .progress {
     position: relative;
     margin-right: 0px;
     margin-left: -20px;
+}
+
+.row2 {
+    position: relative;
+    top: -810px;
+    left: -20px;
+}
+.row3 {
+    position: absolute;
+    top: 940px;
+    left: 230px;
+    width: 1000px
+}
+
+.row4 {
+    position: absolute;
+    top: 940px;
+    left: 1230px;
+    width: 500px
 }
 
 
