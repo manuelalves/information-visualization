@@ -24,12 +24,14 @@
     <script src="js/d3.v3.min.js"></script>
     <script src="js/d3.tip.v0.6.3.js"></script>
     <script src="js/RadarChart.js"></script>
+    <script src="js/bubbleChart.js"></script>
+
 
 
 </head>
 
 
-<body class="nav-md"  onload="radar('2');">
+<body class="nav-md"  onload="radar('2'); bubbleChart();">
 
     <div class="container body">
 
@@ -50,7 +52,7 @@
 <!-- Player 1 -->
 
                                 <div class="form-group">
-                                  <select id="playerList1" class="form-control1" onchange="radar('2'); changePlayer1(); ">
+                                  <select id="playerList1" class="form-control1" onchange="radar('2'); bubbleChart(); changePlayer1(); ">
                                       <!--<option>Select Player</option>-->
                                       <option>Adrian Mannarino</option>
                                       <option>Alexandr Dolgopolov</option>
@@ -144,7 +146,7 @@
                                    <div class="form-group">
                                      <br>
                                        <br>
-                                     <select id="playerList2" class="form-control2" onchange=" radar('2'); changePlayer2(); ">
+                                     <select id="playerList2" class="form-control2" onchange=" radar('2'); bubbleChart(); changePlayer2(); ">
                                          <!--<option>Select Player</option>-->
                                          <option>Adrian Mannarino</option>
                                          <option>Alexandr Dolgopolov</option>
@@ -237,7 +239,7 @@
                                    <div class="form-group">
                                      <br>
 
-                                     <select id="playerList3" class="form-control3" onchange="radar('2'); changePlayer3(); ">
+                                     <select id="playerList3" class="form-control3" onchange="radar('2'); bubbleChart(); changePlayer3(); ">
                                          <!--<option>Select Player</option>-->
                                          <option>Adrian Mannarino</option>
                                          <option>Alexandr Dolgopolov</option>
@@ -381,6 +383,35 @@
                     </div>
                   </div>
 
+                  <div class="option_menu2">
+                    <div class ="select_year"> Select Year: </div>
+                    <div class="check_year_2010">
+                      <input type="radio" id="cb5" name="cb"value="" onchange = "select_year('2010')" checked>
+                      <label for="cb5">2010</label>
+                    </div>
+                    <div class="check_year_2011">
+                        <input type="radio" id="cb6" name="cb" value="" onchange = "select_year('2011')">
+                        <label for="cb6">2011</label>
+                    </div>
+
+                    <div class="check_year_2012">
+                        <input type="radio" id="cb7" name="cb" value="" onchange = "select_year('2012')">
+                          <label for="cb7">2012</label>
+                    </div>
+                    <div class="check_year_2013">
+                        <input type="radio" id="cb8" name="cb" value="" onchange = "select_year('2013')">
+                        <label for="cb8">2013</label>
+                    </div>
+                    <div class="check_year_2014">
+                        <input type="radio" id="cb9" name="cb" value="" onchange = "select_year('2014')">
+                        <label for="cb9">2014</label>
+                    </div>
+                    <div class="check_year_2015">
+                        <input type="radio" id="cb10" name="cb" value="" onchange = "select_year('2015')">
+                        <label for="cb10">2015</label>
+                    </div>
+                  </div>
+
                 </div>
 
 
@@ -405,7 +436,7 @@
 
 
                  <div class="col-md-5 col-sm-5 col-xs-12">
-                        <div class="x_panel fixed_height_390">
+                        <div class="x_panel fixed_height_900">
                             <div class="x_title">
                                 <h2>Other 1 </h2>
 
@@ -413,10 +444,10 @@
                             </div>
 
                             <div class="x_content_tournament1">
-                              <div id="radar">
+                              <div id="bubble">
                                 <div id="chart"></div>
                               </div>
-                              <script type="text/javascript" src="js/RadarScript.js"></script>
+                              <script type="text/javascript" src="js/bubbleChart.js"></script>
 
                             </div>
                         </div>
@@ -434,7 +465,7 @@
                                  <div id="radar">
                                    <div id="chart"></div>
                                  </div>
-                                 <script type="text/javascript" src="js/RadarScript.js"></script>
+                            <!--     <script type="text/javascript" src="js/RadarScript.js"></script>-->
 
                                </div>
                            </div>
@@ -494,7 +525,7 @@
                                  <div id="radar">
                                    <div id="chart"></div>
                                  </div>
-                                 <script type="text/javascript" src="js/RadarScript.js"></script>
+                            <!--     <script type="text/javascript" src="js/RadarScript.js"></script>-->
 
                                </div>
                            </div>
@@ -512,7 +543,7 @@
                                     <div id="radar">
                                       <div id="chart"></div>
                                     </div>
-                                    <script type="text/javascript" src="js/RadarScript.js"></script>
+                            <!--        <script type="text/javascript" src="js/RadarScript.js"></script>-->
 
                                   </div>
                               </div>
@@ -569,7 +600,7 @@
                                  <div id="radar">
                                    <div id="chart"></div>
                                  </div>
-                                 <script type="text/javascript" src="js/RadarScript.js"></script>
+                        <!--         <script type="text/javascript" src="js/RadarScript.js"></script>-->
 
                                </div>
                            </div>
@@ -578,7 +609,7 @@
                        <div class="col-md-5 col-sm-5 col-xs-12">
                               <div class="x_panel fixed_height_390">
                                   <div class="x_title">
-                                      <h2>Other 1 </h2>
+                                      <h2>Other 6 </h2>
 
                                       <div class="clearfix"></div>
                                   </div>
@@ -587,7 +618,7 @@
                                     <div id="radar">
                                       <div id="chart"></div>
                                     </div>
-                                    <script type="text/javascript" src="js/RadarScript.js"></script>
+                            <!--        <script type="text/javascript" src="js/RadarScript.js"></script>-->
 
                                   </div>
                               </div>

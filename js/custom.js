@@ -255,7 +255,6 @@ function changePlayer1() {
     var strUser1 = playerList1.options[index1].value;
 
     //writeRadarChartTournaments1(index1);
-    writeRadarChartSurface1(index1);
 
     document.getElementById("list1").innerHTML = strUser1;
 
@@ -264,14 +263,10 @@ function changePlayer1() {
 
     document.getElementById("flag_photo1").src = flagArray[index1];
 
-    document.getElementById("player_age").innerHTML = ageArray[index1];
-    document.getElementById("player_birthdate").innerHTML = birthdateArray[index1];
-    document.getElementById("player_birthplace").innerHTML = birthplaceArray[index1];
-    document.getElementById("player_height").innerHTML = heightArray[index1];
-    document.getElementById("player_hand").innerHTML = handArray[index1];
 
-    document.getElementById("player_rank").innerHTML = rankArray[index1];
-    document.getElementById("player_points").innerHTML = pointsArray[index1];
+    writeRadarChartSurface1(index1);
+
+    //bubbleChart();
 
 
 
@@ -344,6 +339,7 @@ function changePlayer4() {
     //multiChart();
 
 }
+
 
 function myYear() {
    lineChart();
