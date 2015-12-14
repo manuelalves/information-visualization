@@ -5,7 +5,7 @@ var axisTournamentOptions = ['Aces', 'Double Faults', '1st Serve', '1st Serve Po
 var blue_colour = "#1f77b4";
 var orange_colour = "#ff7f0e";
 var green_colour = "#2ca02c";
-var red_colour =  "#d62728";
+var red_colour =  "#17becf";
 var graph_colour = d3.scale.category10();
 
 var australian_check = false;
