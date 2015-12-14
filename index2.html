@@ -11,6 +11,7 @@
     <title>iTennistics</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-horizon.css" rel="stylesheet">
 
     <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
 
@@ -25,13 +26,13 @@
     <script src="js/d3.tip.v0.6.3.js"></script>
     <script src="js/RadarChart.js"></script>
     <script src="js/bubbleChart.js"></script>
-
+    <script src="js/RadarChartSurfaces.js"></script>
 
 
 </head>
 
 
-<body class="nav-md"  onload="radar('2'); bubbleChart();">
+<body class="nav-md"  onload="radar('2'); bubbleChart(); radar_surface('2');">
 
     <div class="container body">
 
@@ -52,7 +53,8 @@
 <!-- Player 1 -->
 
                                 <div class="form-group">
-                                  <select id="playerList1" class="form-control1" onchange="radar('2'); bubbleChart(); changePlayer1(); ">
+
+                                  <select id="playerList1" class="form-control1" onchange="radar('2'); bubbleChart(); radar_surface('2'); changePlayer1(); ">
                                       <!--<option>Select Player</option>-->
                                       <option>Adrian Mannarino</option>
                                       <option>Alexandr Dolgopolov</option>
@@ -125,7 +127,7 @@
                                    <div class="form-group-year" >
 
 
-                                                    <select id="yearList1" class="form-year" onchange="radar('2'); " >
+                                                    <select id="yearList1" class="form-year" onchange="radar('2'); radar_surface('2'); " >
 
                                                                     <option selected="selected">2010</option>
                                                                     <option>2011</option>
@@ -146,7 +148,8 @@
                                    <div class="form-group">
                                      <br>
                                        <br>
-                                     <select id="playerList2" class="form-control2" onchange=" radar('2'); bubbleChart(); changePlayer2(); ">
+
+                                     <select id="playerList2" class="form-control2" onchange=" radar('2'); bubbleChart(); radar_surface('2'); changePlayer2(); ">
                                          <!--<option>Select Player</option>-->
                                          <option>Adrian Mannarino</option>
                                          <option>Alexandr Dolgopolov</option>
@@ -218,7 +221,7 @@
 
                                    <div class="form-group-year" >
 
-                                                    <select id="yearList2" class="form-year" onchange="radar('2');" >
+                                                    <select id="yearList2" class="form-year" onchange="radar('2'); radar_surface('2');" >
 
                                                                     <option selected="selected">2010</option>
                                                                     <option>2011</option>
@@ -239,7 +242,7 @@
                                    <div class="form-group">
                                      <br>
 
-                                     <select id="playerList3" class="form-control3" onchange="radar('2'); bubbleChart(); changePlayer3(); ">
+                                     <select id="playerList3" class="form-control3" onchange="radar('2'); bubbleChart(); radar_surface('2'); changePlayer3(); ">
                                          <!--<option>Select Player</option>-->
                                          <option>Adrian Mannarino</option>
                                          <option>Alexandr Dolgopolov</option>
@@ -311,7 +314,7 @@
 
                                    <div class="form-group-year" >
 
-                                                    <select id="yearList3" class="form-year" onchange="radar('2');" >
+                                                    <select id="yearList3" class="form-year" onchange="radar('2'); radar_surface('2');" >
 
                                                                     <option selected="selected">2010</option>
                                                                     <option>2011</option>
@@ -360,7 +363,7 @@
             <div class="right_col" role="main">
 
                 <!-- top tiles -->
-                <div class="row tile_count">
+                  <div class="row tile_count">
 
                   <div class="option_menu">
                     <div class ="surface_tournament"> Select Tournament: </div>
@@ -384,6 +387,7 @@
                   </div>
 
                   <div class="option_menu2">
+
                     <div class ="select_year"> Select Year: </div>
                     <div class="check_year_2010">
                       <input type="radio" id="cb5" name="cb"value="" onchange = "select_year('2010')" checked>
@@ -410,9 +414,30 @@
                         <input type="radio" id="cb10" name="cb" value="" onchange = "select_year('2015')">
                         <label for="cb10">2015</label>
                     </div>
-                  </div>
-
                 </div>
+
+                <div class="option_menu3">
+                    <div class ="surface_tournament"> Select Surface: </div>
+                    <div class="check_hard">
+                      <input type="checkbox" id="cs1" name="cs"value="" onchange = "select_hard('2')">
+                      <label for="cs1">Hard</label>
+                    </div>
+                    <div class="check_clay">
+                        <input type="checkbox" id="cs2" name="cs" value="" onchange = "select_clay('2')">
+                        <label for="cs2">Clay</label>
+                    </div>
+
+                    <div class="check_grass">
+                        <input type="checkbox" id="cs3" name="cs" value="" onchange = "select_grass('2')">
+                          <label for="cs3">Grass</label>
+
+                    </div>
+                  </div>
+              </div>
+
+
+
+
 
 
 
@@ -449,6 +474,7 @@
                               </div>
                               <script type="text/javascript" src="js/bubbleChart.js"></script>
 
+
                             </div>
                         </div>
                     </div>
@@ -475,15 +501,14 @@
                     <div class="col-md-5 col-sm-5 col-xs-12">
                         <div class="x_panel tile fixed_height_390 ">
                             <div class="x_title">
-                                <h2>Surface Influence on Ranking & Perfomance</h2>
+                                <h2>Surface Influence on Perfomance Stats</h2>
 
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content_surface1">
                               <div id="surfaceradar">
                                 <div id="surfacechart"></div>
-                                <script type="text/javascript" src="js/RadarScriptSurfaces.js"></script>
-                              </div>
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -527,6 +552,7 @@
                                  </div>
                             <!--     <script type="text/javascript" src="js/RadarScript.js"></script>-->
 
+
                                </div>
                            </div>
                        </div>
@@ -552,15 +578,14 @@
                     <div class="col-md-5 col-sm-5 col-xs-12">
                                 <div class="x_panel fixed_height_390">
                                     <div class="x_title">
-                                        <h2>Surface Influence on Ranking & Performance </h2>
+                                        <h2>Surface Influence on Perfomance Stats </h2>
 
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="x_content_surface2">
                                       <div id="surfaceradar">
                                         <div id="surfacechart1"></div>
-                                        <script type="text/javascript" src="js/RadarScriptSurfaces.js"></script>
-                                      </div>
+                                          </div>
                                     </div>
                                 </div>
 
@@ -627,15 +652,14 @@
                     <div class="col-md-5 col-sm-5 col-xs-12">
                                 <div class="x_panel fixed_height_390">
                                     <div class="x_title">
-                                        <h2>Surface Influence on Ranking & Performance </h2>
+                                        <h2>Surface Influence on Perfomance Stats </h2>
 
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="x_content_surface3">
                                       <div id="surfaceradar">
                                         <div id="surfacechart2"></div>
-                                        <script type="text/javascript" src="js/RadarScriptSurfaces.js"></script>
-                                      </div>
+                                        </div>
                                     </div>
                                 </div>
 

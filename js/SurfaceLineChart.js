@@ -306,7 +306,7 @@ var ciclosgrass = 0;
     surfaceanswer.push("Clay");
     surfaceanswer.push("Grass");
 
-    var margin = {top: 5, right: 30, bottom: 50, left: 30};
+    var margin = {top: 10, right: 30, bottom: 50, left: 30};
     var width = 500 - margin.left - margin.right;
     var height = 250 - margin.top - margin.bottom;
 

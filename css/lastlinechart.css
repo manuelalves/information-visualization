@@ -21,7 +21,7 @@ path {
     shape-rendering: crispEdges;
 }
 .datapoint:hover{
-fill: #BEBEBE;
+fill-opacity: 0.4;
 }
 .xlabel, .ylabel {
     font-weight:bold;

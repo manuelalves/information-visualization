@@ -244,7 +244,22 @@ body.nav-sm .menu_section h3 {
     padding: 6px;
     position: relative;
     margin-top: 5px;
-    margin-left: 70px;
+    margin-left: 100px;
+
+}
+
+.option_menu3 {
+    float: left;
+    /*background: #F4F6F9;
+    border-bottom: 1px solid #E6E9ED;*/
+    background: #FFF;
+    border-bottom: 2px solid #D9DEE4;
+    width: 22.3%;
+
+    padding: 6px;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 /*Legenda/Butoes*/
@@ -396,18 +411,7 @@ body.nav-md .container.body .right_col_small {
 
 }
 
-/*
-.check_surface input[type=radio] + label:before {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    vertical-align:middle;
-    margin-right: 8px;
-    background-color: white;
-    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .3);
-    border-radius: 8px;
-}*/
+
 
 .check_surface_clay input[type=checkbox] + label:before {
     content: "";
@@ -448,17 +452,7 @@ body.nav-md .container.body .right_col_small {
     border-radius: 4px;
     border: 1px solid #7FAF1B
 }
-/*
-.check_surface input[type=radio]:checked + label:before {
-    content: "\2022"; // Bullet
-    color:white;
-    background-color: white;
-    font-size:1.8em;
-    text-align:center;
-    line-height:14px;
-    text-shadow:0px 0px 3px #eee;
-}
-*/
+
 
 .check_surface_clay input[type=checkbox]:checked + label:before {
     content:"\2713"; /* Tick */
@@ -814,6 +808,114 @@ body.nav-md .container.body .right_col_small {
     line-height:12px;
     text-shadow:0px 0px 3px #2A8FBD;
 }
+
+/*Surface*/
+
+.surface_graph_title {
+    float: left;
+    font-size: 12px;
+    font-weight: 350;
+    padding: 0px 10px;
+    text-align: left;
+}
+
+.check_surface_graph input[type=radio], input[type=checkbox] {
+    display:none;
+
+}
+
+.check_clay label {
+    font-weight: 300;
+    font-size: 12px;
+    padding: 0px 5px;
+    text-align: left;
+    float: left;
+
+}
+.check_hard label {
+    font-weight: 300;
+    font-size: 12px;
+    padding: 0px 5px;
+    text-align: left;
+    float: left;
+}
+.check_grass label {
+    font-weight: 300;
+    font-size: 12px;
+    padding: 0px 5px;
+    text-align: left;
+    float: left;
+
+}
+
+
+.check_clay input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align:-2px;
+    margin-right: 8px;
+    background-color: white;
+    box-shadow: inset 0px 2px 2px rgba(251, 184, 41, .3);
+    border-radius: 4px;
+    border: 1px solid #FBB829
+
+}
+
+.check_hard input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align:-2px;
+    margin-right: 8px;
+    background-color: white;
+    box-shadow: inset 0px 2px 2px rgba(42, 143, 189, .3);
+    border-radius: 4px;
+    border: 1px solid #2A8FBD
+}
+
+.check_grass input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align:-2px;
+    margin-right: 8px;
+    background-color: white;
+    box-shadow: inset 0px 2px 2px rgba(127, 175, 27, .3);
+    border-radius: 4px;
+    border: 1px solid #7FAF1B
+}
+
+.check_clay input[type=checkbox]:checked + label:before {
+    content:"\2713"; /* Tick */
+    color:#FBB829;
+    background-color: white;
+    text-align:center;
+    line-height:12px;
+    text-shadow:0px 0px 3px #FBB829;
+}
+
+.check_hard input[type=checkbox]:checked + label:before {
+    content:"\2713"; /* Tick */
+    color:#2A8FBD;
+    background-color: white;
+    text-align:center;
+    line-height:12px;
+    text-shadow:0px 0px 3px #2A8FBD;
+}
+
+.check_grass input[type=checkbox]:checked + label:before {
+    content:"\2713"; /* Tick */
+    color:#7FAF1B;
+    background-color: white;
+    text-align:center;
+    line-height:12px;
+    text-shadow:0px 0px 3px #7FAF1B;
+}
+
 /*ENND MINE*/
 
 

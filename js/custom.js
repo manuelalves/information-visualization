@@ -256,6 +256,8 @@ function changePlayer1() {
 
     //writeRadarChartTournaments1(index1);
 
+  //  writeRadarChartSurface1(index1);
+
     document.getElementById("list1").innerHTML = strUser1;
 
     document.getElementById("player_photo1").src = imageArray[index1];
@@ -286,7 +288,7 @@ function changePlayer2() {
 
     document.getElementById("flag_photo2").src = flagArray[index2];
 
-    writeRadarChartSurface2(index2);
+  //  writeRadarChartSurface2(index2);
 
 
 
@@ -307,7 +309,7 @@ function changePlayer3() {
     document.getElementById("flag_photo3").src = flagArray[index3];
 
 
-    writeRadarChartSurface3(index3);
+    //writeRadarChartSurface3(index3);
 
 
     //document.getElementById("list").value = playerList.options[playerList.selectedIndex].text;
@@ -407,7 +409,8 @@ function changeYear1(y){
         }
     }
     linesurfaceChart();
-    radar(1);
+    radar('1');
+    radar_surface('1');
     //RadarChart();
 }
 
