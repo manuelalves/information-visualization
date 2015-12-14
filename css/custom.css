@@ -272,6 +272,38 @@ body.nav-sm .menu_section h3 {
     border-color: #17becf;
 }
 
+
+.legenda2 { list-style: none; position: absolute;     margin-top: 250px;        margin-left: 7px;
+}
+.legenda2 li { float: left; margin-right: 10px; margin-left: 10px; margin-top: 2px;}
+.legenda2 span { border: 0px solid #fff; float: left; width: 14px; height: 14px; margin: 2px; }
+/* your colors */
+.legenda2 .A { background-color: #d6616b; opacity: 0.3; border-style: solid; border-width: 2px;} /*2010 - vermelho*/
+.legenda2 .B { background-color: #a55194; opacity: 0.3; border-style: solid; border-width: 2px;} /*2011 - roxo*/
+.legenda2 .C { background-color: #8c564b; opacity: 0.3; border-style: solid; border-width: 2px;} /*2012 - castanho*/
+.legenda2 .D { background-color: #e7969c; opacity: 0.3; border-style: solid; border-width: 2px;} /*2013 - rosa*/
+.legenda2 .E { background-color: #7f7f7f; opacity: 0.3; border-style: solid; border-width: 2px;} /*2014 - cinzento*/
+.legenda2 .F { background-color: #17becf; opacity: 0.3; border-style: solid; border-width: 2px; } /*2015 - azul claro*/
+
+.legenda2 .A:hover{
+    border-color: #d6616b;
+}
+.legenda2 .B:hover{
+    border-color: #a55194;
+}
+.legenda2 .C:hover{
+    border-color: #8c564b;
+}
+.legenda2 .D:hover{
+    border-color: #e7969c;
+}
+.legenda2 .E:hover{
+    border-color: #7f7f7f;
+}
+.legenda2 .F:hover{
+    border-color: #17becf;
+}
+
 .rcorners {
     margin-top: 260px;
     border-radius: 25px;

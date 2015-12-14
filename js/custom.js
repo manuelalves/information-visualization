@@ -356,6 +356,65 @@ function myYear1() {
 
 }
 
+
+function changeYear1(y){
+    if(document.getElementById("yearList").selectedIndex != y){
+        document.getElementById("yearList").selectedIndex = y;
+
+        if(y == '0'){
+        document.getElementById("A").style.opacity = "1";
+        document.getElementById("B").style.opacity = "0.3";
+        document.getElementById("C").style.opacity = "0.3";
+        document.getElementById("D").style.opacity = "0.3";
+        document.getElementById("E").style.opacity = "0.3";
+        document.getElementById("F").style.opacity = "0.3";
+        }
+        if(y == '1'){
+        document.getElementById("B").style.opacity = "1";
+        document.getElementById("A").style.opacity = "0.3";
+        document.getElementById("C").style.opacity = "0.3";
+        document.getElementById("D").style.opacity = "0.3";
+        document.getElementById("E").style.opacity = "0.3";
+        document.getElementById("F").style.opacity = "0.3";
+        }
+        if(y == '2'){
+        document.getElementById("C").style.opacity = "1";
+        document.getElementById("B").style.opacity = "0.3";
+        document.getElementById("A").style.opacity = "0.3";
+        document.getElementById("D").style.opacity = "0.3";
+        document.getElementById("E").style.opacity = "0.3";
+        document.getElementById("F").style.opacity = "0.3";
+        }
+        if(y == '3'){
+        document.getElementById("D").style.opacity = "1";
+        document.getElementById("B").style.opacity = "0.3";
+        document.getElementById("C").style.opacity = "0.3";
+        document.getElementById("A").style.opacity = "0.3";
+        document.getElementById("E").style.opacity = "0.3";
+        document.getElementById("F").style.opacity = "0.3";
+        }
+        if(y == '4'){
+        document.getElementById("E").style.opacity = "1";
+        document.getElementById("B").style.opacity = "0.3";
+        document.getElementById("C").style.opacity = "0.3";
+        document.getElementById("D").style.opacity = "0.3";
+        document.getElementById("A").style.opacity = "0.3";
+        document.getElementById("F").style.opacity = "0.3";
+        }
+        if(y == '5'){
+        document.getElementById("F").style.opacity = "1";
+        document.getElementById("B").style.opacity = "0.3";
+        document.getElementById("C").style.opacity = "0.3";
+        document.getElementById("D").style.opacity = "0.3";
+        document.getElementById("E").style.opacity = "0.3";
+        document.getElementById("A").style.opacity = "0.3";
+        }
+    }
+    linesurfaceChart();
+    radar(1);
+    //RadarChart();
+}
+
 function changeYear(y){
     if(document.getElementById("yearList").selectedIndex != y){
         document.getElementById("yearList").selectedIndex = y;
