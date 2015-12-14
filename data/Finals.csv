@@ -1,0 +1,66 @@
+tourney_id,tourney_name,surface,tourney_date,winner_id,winner_name,winner_rank,winner_rank_points,loser_id,loser_name,loser_rank,loser_rank_points,score,round
+2010-540 ,Wimbledon       ,Gras,21-06-2010,104745,Rafael Nadal           ,1,8745,104607,Tomas Berdych          ,13,2825,6-3 7-5 6-4      ,F
+2010-560 ,US Open       ,Hard,30-08-2010,104745,Rafael Nadal           ,1,10745,104925,Novak Djokovic         ,3,6665,6-4 5-7 6-4 6-2  ,F
+2010-580 ,Australian Open       ,Hard,18-01-2010,103819,Roger Federer          ,1,10550,104918,Andy Murray            ,4,6780,6-3 6-4 7-6(11)  ,F
+2010-352 ,Paris Masters       ,Hard,07-11-2010,104417,Robin Soderling        ,5,4960,104792,Gael Monfils           ,14,2485,6-1 7-6(1)       ,F
+2010-421 ,Canada Masters        ,Hard,09-08-2010,104918,Andy Murray            ,4,5305,103819,Roger Federer          ,3,6795,7-5 7-5          ,F
+2010-422 ,Cincinnati Masters       ,Hard,15-08-2010,103819,Roger Federer          ,2,7215,103888,Mardy Fish             ,36,1151,6-7(5) 7-6(1) 6-4,F
+2010-520 ,Roland-Garros        ,Clay,24-05-2010,104745,Rafael Nadal           ,2,6880,104417,Robin Soderling        ,7,4755,6-4 6-2 6-4      ,F
+2010-404 ,Indian Wells Masters        ,Hard,11-03-2010,103344,Ivan Ljubicic          ,26,1520,104053,Andy Roddick           ,8,3720,7-6(3) 7-6(5)    ,F
+2010-403 ,Miami Masters Masters       ,Hard,24-03-2010,104053,Andy Roddick           ,8,3960,104607,Tomas Berdych          ,20,1760,7-5 6-4          ,F
+2010-410 ,Monte Carlo Masters,Clay,11-04-2010,104745,Rafael Nadal           ,3,6980,104269,Fernando Verdasco      ,12,2725,6-0 6-1          ,F
+2010-416 ,Rome Masters    ,Clay,25-04-2010,104745,Rafael Nadal           ,3,6480,103970,David Ferrer           ,17,2105,7-5 6-2          ,F
+2011-560 ,US Open       ,Hard,29-08-2011,104925,Novak Djokovic         ,1,13920,104745,Rafael Nadal           ,2,11420,6-2 6-4 6-7(3) 6-,F
+2011-580 ,Australian Open       ,Hard,17-01-2011,104925,Novak Djokovic         ,3,6240,104918,Andy Murray            ,5,5760,6-4 6-2 6-3      ,F
+2011-422 ,Cincinnati Masters       ,Hard,14-08-2011,104918,Andy Murray            ,4,5715,104925,Novak Djokovic         ,1,13500,6-4 3-0 RET      ,F
+2011-540 ,Wimbledon       ,Gras,20-06-2011,104925,Novak Djokovic         ,2,12005,104745,Rafael Nadal           ,1,12070,6-4 6-1 1-6 6-3  ,F
+2011-410 ,Monte Carlo Masters,Clay,10-04-2011,104745,Rafael Nadal           ,1,12870,103970,David Ferrer           ,6,4600,6-4 7-5          ,F
+2011-416 ,Rome Masters    ,Clay,08-05-2011,104925,Novak Djokovic         ,2,10665,104745,Rafael Nadal           ,1,12470,6-4 6-4          ,F
+2011-403 ,Miami Masters Masters       ,Hard,23-03-2011,104925,Novak Djokovic         ,2,8710,104745,Rafael Nadal           ,1,12630,4-6 6-3 7-6(4)   ,F
+2011-404 ,Indian Wells Masters        ,Hard,10-03-2011,104925,Novak Djokovic         ,3,7800,104745,Rafael Nadal           ,1,12390,4-6 6-3 6-2      ,F
+2011-520 ,Roland-Garros        ,Clay,22-05-2011,104745,Rafael Nadal           ,1,12070,103819,Roger Federer          ,3,8390,7-5 7-6(3) 5-7 6-,F
+2011-421 ,Canada Masters        ,Hard,08-08-2011,104925,Novak Djokovic         ,1,12860,103888,Mardy Fish             ,8,2505,6-2 3-6 6-4      ,F
+2011-352 ,Paris Masters       ,Hard,07-11-2011,103819,Roger Federer          ,4,7530,104542,Jo Wilfried Tsonga     ,8,2935,6-1 7-6(3)       ,F
+2012-410 ,Monte Carlo Masters,Clay,15-04-2012,104745,Rafael Nadal           ,2,9215,104925,Novak Djokovic         ,1,12670,6-3 6-1          ,F
+2012-416 ,Rome Masters    ,Clay,13-05-2012,104745,Rafael Nadal           ,3,9105,104925,Novak Djokovic         ,1,11200,7-5 6-3          ,F
+2012-422 ,Cincinnati Masters       ,Hard,12-08-2012,103819,Roger Federer          ,1,11345,104925,Novak Djokovic         ,2,11270,6-0 7-6(7)       ,F
+2012-421 ,Canada Masters        ,Hard,06-08-2012,104925,Novak Djokovic         ,2,11270,104755,Richard Gasquet        ,21,1600,6-3 6-2          ,F
+2012-540 ,Wimbledon       ,Gras,25-06-2012,103819,Roger Federer          ,3,9435,104918,Andy Murray            ,4,6980,4-6 7-5 6-3 6-4  ,F
+2012-403 ,Miami Masters Masters       ,Hard,21-03-2012,104925,Novak Djokovic         ,1,12670,104918,Andy Murray            ,4,7450,6-1 7-6(4)       ,F
+2012-520 ,Roland-Garros        ,Clay,27-05-2012,104745,Rafael Nadal           ,2,10060,104925,Novak Djokovic         ,1,11800,6-4 6-3 2-6 7-5  ,F
+2012-352 ,Paris Masters       ,Hard,29-10-2012,103970,David Ferrer           ,5,5610,105668,Jerzy Janowicz         ,69,682,6-4 6-3          ,F
+2012-580 ,Australian Open       ,Hard,16-01-2012,104925,Novak Djokovic         ,1,13630,104745,Rafael Nadal           ,2,9595,5-7 6-4 6-2 6-7(5,F
+2012-560 ,US Open       ,Hard,27-08-2012,104918,Andy Murray            ,4,7290,104925,Novak Djokovic         ,2,11270,7-6(10) 7-5 2-6 3,F
+2012-404 ,Indian Wells Masters        ,Hard,08-03-2012,103819,Roger Federer          ,3,8710,104545,John Isner             ,11,2120,7-6(7) 6-3       ,F
+2013-422 ,Cincinnati Masters       ,Hard,11-08-2013,104745,Rafael Nadal           ,3,7860,104545,John Isner             ,22,1585,7-6(8) 7-6(3)    ,F
+2013-540 ,Wimbledon       ,Gras,24-06-2013,104918,Andy Murray            ,2,8560,104925,Novak Djokovic         ,1,11830,6-4 7-5 6-4      ,F
+2013-416 ,Rome Masters    ,Clay,12-05-2013,104745,Rafael Nadal           ,5,6895,103819,Roger Federer          ,3,7760,6-1 6-3          ,F
+2013-403 ,Miami Masters Masters       ,Hard,20-03-2013,104918,Andy Murray            ,3,8350,103970,David Ferrer           ,5,6630,2-6 6-4 7-6(1)   ,F
+2013-560 ,US Open       ,Hard,26-08-2013,104745,Rafael Nadal           ,2,8860,104925,Novak Djokovic         ,1,10980,6-2 3-6 6-4 6-1  ,F
+2013-580 ,Australian Open       ,Hard,14-01-2013,104925,Novak Djokovic         ,1,12920,104918,Andy Murray            ,3,8000,6-7(2) 7-6(3) 6-3,F
+2013-404 ,Indian Wells Masters        ,Hard,07-03-2013,104745,Rafael Nadal           ,5,6105,105223,Juan Martin Del Potro  ,7,4410,4-6 6-3 6-4      ,F
+2013-421 ,Canada Masters        ,Hard,05-08-2013,104745,Rafael Nadal           ,4,6860,105683,Milos Raonic           ,13,2225,6-2 6-2          ,F
+2013-520 ,Roland-Garros        ,Clay,27-05-2013,104745,Rafael Nadal           ,4,6895,103970,David Ferrer           ,5,6740,6-3 6-2 6-3      ,F
+2013-352 ,Paris Masters       ,Hard,28-10-2013,104925,Novak Djokovic         ,2,11120,103970,David Ferrer           ,3,6600,7-5 7-5          ,F
+2013-410 ,Monte Carlo Masters,Clay,14-04-2013,104925,Novak Djokovic         ,1,12500,104745,Rafael Nadal           ,5,6385,6-2 7-6(1)       ,F
+2014-403 ,Miami Masters Masters       ,Hard,19-03-2014,104925,Novak Djokovic         ,2,10900,104745,Rafael Nadal           ,1,13130,6-3 6-3          ,F
+2014-421 ,Canada Masters        ,Hard,04-08-2014,104542,Jo Wilfried Tsonga     ,15,1910,103819,Roger Federer          ,3,6070,7-5 7-6(3)       ,F
+2014-416 ,Rome Masters    ,Clay,11-05-2014,104925,Novak Djokovic         ,2,11030,104745,Rafael Nadal           ,1,12900,4-6 6-3 6-3      ,F
+2014-422 ,Cincinnati Masters       ,Hard,10-08-2014,103819,Roger Federer          ,3,6670,103970,David Ferrer           ,6,4255,6-3 1-6 6-2      ,F
+2014-410 ,Monte Carlo Masters,Clay,13-04-2014,104527,Stanislas Wawrinka     ,3,5760,103819,Roger Federer          ,4,5355,4-6 7-6(5) 6-2   ,F
+2014-580 ,Australian Open       ,Hard,13-01-2014,104527,Stanislas Wawrinka     ,8,3890,104745,Rafael Nadal           ,1,13130,6-3 6-2 3-6 6-3  ,F
+2014-404 ,Indian Wells Masters        ,Hard,06-03-2014,104925,Novak Djokovic         ,2,10260,103819,Roger Federer          ,8,4625,3-6 6-3 7-6(3)   ,F
+2014-520 ,Roland-Garros        ,Clay,26-05-2014,104745,Rafael Nadal           ,1,12500,104925,Novak Djokovic         ,2,11850,3-6 7-5 6-2 6-4  ,F
+2014-540 ,Wimbledon       ,Gras,23-06-2014,104925,Novak Djokovic         ,2,12330,103819,Roger Federer          ,4,4945,6-7(7) 6-4 7-6(4),F
+2014-560 ,US Open       ,Hard,25-08-2014,105227,Marin Cilic            ,16,1845,105453,Kei Nishikori          ,11,2680,6-3 6-3 6-3      ,F
+2014-352 ,Paris Masters       ,Hard,27-10-2014,104925,Novak Djokovic         ,1,11510,105683,Milos Raonic           ,10,3930,6-2 6-3          ,F
+2015-422 ,Cincinnati Masters       ,Hard,16-08-2015,103819,Roger Federer          ,3,8065,104925,Novak Djokovic         ,1,14265,7-6(1) 6-3       ,F
+2015-540 ,Wimbledon       ,Gras,29-06-2015,104925,Novak Djokovic         ,1,13845,103819,Roger Federer          ,2,9665,7-6(1) 6-7(10) 6-,F
+2015-421 ,Canada Mastersea       ,Hard,10-08-2015,104918,Andy Murray            ,3,7840,104925,Novak Djokovic         ,1,13755,6-4 4-6 6-3      ,F
+2015-404 ,Indian Wells Masters        ,Hard,12-03-2015,104925,Novak Djokovic         ,1,13205,103819,Roger Federer          ,2,9205,6-3 6-7(5) 6-2   ,F
+2015-403 ,Miami Masters         ,Hard,25-03-2015,104925,Novak Djokovic         ,1,13205,104918,Andy Murray            ,4,5695,7-6(3) 4-6 6-0   ,F
+2015-560 ,US Open       ,Hard,31-08-2015,104925,Novak Djokovic         ,1,14865,103819,Roger Federer          ,2,9065,6-4 5-7 6-4 6-4  ,F
+2015-580 ,Australian Open       ,Hard,19-01-2015,104925,Novak Djokovic         ,1,11405,104918,Andy Murray            ,6,4675,7-6(5) 6-7(4) 6-3,F
+2015-416 ,Rome Masters          ,Clay,10-05-2015,104925,Novak Djokovic         ,1,13845,103819,Roger Federer          ,2,8645,6-4 6-3          ,F
+2015-410 ,Monte Carlo Masters-C       ,Clay,12-04-2015,104925,Novak Djokovic         ,1,13205,104607,Tomas Berdych          ,8,4510,7-5 4-6 6-3      ,F
+2015-520 ,Roland-Garros        ,Clay,24-05-2015,104527,Stanislas Wawrinka     ,9,3845,104925,Novak Djokovic         ,1,13845,4-6 6-4 6-3 6-4  ,F
