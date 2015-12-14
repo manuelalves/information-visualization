@@ -411,7 +411,8 @@ function changeYear1(y){
         }
     }
     linesurfaceChart();
-    radar(1);
+    radar('1');
+    radar_surface('1');
     //RadarChart();
 }
 
