@@ -16,6 +16,9 @@ playeridArray = new Array(105173, 105238, 104312, 104918, 103794, 104797, 103970
 						  104665, 105807, 104655, 104259, 104745, 104755, 105138, 103819, 105023,
 						  105053, 104527, 105449, 104607, 103990, 104229);
 
+
+var img = false;
+
 var linesurfaceChart = function (){
 
 var format = d3.time.format("%m/%d/%Y");
@@ -49,6 +52,56 @@ if(yearid == lastYear){
 	changedYear = true;
 	lastYear=yearid;
 }
+
+if(yearid == '0'){
+	document.getElementById("A").style.opacity = "1";
+	document.getElementById("B").style.opacity = "0.3";
+	document.getElementById("C").style.opacity = "0.3";
+	document.getElementById("D").style.opacity = "0.3";
+	document.getElementById("E").style.opacity = "0.3";
+	document.getElementById("F").style.opacity = "0.3";
+}
+if(yearid == '1'){
+	document.getElementById("B").style.opacity = "1";
+	document.getElementById("A").style.opacity = "0.3";
+	document.getElementById("C").style.opacity = "0.3";
+	document.getElementById("D").style.opacity = "0.3";
+	document.getElementById("E").style.opacity = "0.3";
+	document.getElementById("F").style.opacity = "0.3";
+}
+if(yearid == '2'){
+	document.getElementById("C").style.opacity = "1";
+	document.getElementById("A").style.opacity = "0.3";
+	document.getElementById("B").style.opacity = "0.3";
+	document.getElementById("D").style.opacity = "0.3";
+	document.getElementById("E").style.opacity = "0.3";
+	document.getElementById("F").style.opacity = "0.3";
+}
+if(yearid == '3'){
+	document.getElementById("D").style.opacity = "1";
+	document.getElementById("A").style.opacity = "0.3";
+	document.getElementById("B").style.opacity = "0.3";
+	document.getElementById("C").style.opacity = "0.3";
+	document.getElementById("E").style.opacity = "0.3";
+	document.getElementById("F").style.opacity = "0.3";
+}
+if(yearid == '4'){
+	document.getElementById("E").style.opacity = "1";
+	document.getElementById("A").style.opacity = "0.3";
+	document.getElementById("B").style.opacity = "0.3";
+	document.getElementById("C").style.opacity = "0.3";
+	document.getElementById("D").style.opacity = "0.3";
+	document.getElementById("F").style.opacity = "0.3";
+}
+if(yearid == '5'){
+	document.getElementById("F").style.opacity = "1";
+	document.getElementById("A").style.opacity = "0.3";
+	document.getElementById("B").style.opacity = "0.3";
+	document.getElementById("C").style.opacity = "0.3";
+	document.getElementById("D").style.opacity = "0.3";
+	document.getElementById("E").style.opacity = "0.3";
+}
+
 
 var playerList2 = document.getElementById("playerList1");
 var playerindice = playerList2.selectedIndex;
@@ -253,9 +306,9 @@ var ciclosgrass = 0;
     surfaceanswer.push("Clay");
     surfaceanswer.push("Grass");
 
-    var margin = {top: 30, right: 40, bottom: 50, left: 35};
+    var margin = {top: 5, right: 30, bottom: 50, left: 30};
     var width = 500 - margin.left - margin.right;
-    var height = 300 - margin.top - margin.bottom;
+    var height = 250 - margin.top - margin.bottom;
 
     var colorscale = d3.scale.category10();
 
@@ -264,27 +317,90 @@ var ciclosgrass = 0;
     .domain(["Hard", "Clay", "Grass"])
     .rangeRoundBands([0, width - margin.right], 1);
 
+
+/*
+var rankinghardmedio = Math.round(rankinghard / cicloshard);
+var rankingclaymedio = Math.round(rankingclay / ciclosclay);
+var rankinggrassmedio = Math.round(rankinggrass / ciclosgrass);
+*/
+
+var mediaMax = 0;
+
+if(mediaMax < rankinghardmedio){
+	mediaMax = rankinghardmedio
+}if(mediaMax < rankingclaymedio){
+	mediaMax = rankingclaymedio;
+}
+if(mediaMax < rankinggrassmedio){
+	mediaMax = rankinggrassmedio
+}
+
+var max;
+
+if(mediaMax >= 0 && mediaMax<=10){
+	max = mediaMax + 1;
+}
+if(mediaMax > 10 && mediaMax<=20){
+	max = mediaMax + 5;
+}
+if(mediaMax > 20 && mediaMax<=50){
+	max = mediaMax + 10;
+}
+if(mediaMax > 50 && mediaMax<=80){
+	max = mediaMax + 15;
+}
+if(mediaMax > 80 && mediaMax<=100){
+	max = mediaMax + 15;
+}if(mediaMax > 100 && mediaMax<=120){
+	console.log("entrei");
+	max = mediaMax + 25;
+}
+if(mediaMax > 120 && mediaMax<=200){
+	max = mediaMax + 25;
+}
+
+
     var y = d3.scale.linear()
-	  .domain([100, 0])
+	  .domain([max, 0])
 	  .range([height, 0]);
 
     var xAxis = d3.svg.axis()
 	  .scale(x)
 	  .orient("bottom");
 
+	  var formatyAxis = d3.format('.0f');
+
     var yAxis = d3.svg.axis()
 	  .scale(y)
-	  .ticks(8)
+	  .ticks(2)
+	  .tickFormat(formatyAxis)
 	  .orient("left");
 
 		d3.select("#surfacelinearchart").select("svg").remove();
 
-    // put the graph in the "surfacelinearchart" div
-    var surflinegraph = d3.select("#surfacelinearchart").append("svg")
-	  .attr("width", width + margin.left + margin.right)
-	  .attr("height", height + margin.top + margin.bottom)
-	  .append("g")
-	  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+		// put the graph in the "surfacelinearchart" div
+		var surflinegraph = d3.select("#surfacelinearchart").append("svg")
+		  .attr("width", width + margin.left + margin.right)
+		  .attr("height", height + margin.top + margin.bottom)
+		  .append("g")
+		  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		if(!(rankinganswer[0]>=0) && !(rankinganswer[1]>=0) && !(rankinganswer[2]>=0)){
+			img = true;
+				   surflinegraph.append("svg:image")
+						.attr('x',-60)
+						.attr('y',-170)
+						.attr('width', 500)
+						.attr('height', 500)
+						.attr("xlink:href","images/no_data.png" );
+
+		} else {img = false;}
+
+if(img == false){
+
+
 
     // function to draw the line
     var line = d3.svg.line()
@@ -298,11 +414,20 @@ var ciclosgrass = 0;
 	.attr('class', 'd3-tip')
 	.offset([75, 40])
 	.html(function(d, i) {
-	    return "<strong>" + performanceanswer[i] +
-                " performance points</strong><br>" + "<br>" + rankinganswer[i] + " on ranking</strong><br>" ;
+	    return "Performance Points: " + performanceanswer[i] + "<br>" + "Rank: " + rankinganswer[i];
 	});
 
     surflinegraph.call(tip);
+
+	//Mouseover tip_line
+    var tip_line = d3.tip()
+	.attr('class', 'd3-tip')
+	.offset([65, 40])
+	.html(function(d) {
+	    return  d;
+	});
+
+    surflinegraph.call(tip_line);
 
     // add the x axis and x-label
     surflinegraph.append("g")
@@ -330,29 +455,77 @@ var ciclosgrass = 0;
 
     // draw the line
 		if(yearid == 0){
-    surflinegraph.append("path")
-	  .attr("d", line(rankinganswer))
-		.attr('stroke', '#d6616b');
+			surflinegraph.append("path")
+			.style("stroke", '#d6616b')
+			.style("stroke-width", '2.5')
+			.on('mouseover', function(d){
+				 tip_line.show('2010');
+			})
+			.on('mouseout', function(d){
+				 tip_line.hide();
+			})
+			.attr("d", line(rankinganswer));
+
 		}if(yearid == 1){
-    surflinegraph.append("path")
-	  .attr("d", line(rankinganswer))
-		.attr('stroke', '#a55194');
+			surflinegraph.append("path")
+			.style("stroke", '#a55194')
+			.style("stroke-width", '2.5')
+			.on('mouseover', function(d){
+				 tip_line.show('2011');
+			})
+			.on('mouseout', function(d){
+				 tip_line.hide();
+			})
+			.attr("d", line(rankinganswer));
+
 		}if(yearid == 2){
-    surflinegraph.append("path")
-	  .attr("d", line(rankinganswer))
-		.attr('stroke', '#8c564b');
+			surflinegraph.append("path")
+			.style("stroke", '#8c564b')
+			.style("stroke-width", '2.5')
+			.on('mouseover', function(d){
+				 tip_line.show('2012');
+			})
+			.on('mouseout', function(d){
+				 tip_line.hide();
+			})
+			.attr("d", line(rankinganswer));
+
 		}if(yearid == 3){
-    surflinegraph.append("path")
-	  .attr("d", line(rankinganswer))
-		.attr('stroke', '#e7969c');
+			surflinegraph.append("path")
+			.style("stroke", '#e7969c')
+			.style("stroke-width", '2.5')
+			.on('mouseover', function(d){
+				 tip_line.show('2013');
+			})
+			.on('mouseout', function(d){
+				 tip_line.hide();
+			})
+			.attr("d", line(rankinganswer));
+
 		}if(yearid == 4){
-    surflinegraph.append("path")
-	  .attr("d", line(rankinganswer))
-		.attr('stroke', '#7f7f7f');
+			surflinegraph.append("path")
+			.style("stroke", '#7f7f7f')
+			.style("stroke-width", '2.5')
+			.on('mouseover', function(d){
+				 tip_line.show('2014');
+			})
+			.on('mouseout', function(d){
+				 tip_line.hide();
+			})
+			.attr("d", line(rankinganswer));
+
 		}if(yearid == 5){
-    surflinegraph.append("path")
-	  .attr("d", line(rankinganswer))
-		.attr('stroke', '#17becf');
+			surflinegraph.append("path")
+			.style("stroke", '#17becf')
+			.style("stroke-width", '2.5')
+			.on('mouseover', function(d){
+				 tip_line.show('2014');
+			})
+			.on('mouseout', function(d){
+				 tip_line.hide();
+			})
+			.attr("d", line(rankinganswer));
+
 		}
 
     surflinegraph.selectAll(".dot")
@@ -373,9 +546,9 @@ var ciclosgrass = 0;
 		/* Add 'curtain' rectangle to hide entire graph */
 		if(img == false){
 		 var curtain = surflinegraph.append('rect')
-		   .attr('x', -1.001 * width)
-		   .attr('y', -0.594 * height)
-		   .attr('height', height)
+		   .attr('x', -1.105 * width)
+		   .attr('y', -0.994 * height)
+		   .attr('height', (height + 15))
 		   .attr('width', width)
 		   .attr('class', 'curtain')
 		   .attr('transform', 'rotate(180)')
@@ -393,8 +566,8 @@ var ciclosgrass = 0;
 
 		   /* Create a shared transition for anything we're animating */
 		 var t = surflinegraph.transition()
-		   .delay(750)
-		   .duration(2000)
+		   .delay(700)
+		   .duration(900)
 		   .ease('linear')
 		   .each('end', function() {
 			 d3.select('line.guide')
@@ -416,6 +589,7 @@ var ciclosgrass = 0;
 		}
 			/*end Transiçao*/
 		}
+	}
 }
 // Read in .csv data and make graph
 d3.csv("data/Performances.csv", parser,
