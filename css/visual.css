@@ -1,16 +1,16 @@
-#chart {
+#chart5 {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
-#chart path {
+#chart5 path {
   fill: none;
 }
 
 /* layers */
-#chart .layer-0 path {
+#chart5 .layer-0 path {
   fill: steelblue;
 }
-#chart .layer-1 path {
+#chart5 .layer-1 path {
   fill: white !important;
   opacity: 0.3;
   stroke-width: 2px;
@@ -18,36 +18,36 @@
 }
 
 /* Outer circle, tick-circles and spokes */
-#chart circle.outer {
+#chart5 circle.outer {
   stroke: #aaa;
   stroke-dasharray: 4, 4;
 }
-#chart .tick-circles circle {
+#chart5 .tick-circles circle {
   stroke: #ddd;
   stroke-dasharray: 2, 2;
 }
-#chart .spokes line {
+#chart5 .spokes line {
   stroke: #666;
   stroke-width: 0.2;
 }
 
 /* Axis */
-#chart .axis text {
+#chart5 .axis text {
   font-size: 11px;
 }
-#chart .axis path {
+#chart5 .axis path {
   stroke: #999;
   shape-rendering: crispEdges;
 }
-#chart .axis line {
+#chart5 .axis line {
   stroke: #999;
   shape-rendering: crispEdges;
 }
 
 /* Labels */
-#chart .labels text {
+#chart5 .labels text {
   fill: #333;
-  font-size: 10px;
+  font-size: 8px;
   font-weight: 500;
 }
 
@@ -56,4 +56,110 @@
   width: 100px;
   height: 30px;
   cursor: pointer;
+}
+
+#chart6 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+}
+#chart6 path {
+  fill: none;
+}
+
+/* layers */
+#chart6 .layer-0 path {
+  fill: steelblue;
+}
+#chart6 .layer-1 path {
+  fill: white !important;
+  opacity: 0.3;
+  stroke-width: 2px;
+  stroke: #999;
+}
+
+/* Outer circle, tick-circles and spokes */
+#chart6 circle.outer {
+  stroke: #aaa;
+  stroke-dasharray: 4, 4;
+}
+#chart6 .tick-circles circle {
+  stroke: #ddd;
+  stroke-dasharray: 2, 2;
+}
+#chart6 .spokes line {
+  stroke: #666;
+  stroke-width: 0.2;
+}
+
+/* Axis */
+#chart6 .axis text {
+  font-size: 11px;
+}
+#chart6 .axis path {
+  stroke: #999;
+  shape-rendering: crispEdges;
+}
+#chart6 .axis line {
+  stroke: #999;
+  shape-rendering: crispEdges;
+}
+
+/* Labels */
+#chart7 .labels text {
+  fill: #333;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+#chart7 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+}
+#chart7 path {
+  fill: none;
+}
+
+/* layers */
+#chart7 .layer-0 path {
+  fill: steelblue;
+}
+#chart7 .layer-1 path {
+  fill: white !important;
+  opacity: 0.3;
+  stroke-width: 2px;
+  stroke: #999;
+}
+
+/* Outer circle, tick-circles and spokes */
+#chart7 circle.outer {
+  stroke: #aaa;
+  stroke-dasharray: 4, 4;
+}
+#chart7 .tick-circles circle {
+  stroke: #ddd;
+  stroke-dasharray: 2, 2;
+}
+#chart7 .spokes line {
+  stroke: #666;
+  stroke-width: 0.2;
+}
+
+/* Axis */
+#chart7 .axis text {
+  font-size: 11px;
+}
+#chart7 .axis path {
+  stroke: #999;
+  shape-rendering: crispEdges;
+}
+#chart7 .axis line {
+  stroke: #999;
+  shape-rendering: crispEdges;
+}
+
+/* Labels */
+#chart7 .labels text {
+  fill: #333;
+  font-size: 8px;
+  font-weight: 500;
 }

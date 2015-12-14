@@ -1,18 +1,23 @@
-var data = [{data:{ January:2,
-            February:0,
-            March:3,
-            April:2,
-            May:0,
-            June:3,
-            July:4,
-            August:1,
-            September:3,
-            October:0,
-            November:2,
-            December:0 }}]
+var data_radial = null;
 var keys = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+first = 0;
 
 function initData(page) {
+    if (first == 0) {
+        data_radial = [{data:{ January:5,
+                    February:0,
+                    March:6,
+                    April:0,
+                    May:0,
+                    June:0,
+                    July:0,
+                    August:5,
+                    September:0,
+                    October:0,
+                    November:0,
+                    December:0 }}];
+                    first ++;
+    }
 
     var last_stage;
     var finals;
@@ -27,28 +32,54 @@ function initData(page) {
         return d;
     }
 
-    d3.csv("data/TimeOfSeasonPerformance.csv", parser,
-      function(error, csvdata) {
-        last_stage = csvdata;
-    });
+    if (page == "1") {
+        dateList = document.getElementById(yearsList[0]);
+        playerList1 = document.getElementById(playersList[0]);
 
-    d3.csv("data/Finals.csv", parser,
-      function(error, csvdata2) {
-        finals = csvdata2;
-        definePrintArea(last_stage, finals, page);
-    });
+        d3.csv("data/TimeOfSeasonPerformance.csv", parser,
+          function(error, csvdata) {
+            last_stage = csvdata;
+        });
+
+        d3.csv("data/Finals.csv", parser,
+          function(error, csvdata2) {
+            finals = csvdata2;
+            definePrintArea2(last_stage, finals);
+        });
+
+
+    }else {
+      for (var i = 0; i < 3; i++) {
+        dateList = document.getElementById(yearsList[i + 1]);
+        playerList1 = document.getElementById(playersList[i]);
+        d3.csv("data/TimeOfSeasonPerformance.csv", parser,
+          function(error, csvdata) {
+            last_stage = csvdata;
+        });
+
+        d3.csv("data/Finals.csv", parser,
+          function(error, csvdata2) {
+            finals = csvdata2;
+            definePrintArea2(last_stage, finals);
+        });
+      }
+    }
+
+
 
 };
 
-function definePrintArea(last_stage, finals ,page){
+function definePrintArea2(last_stage, finals){
 
+    var index = dateList.selectedIndex;
+    var year = dateList[index].value;
 
-  var year = 2015;
-  "var year = last_stage[0].tourneyDate.getFullYear();"
+  //Get the actual player
 
+    var index1 = playerList1.selectedIndex;
+    var playerIndex = index1;
+    var playerId = playerIdArray[index1];
 
-
-  var playerId = 104745;
 
   var data_australian = [];
   var data_miami = [];
@@ -65,6 +96,7 @@ function definePrintArea(last_stage, finals ,page){
     var tourney = last_stage[i].tourney_name;
     var id = last_stage[i].player; //playerName
     var yearData = last_stage[i].tourneyDate.getFullYear();
+
 
     if(id == playerId){
       if(yearData == year){
@@ -101,37 +133,37 @@ function definePrintArea(last_stage, finals ,page){
   }
 
   for(var i = 0; i <= (finals.length-1); i++){
-    var tourney = finals[i].tourney_name;
-    var id = finals[i].player; //playerName
-    var yearData = finals[i].tourneyDate.getFullYear();
+    var tourney2 = finals[i].tourney_name;
+    var id2 = finals[i].player; //playerName
+    var yearData2 = finals[i].tourneyDate.getFullYear();
 
-    if(id == playerId){
-      if(yearData == year){
-        if (tourney == 'Australian Open             ' ) {
+    if(id2 == playerId){
+      if(yearData2 == year){
+        if (tourney2 == 'Australian Open             ' ) {
             data_australian.push(finals[i]);
         }
-        if (tourney == 'Miami Masters             ' ) {
+        if (tourney2 == 'Miami Masters             ' ) {
             data_miami.push(finals[i]);
         }
-        if (tourney == 'Monte Carlo Masters             ' ) {
+        if (tourney2 == 'Monte Carlo Masters             ' ) {
             data_montecarlo.push(finals[i]);
         }
-        if (tourney == 'Rome Masters Masters             ' ) {
+        if (tourney2 == 'Rome Masters Masters             ' ) {
             data_rome.push(finals[i]);
         }
-        if (tourney == 'Roland-Garros              ' ) {
+        if (tourney2 == 'Roland-Garros              ' ) {
             data_roland.push(finals[i]);
         }
-        if (tourney == 'Wimbledon             ' ) {
+        if (tourney2 == 'Wimbledon             ' ) {
             data_wimbledon.push(finals[i]);
         }
-        if (tourney == 'Cincinnati Masters             ' ) {
+        if (tourney2 == 'Cincinnati Masters             ' ) {
             data_cincinati.push(finals[i]);
         }
-        if (tourney == 'US Open             ' ) {
+        if (tourney2 == 'US Open             ' ) {
             data_usa.push(finals[i]);
         }
-        if (tourney == 'Paris Masters             ' ) {
+        if (tourney2 == 'Paris Masters             ' ) {
             data_paris.push(finals[i]);
         }
 
@@ -161,7 +193,7 @@ function definePrintArea(last_stage, finals ,page){
   }
 
 
-  data =[{data:{ January:converseRanking(data_australian),
+  data_radial =[{data:{ January:converseRanking(data_australian),
               February:0,
               March:converseRanking(data_miami),
               April:converseRanking(data_montecarlo),
@@ -175,28 +207,65 @@ function definePrintArea(last_stage, finals ,page){
               December:0 }}];
 
 
-  console.log(data);
   // Player
+console.log(data_radial);
 
+
+
+}
+function update(page) {
+
+
+        if(page == '1'){
+            initData("1");
+
+            d3.select('#chart5')
+              .datum(data_radial)
+              .call(chart5);
+        }if (page == '2') {
+            initData("2");
+
+            d3.select('#chart5')
+              .datum(data_radial)
+              .call(chart5);
+
+              d3.select('#chart6')
+                .datum(data_radial)
+                .call(chart5);
+
+                d3.select('#chart7')
+                  .datum(data_radial)
+                  .call(chart5);
+        }
 
 
 
 
 }
-function update() {
 
-  initData("1");
-  console.log(data);
-  d3.select('#chart')
-    .datum(data)
-    .call(chart);
-}
+d3.select('#playerList1')
+  .on('change', update);
 
-d3.select('#update')
-  .on('click', update);
+d3.select('#yearList')
+    .on('change', update);
 
-var chart = radialBarChart()
-  .barHeight(150)
+d3.select('#playerList2')
+      .on('change', update);
+
+    d3.select('#yearList1')
+        .on('change', update);
+
+d3.select('#playerList3')
+          .on('change', update);
+
+d3.select('#yearList2')
+            .on('change', update);
+
+d3.select('#yearList3')
+    .on('change', update);
+
+var chart5 = radialBarChart()
+  .barHeight(120)
   .reverseLayerOrder(true)
   .capitalizeLabels(true)
   .barColors(['#3182bd', '#6baed6', '#9ecae1', '#c6dbef', '#e6550d', '#fd8d3c', '#fdae6b', '#fdd0a2', '#31a354', '#74c476', '#a1d99b', '#c7e9c0'])
@@ -249,7 +318,7 @@ function radialBarChart() {
       .style('width', 2 * barHeight + margin.left + margin.right + 'px')
       .style('height', 2 * barHeight + margin.top + margin.bottom + 'px')
       .append('g')
-      .classed('radial-barchart', true)
+      .classed('radial-barchart5', true)
         .attr('transform', svgTranslate(margin.left + barHeight, margin.top + barHeight));
 
     // Concentric circles at specified tick values
@@ -264,7 +333,7 @@ function radialBarChart() {
   }
 
   function renderOverlays(container) {
-    var g = d3.select(container).select('svg g.radial-barchart');
+    var g = d3.select(container).select('svg g.radial-barchart5');
 
     // Spokes
     g.append('g')
@@ -312,7 +381,7 @@ function radialBarChart() {
       .text(function(d) {return capitalizeLabels ? d.toUpperCase() : d;});
   }
 
-  function chart(selection) {
+  function chart5(selection) {
     selection.each(function(d) {
 
       init(d);
@@ -320,15 +389,15 @@ function radialBarChart() {
       if(reverseLayerOrder)
         d.reverse();
 
-      var g = d3.select(this).select('svg g.radial-barchart');
+      var g = d3.select(this).select('svg g.radial-barchart5');
 
-      // check whether chart has already been created
+      // check whether chart5 has already been created
       var update = g[0][0] !== null; // true if data is being updated
 
       if(!update)
         initChart(this);
 
-      g = d3.select(this).select('svg g.radial-barchart');
+      g = d3.select(this).select('svg g.radial-barchart5');
 
       // Layer enter/exit/update
       var layers = g.selectAll('g.layer')
@@ -385,65 +454,65 @@ function radialBarChart() {
   }
 
   /* Configuration getters/setters */
-  chart.margin = function(_) {
+  chart5.margin = function(_) {
     if (!arguments.length) return margin;
     margin = _;
-    return chart;
+    return chart5;
   };
 
-  chart.barHeight = function(_) {
+  chart5.barHeight = function(_) {
     if (!arguments.length) return barHeight;
     barHeight = _;
-    return chart;
+    return chart5;
   };
 
-  chart.reverseLayerOrder = function(_) {
+  chart5.reverseLayerOrder = function(_) {
     if (!arguments.length) return reverseLayerOrder;
     reverseLayerOrder = _;
-    return chart;
+    return chart5;
   };
 
-  chart.barColors = function(_) {
+  chart5.barColors = function(_) {
     if (!arguments.length) return barColors;
     barColors = _;
-    return chart;
+    return chart5;
   };
 
-  chart.capitalizeLabels = function(_) {
+  chart5.capitalizeLabels = function(_) {
     if (!arguments.length) return capitalizeLabels;
     capitalizeLabels = _;
-    return chart;
+    return chart5;
   };
 
-  chart.domain = function(_) {
+  chart5.domain = function(_) {
     if (!arguments.length) return domain;
     domain = _;
-    return chart;
+    return chart5;
   };
 
-  chart.tickValues = function(_) {
+  chart5.tickValues = function(_) {
     if (!arguments.length) return tickValues;
     tickValues = _;
-    return chart;
+    return chart5;
   };
 
-  chart.colorLabels = function(_) {
+  chart5.colorLabels = function(_) {
     if (!arguments.length) return colorLabels;
     colorLabels = _;
-    return chart;
+    return chart5;
   };
 
-  chart.tickCircleValues = function(_) {
+  chart5.tickCircleValues = function(_) {
     if (!arguments.length) return tickCircleValues;
     tickCircleValues = _;
-    return chart;
+    return chart5;
   };
 
-  chart.transitionDuration = function(_) {
+  chart5.transitionDuration = function(_) {
     if (!arguments.length) return transitionDuration;
     transitionDuration = _;
-    return chart;
+    return chart5;
   };
 
-  return chart;
+  return chart5;
 }

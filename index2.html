@@ -21,18 +21,20 @@
 
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/linearchat.css" rel="stylesheet">
+    <link href="css/visual.css" rel="stylesheet">
     <script src="js/custom.js"></script>
     <script src="js/d3.v3.min.js"></script>
     <script src="js/d3.tip.v0.6.3.js"></script>
     <script src="js/RadarChart.js"></script>
     <script src="js/bubbleChart.js"></script>
     <script src="js/RadarChartSurfaces.js"></script>
+    <script src="js/radialBarChart.js"></script>
 
 
 </head>
 
 
-<body class="nav-md"  onload="radar('2'); bubbleChart(); radar_surface('2');">
+<body class="nav-md"  onload="radar('2'); bubbleChart(); radar_surface('2'); update('2');">
 
     <div class="container body">
 
@@ -475,7 +477,8 @@
 
                                <div class="x_content_tournament1">
                                  <div id="radar">
-                                   <div id="chart"></div>
+                                     <div id="chart5"></div>
+                                    <script src="js/radialBarChart.js"></script>
                                  </div>
                             <!--     <script type="text/javascript" src="js/RadarScript.js"></script>-->
 
@@ -552,7 +555,8 @@
 
                                <div class="x_content_tournament1">
                                  <div id="radar">
-                                   <div id="chart"></div>
+                                     <div id="chart6"></div>
+                                    <script src="js/radialBarChart.js"></script>
                                  </div>
                             <!--     <script type="text/javascript" src="js/RadarScript.js"></script>-->
 
@@ -603,14 +607,15 @@
                     <div class="col-md-5 col-sm-5 col-xs-12">
                            <div class="x_panel fixed_height_390">
                                <div class="x_title">
-                                   <h2>Other 5 </h2>
+                                   <h2>Tourney Performance </h2>
 
                                    <div class="clearfix"></div>
                                </div>
 
                                <div class="x_content_tournament1">
                                  <div id="radar">
-                                   <div id="chart"></div>
+                                     <div id="chart7"></div>
+                                    <script src="js/radialBarChart.js"></script>
                                  </div>
                         <!--         <script type="text/javascript" src="js/RadarScript.js"></script>-->
 

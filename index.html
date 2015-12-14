@@ -21,6 +21,7 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/linearchat.css" rel="stylesheet">
     <link href="css/lastlinechart.css" rel="stylesheet">
+    <link href="css/visual.css" rel="stylesheet">
 
     <script src="js/custom.js"></script>
 
@@ -29,12 +30,13 @@
     <script src="js/RadarChartSurfaces.js"></script>
     <script src="js/RadarChart.js"></script>
     <script src="js/SurfaceLineChart.js"></script>
+    <script src="js/radialBarChart.js"></script>
 
 
 </head>
 
 
-<body class="nav-md" onload="radar('1'); radar_surface('1'); linesurfaceChart();">
+<body class="nav-md" onload=" radar('1'); radar_surface('1'); linesurfaceChart();update('1');">
 
     <div class="container body">
 
@@ -193,7 +195,8 @@
 
                             <div class="x_content">
 
-<!--grafico radial-->
+<!--grafico radial-->           <div id="chart5"></div>
+                                <script src="js/radialBarChart.js"></script>
 
 
                             </div>

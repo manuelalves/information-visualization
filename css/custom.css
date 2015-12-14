@@ -228,7 +228,7 @@ body.nav-sm .menu_section h3 {
     border-bottom: 1px solid #E6E9ED;*/
     background: #FFF;
     border-bottom: 2px solid #D9DEE4;
-    width: 22.3%;
+    width: 490px;
 
     padding: 6px;
     position: relative;
@@ -240,7 +240,7 @@ body.nav-sm .menu_section h3 {
     float: left;
     background: #FFF;
     border-bottom: 2px solid #D9DEE4;
-    width: 22.3%;
+    width: 490px;
     padding: 6px;
     position: absolute;
     margin-top: 5px;
@@ -254,7 +254,7 @@ body.nav-sm .menu_section h3 {
     border-bottom: 1px solid #E6E9ED;*/
     background: #FFF;
     border-bottom: 2px solid #D9DEE4;
-    width: 22.3%;
+    width: 490px;
 
     padding: 6px;
     position: absolute;
@@ -1337,10 +1337,13 @@ table.no-margin .progress {
   width: 500px;
 }
 
+
+
 .row {
     position: relative;
     margin-right: 0px;
     margin-left: -20px;
+
 }
 
 .row2 {
