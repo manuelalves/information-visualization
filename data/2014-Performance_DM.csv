@@ -1,0 +1,209 @@
+player_id,player_name,surface,ranking,ace,df,firstIn,firstWon,secondWon,bpFaced,bpSaved,SvGms
+ 103163,Tommy Haas         ,Clay               ,19,5,2,46,34,15,2,1,12
+ 103163,Tommy Haas         ,Hard               ,12,3,4,38,26,16,2,2,10
+ 103285,Radek Stepanek     ,Clay               ,42,5,4,64,46,21,9,6,16
+ 103285,Radek Stepanek     ,Gras               ,38,10,2,49,44,12,0,0,14
+ 103285,Radek Stepanek     ,Hard               ,50,6,0,34,28,14,4,4,10
+ 103333,Ivo Karlovic       ,Clay               ,42,19,1,63,54,15,2,1,16
+ 103333,Ivo Karlovic       ,Hard               ,41,21,2,50,43,19,3,2,14
+ 103607,Victor Estrella    ,Hard               ,80,6,4,68,51,23,5,2,19
+ 103720,Lleyton Hewitt     ,Gras               ,48,8,4,67,50,29,5,2,19
+ 103720,Lleyton Hewitt     ,Hard               ,42,6,7,47,33,18,10,6,14
+ 103794,Benjamin Becker    ,Gras               ,65,13,4,66,52,13,5,5,14
+ 103794,Benjamin Becker    ,Hard               ,81,6,3,48,39,16,4,2,13
+ 103813,Jarkko Nieminen    ,Clay               ,60,9,11,111,90,32,11,9,27
+ 103813,Jarkko Nieminen    ,Gras               ,62,4,0,67,58,16,1,1,17
+ 103813,Jarkko Nieminen    ,Hard               ,40,2,3,50,34,15,6,3,13
+ 103819,Roger Federer      ,Clay               ,4,7,1,49,40,14,2,2,13
+ 103819,Roger Federer      ,Gras               ,4,12,1,54,44,18,2,2,15
+ 103819,Roger Federer      ,Hard               ,5,7,2,47,38,17,4,2,13
+ 103852,Feliciano Lopez    ,Clay               ,27,8,1,71,52,26,7,6,16
+ 103852,Feliciano Lopez    ,Gras               ,26,22,3,70,60,31,4,3,20
+ 103852,Feliciano Lopez    ,Hard               ,27,11,4,54,42,20,7,6,14
+ 103893,Paolo Lorenzi      ,Hard               ,89,4,1,33,27,15,1,0,10
+ 103898,Julien Benneteau   ,Clay               ,51,4,4,57,40,15,5,2,15
+ 103898,Julien Benneteau   ,Hard               ,49,8,3,47,36,15,3,2,12
+ 103908,Paul Henri Mathieu ,Hard               ,102,12,5,72,54,33,10,8,18
+ 103970,David Ferrer       ,Clay               ,5,2,2,50,35,15,5,4,12
+ 103970,David Ferrer       ,Gras               ,7,10,3,88,62,13,11,9,16
+ 103970,David Ferrer       ,Hard               ,5,3,3,50,36,17,7,4,13
+ 103990,Tommy Robredo      ,Clay               ,18,3,1,50,35,16,6,4,13
+ 103990,Tommy Robredo      ,Gras               ,22,12,2,81,64,18,5,2,20
+ 103990,Tommy Robredo      ,Hard               ,18,7,2,64,49,20,6,4,16
+ 104022,Mikhail Youzhny    ,Clay               ,16,3,2,56,37,18,7,4,13
+ 104022,Mikhail Youzhny    ,Gras               ,16,2,1,46,34,18,3,3,12
+ 104022,Mikhail Youzhny    ,Hard               ,22,4,1,42,29,13,4,2,11
+ 104122,Carlos Berlocq     ,Clay               ,47,1,1,104,72,8,13,11,17
+ 104180,Gilles Muller      ,Gras               ,103,28,5,64,62,18,1,1,17
+ 104198,Guillermo Garcia Lo,Clay               ,40,3,4,58,42,18,8,5,15
+ 104198,Guillermo Garcia Lo,Hard               ,50,6,3,34,27,16,4,2,11
+ 104229,Yen Hsun Lu        ,Clay               ,52,1,0,45,30,14,7,5,10
+ 104229,Yen Hsun Lu        ,Gras               ,47,9,5,94,70,21,15,12,22
+ 104229,Yen Hsun Lu        ,Hard               ,47,5,2,36,29,11,4,3,10
+ 104259,Philipp Kohlschreib,Clay               ,26,3,1,51,37,16,5,4,12
+ 104259,Philipp Kohlschreib,Gras               ,28,9,0,60,45,14,2,2,14
+ 104259,Philipp Kohlschreib,Hard               ,25,10,3,46,37,21,4,4,13
+ 104269,Fernando Verdasco  ,Clay               ,25,7,2,80,58,19,8,6,18
+ 104269,Fernando Verdasco  ,Hard               ,34,8,6,59,44,19,7,5,15
+ 104291,Malek Jaziri       ,Hard               ,103,2,2,43,30,23,7,6,11
+ 104312,Andreas Seppi      ,Clay               ,34,6,2,51,37,24,8,6,14
+ 104312,Andreas Seppi      ,Hard               ,40,7,4,60,43,24,12,8,16
+ 104338,Juan Monaco        ,Clay               ,76,0,3,60,39,9,12,8,13
+ 104338,Juan Monaco        ,Hard               ,43,2,2,65,48,18,3,1,16
+ 104468,Gilles Simon       ,Clay               ,30,3,2,35,28,15,3,2,11
+ 104468,Gilles Simon       ,Gras               ,44,8,1,54,46,26,0,0,16
+ 104468,Gilles Simon       ,Hard               ,28,12,5,68,51,32,11,8,19
+ 104471,Ivan Dodig         ,Clay               ,40,6,1,30,22,14,3,2,8
+ 104471,Ivan Dodig         ,Hard               ,49,8,4,65,50,16,4,2,16
+ 104527,Stanislas Wawrinka ,Clay               ,3,4,1,33,28,16,1,1,10
+ 104527,Stanislas Wawrinka ,Gras               ,3,18,2,56,47,25,3,2,16
+ 104527,Stanislas Wawrinka ,Hard               ,5,11,3,53,43,21,4,3,15
+ 104542,Jo Wilfried Tsonga ,Clay               ,13,8,1,52,40,16,4,3,14
+ 104542,Jo Wilfried Tsonga ,Gras               ,17,24,4,92,74,26,6,4,24
+ 104542,Jo Wilfried Tsonga ,Hard               ,12,13,3,48,39,19,4,3,13
+ 104545,John Isner         ,Clay               ,11,25,3,103,82,28,9,8,22
+ 104545,John Isner         ,Gras               ,11,29,1,74,62,20,4,4,17
+ 104545,John Isner         ,Hard               ,13,17,1,49,41,14,1,1,13
+ 104559,Teymuraz Gabashvili,Clay               ,58,3,2,51,36,20,6,3,14
+ 104559,Teymuraz Gabashvili,Hard               ,67,5,4,61,43,23,7,4,16
+ 104571,Marcos Baghdatis   ,Gras               ,119,13,5,77,59,27,5,2,21
+ 104571,Marcos Baghdatis   ,Hard               ,143,6,5,48,34,28,8,4,15
+ 104586,Lukas Rosol        ,Clay               ,50,4,1,33,26,12,2,2,9
+ 104586,Lukas Rosol        ,Gras               ,52,7,4,87,65,27,4,3,20
+ 104586,Lukas Rosol        ,Hard               ,47,7,6,55,45,24,4,3,17
+ 104594,Marinko Matosevic  ,Clay               ,66,5,0,87,61,34,10,6,23
+ 104594,Marinko Matosevic  ,Gras               ,58,11,2,74,56,22,8,6,19
+ 104594,Marinko Matosevic  ,Hard               ,77,3,3,48,33,19,6,4,12
+ 104597,Nicolas Almagro    ,Clay               ,20,6,1,38,32,14,2,2,10
+ 104597,Nicolas Almagro    ,Hard               ,19,13,0,29,27,13,0,0,10
+ 104607,Tomas Berdych      ,Clay               ,6,9,2,52,42,20,4,2,15
+ 104607,Tomas Berdych      ,Gras               ,6,24,2,73,58,30,3,2,20
+ 104607,Tomas Berdych      ,Hard               ,7,10,3,48,38,20,5,3,14
+ 104620,Simone Bolelli     ,Clay               ,156,2,1,66,46,17,5,2,15
+ 104620,Simone Bolelli     ,Gras               ,132,14,4,88,67,30,8,4,24
+ 104620,Simone Bolelli     ,Hard               ,85,8,5,67,57,25,4,1,22
+ 104655,Pablo Cuevas       ,Clay               ,136,5,1,44,37,9,1,0,12
+ 104655,Pablo Cuevas       ,Hard               ,34,5,1,24,20,9,2,2,6
+ 104660,Sergiy Stakhovsky  ,Gras               ,90,11,0,50,42,18,2,1,14
+ 104660,Sergiy Stakhovsky  ,Hard               ,83,1,1,41,30,12,3,2,11
+ 104665,Pablo Andujar      ,Clay               ,36,5,4,67,41,25,11,6,16
+ 104665,Pablo Andujar      ,Hard               ,48,2,2,54,39,13,4,2,14
+ 104719,Marcel Granollers  ,Clay               ,37,4,2,56,39,17,8,5,14
+ 104719,Marcel Granollers  ,Gras               ,30,19,1,103,71,34,11,9,22
+ 104719,Marcel Granollers  ,Hard               ,42,6,6,84,68,28,8,6,22
+ 104731,Kevin Anderson     ,Clay               ,20,8,2,42,35,12,2,1,12
+ 104731,Kevin Anderson     ,Gras               ,18,21,4,78,63,15,8,6,19
+ 104731,Kevin Anderson     ,Hard               ,20,15,4,67,51,18,6,4,16
+ 104735,Tobias Kamke       ,Clay               ,106,7,2,84,62,24,4,3,18
+ 104745,Rafael Nadal       ,Clay               ,1,2,1,54,39,12,6,4,13
+ 104745,Rafael Nadal       ,Gras               ,1,9,2,82,61,18,7,5,19
+ 104745,Rafael Nadal       ,Hard               ,1,4,2,50,39,13,4,3,12
+ 104755,Richard Gasquet    ,Clay               ,13,4,3,62,48,18,6,4,15
+ 104755,Richard Gasquet    ,Gras               ,14,22,5,86,73,19,7,6,22
+ 104755,Richard Gasquet    ,Hard               ,12,8,2,48,37,17,3,2,13
+ 104792,Gael Monfils       ,Clay               ,27,7,5,66,44,20,11,7,16
+ 104792,Gael Monfils       ,Gras               ,21,17,2,74,55,15,5,3,17
+ 104792,Gael Monfils       ,Hard               ,25,9,4,47,37,16,4,3,13
+ 104797,Denis Istomin      ,Clay               ,49,9,2,71,55,19,5,3,18
+ 104797,Denis Istomin      ,Gras               ,45,14,1,70,55,16,4,2,18
+ 104797,Denis Istomin      ,Hard               ,53,13,1,69,51,19,7,5,16
+ 104871,Jeremy Chardy      ,Clay               ,46,6,3,42,34,15,4,3,12
+ 104871,Jeremy Chardy      ,Gras               ,42,18,5,80,65,32,8,5,23
+ 104871,Jeremy Chardy      ,Hard               ,37,13,7,63,50,23,8,6,16
+ 104882,Blaz Kavcic        ,Hard               ,94,8,5,68,50,17,10,7,16
+ 104890,Andreas Haider Maur,Clay               ,104,14,9,77,61,30,6,2,24
+ 104890,Andreas Haider Maur,Gras               ,95,7,4,54,45,17,6,5,14
+ 104898,Robin Haase        ,Clay               ,50,10,1,61,46,22,4,4,15
+ 104898,Robin Haase        ,Gras               ,53,12,2,84,70,28,5,4,22
+ 104898,Robin Haase        ,Hard               ,46,1,3,28,25,16,0,0,10
+ 104918,Andy Murray        ,Clay               ,8,5,3,62,43,25,8,5,17
+ 104918,Andy Murray        ,Gras               ,5,9,2,50,42,12,2,2,13
+ 104918,Andy Murray        ,Hard               ,7,6,3,48,37,18,5,3,13
+ 104919,Leonardo Mayer     ,Clay               ,65,10,8,69,54,26,8,5,20
+ 104919,Leonardo Mayer     ,Gras               ,64,15,4,79,63,27,8,7,20
+ 104919,Leonardo Mayer     ,Hard               ,50,10,2,32,27,14,2,1,10
+ 104925,Novak Djokovic     ,Clay               ,2,4,1,55,39,16,5,3,14
+ 104925,Novak Djokovic     ,Gras               ,2,12,2,80,61,23,5,4,19
+ 104925,Novak Djokovic     ,Hard               ,2,6,2,48,38,14,3,2,12
+ 104926,Fabio Fognini      ,Clay               ,14,4,4,52,37,19,5,2,14
+ 104926,Fabio Fognini      ,Gras               ,15,7,5,82,58,30,13,8,22
+ 104926,Fabio Fognini      ,Hard               ,17,5,5,46,34,20,8,5,13
+ 104932,Kenny De Schepper  ,Clay               ,72,2,0,9,7,3,0,0,2
+ 104932,Kenny De Schepper  ,Hard               ,86,19,13,84,63,20,13,11,18
+ 104979,Andrey Golubev     ,Clay               ,59,2,2,46,30,10,5,1,11
+ 104997,Igor Sijsling      ,Clay               ,53,1,3,51,39,14,7,5,12
+ 105023,Sam Querrey        ,Clay               ,67,24,3,71,59,17,10,10,15
+ 105023,Sam Querrey        ,Gras               ,67,25,6,81,70,26,9,8,21
+ 105023,Sam Querrey        ,Hard               ,54,16,3,50,42,19,4,3,14
+ 105032,Samuel Groth       ,Hard               ,104,12,6,52,46,24,0,0,16
+ 105041,Lukas Lacko        ,Hard               ,105,10,0,26,23,21,3,3,10
+ 105053,Santiago Giraldo   ,Gras               ,35,3,0,77,56,22,10,7,18
+ 105053,Santiago Giraldo   ,Hard               ,51,2,1,38,28,19,5,3,12
+ 105062,Mikhail Kukushkin  ,Clay               ,57,4,2,93,60,24,13,10,18
+ 105062,Mikhail Kukushkin  ,Gras               ,63,7,1,52,42,20,8,8,14
+ 105062,Mikhail Kukushkin  ,Hard               ,58,2,0,40,26,18,6,4,11
+ 105064,Thomaz Bellucci    ,Clay               ,108,15,3,65,47,33,7,3,22
+ 105064,Thomaz Bellucci    ,Hard               ,110,10,6,54,42,24,8,6,16
+ 105077,Albert Ramos       ,Clay               ,101,5,0,42,27,11,5,3,10
+ 105138,Roberto Bautista Ag,Clay               ,34,2,0,63,43,13,5,4,13
+ 105138,Roberto Bautista Ag,Gras               ,23,5,2,98,71,16,10,8,20
+ 105138,Roberto Bautista Ag,Hard               ,41,4,3,60,44,15,6,4,14
+ 105147,Tatsuma Ito        ,Hard               ,126,7,9,82,59,17,15,12,16
+ 105173,Adrian Mannarino   ,Clay               ,89,6,1,38,29,18,0,0,11
+ 105173,Adrian Mannarino   ,Gras               ,81,10,2,57,43,14,3,3,13
+ 105173,Adrian Mannarino   ,Hard               ,80,7,3,58,40,20,5,2,15
+ 105208,Ernests Gulbis     ,Clay               ,17,11,3,51,40,21,3,2,15
+ 105208,Ernests Gulbis     ,Gras               ,10,22,8,70,64,19,1,0,18
+ 105208,Ernests Gulbis     ,Hard               ,18,11,5,48,39,18,4,3,13
+ 105227,Marin Cilic        ,Clay               ,26,12,2,44,36,14,4,3,12
+ 105227,Marin Cilic        ,Gras               ,29,24,3,70,60,18,5,4,18
+ 105227,Marin Cilic        ,Hard               ,20,12,4,49,40,21,4,3,14
+ 105238,Alexandr Dolgopolov,Clay               ,22,8,2,40,34,18,4,4,12
+ 105238,Alexandr Dolgopolov,Gras               ,19,28,1,82,66,24,2,2,20
+ 105238,Alexandr Dolgopolov,Hard               ,31,7,3,36,29,20,4,2,12
+ 105311,Joao Sousa         ,Hard               ,41,6,2,62,44,22,9,6,15
+ 105373,Martin Klizan      ,Clay               ,59,4,3,68,45,28,10,6,18
+ 105373,Martin Klizan      ,Hard               ,92,12,5,62,46,31,7,4,19
+ 105385,Donald Young       ,Clay               ,79,3,4,64,45,21,6,4,15
+ 105385,Donald Young       ,Hard               ,77,3,6,64,46,20,8,5,16
+ 105449,Steve Johnson      ,Clay               ,64,5,3,88,56,58,16,11,26
+ 105449,Steve Johnson      ,Hard               ,55,2,0,35,30,10,2,2,10
+ 105453,Kei Nishikori      ,Gras               ,12,9,3,66,52,23,3,2,18
+ 105453,Kei Nishikori      ,Hard               ,14,5,3,58,42,22,7,5,15
+ 105526,Jan Lennard Struff ,Clay               ,62,8,1,47,38,22,4,4,14
+ 105526,Jan Lennard Struff ,Hard               ,77,14,6,96,74,29,19,14,24
+ 105577,Vasek Pospisil     ,Hard               ,35,12,4,67,54,21,7,5,17
+ 105583,Dusan Lajovic      ,Clay               ,83,4,1,45,36,23,6,5,14
+ 105583,Dusan Lajovic      ,Gras               ,84,12,3,123,85,23,16,13,23
+ 105583,Dusan Lajovic      ,Hard               ,103,8,4,68,48,28,7,4,18
+ 105641,Blaz Rola          ,Gras               ,92,4,4,51,41,15,7,6,13
+ 105641,Blaz Rola          ,Hard               ,185,6,8,69,57,13,8,8,15
+ 105643,Federico Delbonis  ,Hard               ,66,12,1,41,31,15,4,2,12
+ 105668,Jerzy Janowicz     ,Clay               ,23,10,11,66,53,20,8,5,18
+ 105668,Jerzy Janowicz     ,Gras               ,25,14,16,92,70,32,10,7,25
+ 105668,Jerzy Janowicz     ,Hard               ,43,14,8,72,53,22,6,3,18
+ 105676,David Goffin       ,Hard               ,45,9,2,42,32,15,5,3,12
+ 105683,Milos Raonic       ,Clay               ,10,15,3,56,45,18,6,4,14
+ 105683,Milos Raonic       ,Gras               ,9,29,1,63,55,19,2,1,17
+ 105683,Milos Raonic       ,Hard               ,9,18,3,50,43,18,4,3,14
+ 105723,Andrey Kuznetsov   ,Gras               ,118,14,2,85,64,25,8,5,21
+ 105723,Andrey Kuznetsov   ,Hard               ,96,7,5,90,64,30,12,8,22
+ 105777,Grigor Dimitrov    ,Clay               ,14,7,2,42,34,16,2,2,12
+ 105777,Grigor Dimitrov    ,Gras               ,13,10,4,63,51,20,4,4,16
+ 105777,Grigor Dimitrov    ,Hard               ,14,9,4,49,41,21,4,3,15
+ 105807,Pablo Carreno Busta,Clay               ,62,3,2,37,28,16,4,4,10
+ 105807,Pablo Carreno Busta,Hard               ,74,7,3,72,52,21,8,4,19
+ 106043,Diego Sebastian Sch,Clay               ,109,0,3,67,38,16,10,4,15
+ 106058,Jack Sock          ,Clay               ,75,4,0,25,20,14,2,2,8
+ 106058,Jack Sock          ,Gras               ,77,13,2,82,64,32,1,1,21
+ 106058,Jack Sock          ,Hard               ,76,8,4,39,31,21,5,4,12
+ 106071,Bernard Tomic      ,Gras               ,86,11,1,49,40,13,2,1,14
+ 106071,Bernard Tomic      ,Hard               ,67,21,1,76,64,22,3,3,17
+ 106210,Jiri Vesely        ,Clay               ,81,4,3,69,54,18,1,0,16
+ 106210,Jiri Vesely        ,Gras               ,68,8,4,62,50,18,4,3,16
+ 106210,Jiri Vesely        ,Hard               ,76,10,6,50,38,13,7,4,13
+ 106233,Dominic Thiem      ,Clay               ,57,4,5,42,33,28,5,3,15
+ 106233,Dominic Thiem      ,Hard               ,74,7,3,48,37,23,5,4,14
+ 106401,Nick Kyrgios       ,Gras               ,144,28,4,106,82,24,8,6,24
+ 106401,Nick Kyrgios       ,Hard               ,93,23,7,67,54,22,6,4,18
+ 106432,Borna Coric        ,Hard               ,204,20,3,53,42,16,5,5,13
