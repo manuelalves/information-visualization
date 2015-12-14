@@ -21,7 +21,7 @@ var usa_box_check = false;
 var page_global = null;
 
 //Get the actual year
-  var dateList = null;
+  var dateList;
   var yearsList = ["yearList", "yearList1", "yearList2", "yearList3"];
 
 //Get the actual player
@@ -107,12 +107,6 @@ function definePrintArea(csvdata, page){
         dateList = document.getElementById(yearsList[0]);
         playerList1 = document.getElementById(playersList[0]);
         dataTransform(csvdata, charts[0]);
-    }else if (page == "3") {
-      for (var i = 1; i < 3; i++) {
-        dateList = document.getElementById(yearsList[i + 1]);
-        playerList1 = document.getElementById(playersList[i]);
-        dataTransform(csvdata, charts[i]);
-      }
     }else {
       for (var i = 0; i < 3; i++) {
         dateList = document.getElementById(yearsList[i + 1]);
@@ -238,7 +232,6 @@ function dataTransform(csvdata, chart_pos){
           data.push(usa_data);
         }
 
-      //  console.log(graph_colour.range())
         if (australian_check && roland_check && wimbledon_check && usa_data ){
           graph_colour.range([blue_colour, orange_colour, green_colour, red_colour]);
 
@@ -471,7 +464,7 @@ var RadarChart = {
                   )
               .on('mouseout', function(){
                 if(australian_box_check || roland_box_check || wimbledon_box_check || usa_box_check){
-                      if ((australian_box_check && australian_check && cfg.color(series) == blue_colour) || (roland_box_check && roland_check && cfg.color(series) == orange_colour) || (wimbledon_box_check && roland_check && cfg.color(series) == green_colour) || (usa_box_check && usa_check && cfg.color(series) == red_colour)) {
+                      if ((australian_box_check && australian_check && cfg.color(series) == blue_colour) || (roland_box_check && roland_check && cfg.color(series) == orange_colour) || (wimbledon_box_check && wimbledon_check && cfg.color(series) == green_colour) || (usa_box_check && usa_check && cfg.color(series) == red_colour)) {
                       }
                   }else{
                        g.selectAll("polygon")

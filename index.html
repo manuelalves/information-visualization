@@ -27,14 +27,13 @@
     <script src="js/d3.v3.min.js"></script>
     <script src="js/d3.tip.v0.6.3.js"></script>
     <script src="js/RadarChartSurfaces.js"></script>
-    <script src="js/RadarScriptSurfaces.js"></script>
     <script src="js/RadarChart.js"></script>
     <script src="js/SurfaceLineChart.js"></script>
 
 </head>
 
 
-<body class="nav-md" onload="radar('1'); linesurfaceChart();">
+<body class="nav-md" onload="radar('1'); radar_surface('1'); linesurfaceChart();">
 
     <div class="container body">
 
@@ -47,7 +46,7 @@
                     <div class="clearfix"></div>
                     <div class="form-group">
 
-                      <select id="playerList1" class="form-control4" onchange="changePlayer1(); radar('1'); linesurfaceChart();">
+                      <select id="playerList1" class="form-control4" onchange="changePlayer1(); radar('1'); radar_surface('1'); linesurfaceChart();">
 
                           <!--<option>Select Player</option>-->
                           <option>Adrian Mannarino</option>
@@ -122,7 +121,7 @@
 
                     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                       <div class="form-group-year1" >
-                          <select id="yearList" class="form-year" onchange=" radar('1');myYear1()" >
+                          <select id="yearList" class="form-year" onchange=" radar('1'); radar_surface('1'); myYear1()" >
 
                                           <option selected="selected">2010</option>
                                           <option>2011</option>
@@ -306,11 +305,27 @@
 
                                         <div class="clearfix"></div>
                                     </div>
+
+                                <form action="">
+                                    <div class="check_hard">
+                                      <input type="checkbox" id="cs1" name="cs"value="" onchange = "select_hard('1')">
+                                      <label for="cs1">Hard</label>
+                                    </div>
+                                    <div class="check_clay">
+                                        <input type="checkbox" id="cs2" name="cs" value="" onchange = "select_clay('1')">
+                                        <label for="cs2">Clay</label>
+                                    </div>
+
+                                    <div class="check_grass">
+                                        <input type="checkbox" id="cs3" name="cs" value="" onchange = "select_grass('1')">
+                                          <label for="cs3">Grass</label>
+                                    </div>
+                                  </form>
+
                                     <div class="x_content_surface">
                                       <div id="surfaceradar">
                                         <div id="surfacechart"></div>
-                                        <script type="text/javascript" src="js/RadarScriptSurfaces.js"></script>
-                                    </div>
+                                      </div>
                                 </div>
 
                         <div class="row">
